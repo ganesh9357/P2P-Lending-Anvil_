@@ -264,7 +264,7 @@ components:
       layout_properties: {grid_position: 'NGLJCV,DULSMJ'}
   - name: column_panel_04
     properties: {role: null, tooltip: '', border: '', foreground: '', visible: false,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"MYRYSU":10,"FMAEVI":35,"RJJXSS":15,"PXEDFC":5,"THSBFK":37}',
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"MYRYSU":10,"FMAEVI":35,"RJJXSS":15,"PXEDFC":5}',
       spacing_below: small, background: ''}
     type: ColumnPanel
     layout_properties:
@@ -313,4 +313,12 @@ components:
       properties: {item_template: admin.dashboard.manage_cms.add_general_dropdowns.ItemTemplate28}
       type: RepeatingPanel
       layout_properties: {grid_position: 'THVHBG,YIQWNT'}
+- name: button_1_copy_3
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: white, visible: true, text: Back, font_size: null, font: '16', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0b2547',
+    bold: true, underline: false, icon: 'fa:backward'}
+  type: Button
+  layout_properties: {grid_position: 'QHXQVC,RRHUJQ'}
+  event_bindings: {click: button_1_copy_3_click}
 is_package: true

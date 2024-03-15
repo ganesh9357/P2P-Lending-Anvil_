@@ -80,3 +80,7 @@ class add_general_dropdowns(add_general_dropdownsTemplate):
     self.column_panel_02.visible = False
     self.column_panel_03.visible = False
     self.column_panel_04.visible = True
+
+  def button_1_copy_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard.manage_cms.manage_dropdowns')
