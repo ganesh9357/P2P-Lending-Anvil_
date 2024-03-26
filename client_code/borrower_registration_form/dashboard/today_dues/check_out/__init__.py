@@ -113,7 +113,8 @@ class check_out(check_outTemplate):
         self.update_total_emi_amount(total_emi)
       
         foreclosure_details = self.get_foreclosure_details(loan_id, selected_row['emi_number'])
-        if foreclosure_details is not None:
+        if foreclosure_details is not None :
+            
             total_due_amount = foreclosure_details['total_due_amount']
             foreclosure_amount = foreclosure_details['foreclose_amount']
         
@@ -163,11 +164,15 @@ class check_out(check_outTemplate):
         return extension_amount
 
     def get_foreclosure_details(self, loan_id, emi_number):
-        foreclosure_row = app_tables.fin_foreclosure.get(
-            loan_id=loan_id,
-             foreclosure_emi_num= emi_number
-        )
-        return foreclosure_row
+      foreclosure_row = app_tables.fin_foreclosure.get(
+          loan_id=loan_id,
+          foreclosure_emi_num=emi_number,
+      )
+      
+      if foreclosure_row is not None and foreclosure_row['status'] == 'approved':
+          return foreclosure_row
+      else:
+          return None
   
     def update_total_emi_amount(self, total_emi):
         self.total_emi_amount_label.text = "{:.2f}".format(total_emi)

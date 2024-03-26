@@ -94,7 +94,7 @@ class payment_details_t(payment_details_tTemplate):
             loan_id=selected_row['loan_id'],
             foreclosure_emi_num=month
         )
-          if foreclosure_row:
+          if foreclosure_row is not None and foreclosure_row['status']=='approved':
             # If foreclosed, set beginning balance and ending balance to the total amount in the foreclosure table
             foreclosure_amount = foreclosure_row['foreclose_amount']
             beginning_balance = foreclosure_row['total_due_amount']
