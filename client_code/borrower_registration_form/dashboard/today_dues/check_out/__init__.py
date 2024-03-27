@@ -25,29 +25,34 @@ class check_out(check_outTemplate):
         interest_rate = selected_row['interest_rate']
         emi_payment_type = selected_row['emi_payment_type']
         total_interest_amount = selected_row['total_interest_amount']
-  
+        total_processing_fee_amount = selected_row['total_processing_fee_amount']
+        processing_fee = total_processing_fee_amount/ tenure
         monthly_interest_rate = interest_rate / 12 / 100
         total_payments = tenure * 12
+        total_repayment_amount = selected_row['total_repayment_amount']
   
         if emi_payment_type == 'One Time':
-            emi = (loan_amount * monthly_interest_rate * (1 + monthly_interest_rate) ** tenure) / ((1 + monthly_interest_rate) ** tenure - 1)
-            total_emi = emi * tenure + extension_amount  # Add extension amount to 12-month EMI total
+            emi = total_repayment_amount
+            #total_emi += emi  # Add extension amount to 12-month EMI total
+            total_emi = emi +  extension_amount + total_processing_fee_amount
         elif emi_payment_type == 'Monthly':
             # Calculate monthly EMI amount
             emi = (loan_amount * monthly_interest_rate * ((1 + monthly_interest_rate) ** tenure)) / (((1 + monthly_interest_rate) ** tenure) - 1)
-            total_emi = emi + extension_amount  # Add extension amount to monthly EMI
+            total_emi = emi + extension_amount + processing_fee  # Add extension amount to monthly EMI
         elif emi_payment_type == 'Three Months':
             # Calculate EMI amount for 3 months
+            processing_fee = processing_fee * 3
             emi = (loan_amount * monthly_interest_rate * (1 + monthly_interest_rate) ** 3) / ((1 + monthly_interest_rate) ** 3 - 1)
-            total_emi = emi + extension_amount  # Add extension amount to 3-month EMI
+            total_emi = emi + extension_amount + processing_fee # Add extension amount to 3-month EMI
         elif emi_payment_type == 'Six Months':
+            processing_fee = processing_fee * 6
             # Calculate EMI amount for 6 months
             emi = (loan_amount * monthly_interest_rate * (1 + monthly_interest_rate) ** 6) / ((1 + monthly_interest_rate) ** 6 - 1)
-            total_emi = emi + extension_amount  # Add extension amount to 6-month EMI
+            total_emi = emi + extension_amount+ processing_fee  # Add extension amount to 6-month EMI
         else:
             # Default to monthly calculation
             emi = (loan_amount * monthly_interest_rate * (1 + monthly_interest_rate) ** total_payments) / ((1 + monthly_interest_rate) ** total_payments - 1)
-            total_emi = emi + extension_amount  # Add extension amount to monthly EMI
+            total_emi = emi + extension_amount + processing_fee # Add extension amount to monthly EMI
 
 
         loan_state_status = app_tables.fin_loan_details.get(loan_id=loan_id)['loan_state_status']
