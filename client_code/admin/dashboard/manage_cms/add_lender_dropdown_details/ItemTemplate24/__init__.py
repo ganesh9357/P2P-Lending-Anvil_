@@ -17,4 +17,6 @@ class ItemTemplate24(ItemTemplate24Template):
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    pass
+    item_data = self.item
+    open_form('admin.dashboard.manage_cms.add_lender_dropdown_details.edit_spouse', selected_row=item_data)
+    

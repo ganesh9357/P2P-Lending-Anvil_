@@ -317,9 +317,20 @@ class add_lender_dropdown_details(add_lender_dropdown_detailsTemplate):
     self.column_panel_3.visible = False
     #self.column_panel_2.visible = False
     self.column_panel_11.visible = False
-    self.column_panel_10_copy.visible = True
+    self.column_panel_10_copy.visible = False
+    self.column_panel_12.visible = True
 
-  def gender_button_click(self, **event_args):
+  # def gender_button_click(self, **event_args):
+  #   """This method is called when the button is clicked"""
+  #   entered_data = self.text_box_01.text.strip()
+  #   if not entered_data:
+  #       alert("Please enter a valid data.")
+  #       return
+  #   new_row = app_tables.fin_lender_spouse_profession.add_row(spouse_profession=entered_data)
+  #   self.text_box_01.text = ' '
+  #   self.refresh()
+
+  def spouse_click(self, **event_args):
     """This method is called when the button is clicked"""
     entered_data = self.text_box_01.text.strip()
     if not entered_data:

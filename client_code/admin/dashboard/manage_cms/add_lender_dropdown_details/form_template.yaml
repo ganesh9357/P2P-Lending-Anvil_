@@ -700,7 +700,7 @@ components:
       layout_properties:
         col_widths: {}
         grid_position: JDKCYC,CSNNJQ
-      event_bindings: {click: gender_button_click}
+      event_bindings: {click: spouse_click}
     - name: spacer_2_copy_2
       properties: {height: 160}
       type: Spacer

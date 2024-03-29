@@ -12,7 +12,7 @@ class edit_spouse(edit_spouseTemplate):
   def __init__(self,selected_row, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.text_box_1.text = selected_row['lendor_salary_type']
+    self.text_box_1.text = selected_row['spouse_profession']
         # Store the selected row for later use
     self.selected_row = selected_row
     # Any code you write here will run before the form opens.
@@ -25,7 +25,7 @@ class edit_spouse(edit_spouseTemplate):
         return
 
         # Update the 'borrower_gender' field in the database
-    self.selected_row['lendor_salary_type'] = update
+    self.selected_row['spouse_profession'] = update
     self.selected_row.update()
         # Close the form
     alert("Changes saved successfully!")
@@ -40,7 +40,7 @@ class edit_spouse(edit_spouseTemplate):
         )
     if confirmation:
             # Get the name of the group to be deleted
-            name = self.selected_row['lendor_salary_type']
+            name = self.selected_row['spouse_profession']
 
             # Delete the rows from the product_group table
             self.selected_row.delete()
