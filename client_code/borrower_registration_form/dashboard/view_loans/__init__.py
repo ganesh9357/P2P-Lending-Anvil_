@@ -14,141 +14,63 @@ class view_loans(view_loansTemplate):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
         self.user_id = main_form_module.userId
-        print(self.user_id, ' idddd')
+        self.load_data()
 
-        # Fetch data based on loan status and user ID
-        open_loans = app_tables.fin_loan_details.search(
-            loan_updated_status=q.like('approved%'), 
-            borrower_customer_id=self.user_id
-        )
-
-        borrower_profiles = []
-        for loan in open_loans:
-            user_profile = app_tables.fin_user_profile.get(customer_id=loan['lender_customer_id'])
-            if user_profile is not None:
-                borrower_profiles.append({
-                    'mobile': user_profile['mobile'],
-                    'interest_rate': loan['interest_rate'],
-                    'loan_amount': loan['loan_amount'],
-                    'tenure': loan['tenure'],
-                    'loan_disbursed_timestamp': loan['loan_disbursed_timestamp'],
-                    'product_name': loan['product_name'],
-                    'product_description': loan['product_description'],
-                    'lender_full_name': loan['lender_full_name'],
-                    'product_id': loan['product_id'],
-                    'loan_id': loan['loan_id'],
-                    'borrower_loan_created_timestamp': loan['borrower_loan_created_timestamp'],
-                    'loan_updated_status' : loan['loan_updated_status']
-                })
-
-        self.repeating_panel_6.items = borrower_profiles
-
-        # Fetch data based on loan status and user ID
-        closed_loans = app_tables.fin_loan_details.search(
-            loan_updated_status=q.like('close%'), 
-            borrower_customer_id=self.user_id
-        )
-
-        borrower_profiles1 = []
-        for loan in closed_loans:
-            user_profile = app_tables.fin_user_profile.get(customer_id=loan['lender_customer_id'])
-            if user_profile is not None:
-                borrower_profiles1.append({
-                    'mobile': user_profile['mobile'],
-                    'interest_rate': loan['interest_rate'],
-                    'loan_amount': loan['loan_amount'],
-                    'tenure': loan['tenure'],
-                    'loan_disbursed_timestamp': loan['loan_disbursed_timestamp'],
-                    'product_name': loan['product_name'],
-                    'product_description': loan['product_description'],
-                    'lender_full_name': loan['lender_full_name'],
-                    'product_id': loan['product_id'],
-                    'loan_id': loan['loan_id'],
-                    'borrower_loan_created_timestamp': loan['borrower_loan_created_timestamp'],
-                    'loan_updated_status' : loan['loan_updated_status']
-                })
-
-        self.repeating_panel_7.items = borrower_profiles1
-
-
-        # Fetch data based on loan status and user ID
-        under_process = app_tables.fin_loan_details.search(
-            loan_updated_status=q.like('under process%'), 
-            borrower_customer_id=self.user_id
-        )
-
-        borrower_profiles2 = []
-        for loan in under_process:
-            user_profile = app_tables.fin_user_profile.get(customer_id=loan['lender_customer_id'])
-            if user_profile is not None:
-                borrower_profiles2.append({
-                    'mobile': user_profile['mobile'],
-                    'interest_rate': loan['interest_rate'],
-                    'loan_amount': loan['loan_amount'],
-                    'tenure': loan['tenure'],
-                    'loan_disbursed_timestamp': loan['loan_disbursed_timestamp'],
-                    'product_name': loan['product_name'],
-                    'product_description': loan['product_description'],
-                    'lender_full_name': loan['lender_full_name'],
-                    'product_id': loan['product_id'],
-                    'loan_id': loan['loan_id'],
-                    'borrower_loan_created_timestamp': loan['borrower_loan_created_timestamp'],
-                    'loan_updated_status' : loan['loan_updated_status']
-                })
-
-        self.repeating_panel_9.items = borrower_profiles2
-
-        rejected_loans = app_tables.fin_loan_details.search(
-            loan_updated_status=q.like('rejected%'), 
-            borrower_customer_id=self.user_id
-        )
-
-        borrower_profiles3 = []
-        for loan in rejected_loans:
-            user_profile = app_tables.fin_user_profile.get(customer_id=loan['lender_customer_id'])
-            if user_profile is not None:
-                borrower_profiles3.append({
-                    'mobile': user_profile['mobile'],
-                    'interest_rate': loan['interest_rate'],
-                    'loan_amount': loan['loan_amount'],
-                    'tenure': loan['tenure'],
-                    'loan_disbursed_timestamp': loan['loan_disbursed_timestamp'],
-                    'product_name': loan['product_name'],
-                    'product_description': loan['product_description'],
-                    'lender_full_name': loan['lender_full_name'],
-                    'product_id': loan['product_id'],
-                    'loan_id': loan['loan_id'],
-                    'borrower_loan_created_timestamp': loan['borrower_loan_created_timestamp'],
-                    'loan_updated_status' : loan['loan_updated_status']
-                })
-
-        self.repeating_panel_8.items = borrower_profiles3
-
-        foreclose = app_tables.fin_loan_details.search(
-            loan_updated_status=q.like('foreclose%'), 
-            borrower_customer_id=self.user_id
-        )
-
-        borrower_profiles4 = []
-        for loan in foreclose:
-            user_profile = app_tables.fin_user_profile.get(customer_id=loan['lender_customer_id'])
-            if user_profile is not None:
-                borrower_profiles4.append({
-                    'mobile': user_profile['mobile'],
-                    'interest_rate': loan['interest_rate'],
-                    'loan_amount': loan['loan_amount'],
-                    'tenure': loan['tenure'],
-                    'loan_disbursed_timestamp': loan['loan_disbursed_timestamp'],
-                    'product_name': loan['product_name'],
-                    'product_description': loan['product_description'],
-                    'lender_full_name': loan['lender_full_name'],
-                    'product_id': loan['product_id'],
-                    'loan_id': loan['loan_id'],
-                    'borrower_loan_created_timestamp': loan['borrower_loan_created_timestamp'],
-                    'loan_updated_status' : loan['loan_updated_status']
-                })
-
-        self.repeating_panel_10.items = borrower_profiles4
+    def load_data(self):
+          # Retrieve and display open loans
+          open_loans = app_tables.fin_loan_details.search(
+              loan_updated_status=q.any_of(
+                  q.like('disbursed loan%'),
+                  q.like('foreclosure%'),
+                  q.like('extension')
+              )
+          )
+          self.repeating_panel_6.items = self.process_data(open_loans)
+          self.label_5.text = str(len(self.repeating_panel_6.items))
+  
+          # Retrieve and display closed loans
+          closed_loans = app_tables.fin_loan_details.search(loan_updated_status=q.like('close%'))
+          self.repeating_panel_7.items = self.process_data(closed_loans)
+          self.label_6.text = str(len(self.repeating_panel_7.items))
+  
+          # Retrieve and display rejected loans
+          rejected_loans = app_tables.fin_loan_details.search(loan_updated_status=q.like('reject%'))
+          self.repeating_panel_8.items = self.process_data(rejected_loans)
+          self.label_7.text = str(len(self.repeating_panel_8.items))
+  
+          # Retrieve and display underprocess loans
+          underprocess_loans = app_tables.fin_loan_details.search(loan_updated_status=q.like('under process%'))
+          self.repeating_panel_9.items = self.process_data(underprocess_loans)
+          self.label_8.text = str(len(self.repeating_panel_9.items))
+  
+          # Retrieve and display foreclosure loans
+          foreclosure_loans = app_tables.fin_loan_details.search(loan_updated_status=q.like('foreclosure%'))
+          self.repeating_panel_10.items = self.process_data(foreclosure_loans)
+          self.label_9.text = str(len(self.repeating_panel_10.items))
+  
+    def process_data(self, data):
+      profiles_with_loans = []
+      for loan in data:
+          user_profile = app_tables.fin_user_profile.get(customer_id=loan['lender_customer_id'])
+          user_profile_1 = app_tables.fin_user_profile.get(customer_id=loan['borrower_customer_id'])
+          if user_profile is not None and user_profile_1 is not None:
+              profiles_with_loans.append({
+                  'mobile': user_profile['mobile'],
+                  'interest_rate': loan['interest_rate'],
+                  'loan_amount': loan['loan_amount'],
+                  'tenure': loan['tenure'],
+                  'loan_disbursed_timestamp': loan['loan_disbursed_timestamp'],
+                  'product_name': loan['product_name'],
+                  'product_description': loan['product_description'],
+                  'borrower_full_name': loan['borrower_full_name'],
+                  'loan_id': loan['loan_id'],
+                  'borrower_loan_created_timestamp': loan['borrower_loan_created_timestamp'],
+                  'loan_updated_status': loan['loan_updated_status'],
+                  'lender_full_name': loan['lender_full_name'],
+                  'mobile_1' : user_profile_1['mobile']
+              })
+      return profiles_with_loans
+    
 
         
 
@@ -158,11 +80,11 @@ class view_loans(view_loansTemplate):
         # self.repeating_panel_10.items = app_tables.fin_loan_details.search(loan_updated_status=q.like('foreclosure%'), borrower_customer_id=self.user_id)
 
         # Update label texts with the count of items in each repeating panel
-        self.label_5.text = str(len(self.repeating_panel_6.items))
-        self.label_6.text = str(len(self.repeating_panel_7.items))
-        self.label_7.text = str(len(self.repeating_panel_8.items))
-        self.label_8.text = str(len(self.repeating_panel_9.items))
-        self.label_9.text = str(len(self.repeating_panel_10.items))
+      # self.label_5.text = str(len(self.repeating_panel_6.items))
+      # self.label_6.text = str(len(self.repeating_panel_7.items))
+      # self.label_7.text = str(len(self.repeating_panel_8.items))
+      # self.label_8.text = str(len(self.repeating_panel_9.items))
+      # self.label_9.text = str(len(self.repeating_panel_10.items))
 
     def home_borrower_registration_form_copy_1_click(self, **event_args):
         """This method is called when the button is clicked"""

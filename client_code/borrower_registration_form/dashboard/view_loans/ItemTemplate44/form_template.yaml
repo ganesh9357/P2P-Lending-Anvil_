@@ -15,13 +15,13 @@ components:
     type: Label
     layout_properties: {x: 78.48750000074506, y: 0, width: 200}
     data_bindings:
-    - {property: text, code: 'self.item[''lender_full_name'']', writeback: false}
+    - {property: text, code: 'self.item[''borrower_full_name'']', writeback: false}
   - name: mobile
     properties: {}
     type: Label
     layout_properties: {x: 78.53748779371381, y: 27.950009156018496, width: 200}
     data_bindings:
-    - {property: text, code: 'self.item[''mobile'']', writeback: false}
+    - {property: text, code: 'self.item[''mobile_1'']', writeback: false}
   - name: outlined_button_1
     properties: {text: View Loan Details, role: outlined-button, align: center, font_size: null,
       background: '#05264d', foreground: white, bold: true}
