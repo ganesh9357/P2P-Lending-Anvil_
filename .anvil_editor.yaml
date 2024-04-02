@@ -363,6 +363,7 @@ unique_ids:
     admin.dashboard.manage_cms.add_general_dropdowns.edit_gender: '1710400343827117328751050.61603'
     wallet.wallet.all_transaction: '1704884604578852863514289.3086'
     borrower_registration_form.dashboard.application_tracker.ItemTemplate69: '1709621198298979722498909.3445'
+    admin.dashboard.admin_management.view_admins.ItemTemplate94: '1712054644303931951908195.8323'
     borrower_registration_form.dashboard.view_loans.payment_details_b.RowTemplate36: '1705553457787678152376814.2659'
     ? borrower_registration_form.star_1_borrower_registration_form_2_employment.star_1_borrower_registration_form_2_employment_business_2
     : '1700570068782198167271670.87088'

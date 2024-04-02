@@ -1,7 +1,7 @@
 container: {type: ColumnPanel}
 components:
 - name: xy_panel_1
-  properties: {height: 383.5454406738281, role: outlined-card}
+  properties: {height: 413.28558349609375, role: outlined-card}
   type: XYPanel
   layout_properties:
     col_widths: {}
@@ -41,49 +41,53 @@ components:
     layout_properties: {x: 19.1875, y: 112.33750915527344, width: 92}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Email             :', font_size: null, font: '', spacing_above: small,
+      visible: true, text: 'Adhar Number    :', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_7
-    layout_properties: {x: 19.1875, y: 150.33750915527344, width: 92}
+    layout_properties: {x: 19.1875, y: 150.33750915527344, width: 181.142822265625}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Date of Birth :', font_size: null, font: '', spacing_above: small,
+      visible: true, text: Total Open Loans, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_8
-    layout_properties: {x: 19.1875, y: 190.25001525878906, width: 92}
+    layout_properties: {x: 19.1875, y: 190.25001525878906, width: 165.9998779296875}
+  - name: link_1
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    type: Label
+    layout_properties: {x: 713.2858210988343, y: 110.125, width: 200.00001525878906}
+    data_bindings:
+    - {property: text, code: 'self.item[''customer_id'']', writeback: false}
+  - name: label_2
+    properties: {}
+    type: Label
+    layout_properties: {x: 713.7858210988343, y: 143.7857666015625, width: 200.00001525878906}
+    data_bindings:
+    - {property: text, code: 'self.item[''adhar'']', writeback: false}
+  - name: label_5
+    properties: {}
+    type: Label
+    layout_properties: {x: 711.5000544972718, y: 186.07144165039062, width: 200.00001525878906}
+    data_bindings:
+    - {property: text, code: 'self.item[''loan_details_count'']', writeback: false}
+  - name: label_9
+    properties: {text: Lost Apportunity Loans}
+    type: Label
+    layout_properties: {x: 19.0357295460999, y: 231.75003051757812, width: 200.00001525878906}
+  - name: label_10
+    properties: {}
+    type: Label
+    layout_properties: {x: 710.3215266652405, y: 227.17852783203125, width: 200.00001525878906}
+    data_bindings:
+    - {property: text, code: 'self.item[''lost_apportunity_loans'']', writeback: false}
   - name: outlined_button_1
     properties: {text: View Loan Details, role: outlined-button, align: center, font_size: null,
       background: '#05264d', foreground: white, bold: true}
     type: Button
-    layout_properties: {x: -3.0130000000000337, y: 321.3749694824219, width: 938.388}
+    layout_properties: {x: 0, y: 327.14288330078125, width: 937.71435546875}
     event_bindings: {click: outlined_button_1_click}
-  - name: link_1
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Customer ID :', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    type: Label
-    layout_properties: {x: 121.1875, y: 112.33750915527344, width: 200}
-    data_bindings:
-    - {property: text, code: 'self.item[''coustmer_id'']'}
-  - name: label_2
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Email :', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    type: Label
-    layout_properties: {x: 121.1875, y: 150.33750915527344, width: 200}
-    data_bindings:
-    - {property: text, code: 'self.item[''email_user'']'}
-  - name: label_5
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Date of Birth :', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    type: Label
-    layout_properties: {x: 121.1875, y: 190.25001525878906, width: 200}
-    data_bindings:
-    - {property: text, code: 'self.item[''date_of_birth'']'}
 is_package: true

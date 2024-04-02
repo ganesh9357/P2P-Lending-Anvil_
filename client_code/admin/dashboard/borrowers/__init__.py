@@ -26,20 +26,21 @@ class borrowers(borrowersTemplate):
                     beseem = borrower_record['beseem_score']
                 else:
                     credit_limit = None
+                    beseem = None
                 
                 loan_details_count = len(
                     app_tables.fin_loan_details.search(
                         q.all_of(
-                            q.any_of(
-                                q.like('disbursed loan%'),
-                                q.like('foreclosure%'),
-                                q.like('under process%')
+                            loan_updated_status=q.any_of(
+                                q.like("disbursed loan%"),
+                                q.like("foreclosure%"),
+                                q.like("under process%")
                             )
                         ),
                         borrower_customer_id=user_profile['customer_id']
                     )
                 )
-
+                #loan_details_count = len(loan_details_count)
                 self.result.append({
                     'customer_id': user_profile['customer_id'],
                     'full_name': user_profile['full_name'],

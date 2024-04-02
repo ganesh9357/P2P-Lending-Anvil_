@@ -20,6 +20,7 @@ class lender_view_loans(lender_view_loansTemplate):
   def load_data(self):
         # Retrieve and display open loans
         open_loans = app_tables.fin_loan_details.search(
+          
             
             loan_updated_status=q.any_of(
                 q.like('disbursed loan%'),

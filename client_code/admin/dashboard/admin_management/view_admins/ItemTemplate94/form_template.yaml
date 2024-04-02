@@ -1,18 +1,17 @@
+is_package: true
 container: {type: ColumnPanel}
 components:
 - name: xy_panel_1
-  properties: {height: 491.28558349609375, role: outlined-card}
+  properties: {height: 461.5714111328125, role: outlined-card}
   type: XYPanel
-  layout_properties:
-    col_widths: {}
-    grid_position: JMQIQU,ISFWMX
+  layout_properties: {grid_position: 'LKLUXU,KFRKWO'}
   components:
   - name: image_1
     properties: {height: 63.399932861328125, source: 'https://freesvg.org/img/abstract-user-flat-4.png'}
     type: Image
     layout_properties: {x: 3.050000000745058, y: 0, width: 66}
     data_bindings:
-    - {property: source, code: 'self.item[''user_photo'']'}
+    - {property: source, code: 'self.item[''photo'']', writeback: false}
   - name: label_1
     properties: {bold: true}
     type: Label
@@ -24,7 +23,7 @@ components:
     type: Label
     layout_properties: {x: 78.53748779371381, y: 27.950009156018496, width: 200}
     data_bindings:
-    - {property: text, code: 'self.item[''mobile'']', writeback: false}
+    - {property: text, code: 'self.item[''mobile_no'']', writeback: false}
   - name: label_3
     properties: {role: null, align: left, tooltip: '', border: '', foreground: grey,
       visible: true, text: '--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------',
@@ -32,66 +31,55 @@ components:
       italic: false, background: '', bold: false, underline: false, icon: ''}
     type: Label
     layout_properties: {x: 0, y: 79.41071428731084, width: 937.71435546875}
-  - type: Label
+  - name: label_4
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Customer ID :', font_size: null, font: '', spacing_above: small,
+      visible: true, text: 'Admin  ID :', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
-    name: label_4
+    type: Label
     layout_properties: {x: 17.071465630084276, y: 130.8214503712952, width: 92.00000762939453}
   - name: label_11
-    properties: {text: Adhar Number}
+    properties: {text: Admin Role}
     type: Label
     layout_properties: {x: 20.2321406789124, y: 181.53574480488896, width: 200.00001525878906}
-  - name: label_5
-    properties: {text: Total Open Loans}
-    type: Label
-    layout_properties: {x: 15.660668510943651, y: 329.7677394337952, width: 200.00001525878906}
   - name: label_12
-    properties: {text: Credit Limit}
+    properties: {text: Super Admin Name}
     type: Label
     layout_properties: {x: 18.00002397969365, y: 233.0178309865296, width: 200.00001525878906}
-  - type: Label
+  - name: label_8
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Beseem Score, font_size: null, font: '', spacing_above: small,
+      visible: true, text: Join Date, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
-    name: label_8
-    layout_properties: {x: 20.6071406789124, y: 281.9642421193421, width: 92.00000762939453}
-  - name: label_2
-    properties: {}
     type: Label
-    layout_properties: {x: 713.8572169728577, y: 333.2322169728577, width: 200.00001525878906}
-    data_bindings:
-    - {property: text, code: 'self.item[''loan_details_count'']', writeback: false}
+    layout_properties: {x: 20.6071406789124, y: 281.9642421193421, width: 92.00000762939453}
   - name: credit
     properties: {}
     type: Label
     layout_properties: {x: 717.3214503712952, y: 233.0357753224671, width: 200.00001525878906}
     data_bindings:
-    - {property: text, code: 'self.item[''credit_limit'']', writeback: false}
+    - {property: text, code: 'self.item[''ref_admin_name'']', writeback: false}
   - name: beseem
     properties: {}
     type: Label
     layout_properties: {x: 713.9286281056702, y: 281.0714503712952, width: 200.00001525878906}
     data_bindings:
-    - {property: text, code: 'self.item[''beseem'']', writeback: false}
+    - {property: text, code: 'self.item[''join_date'']', writeback: false}
   - name: adhar
     properties: {}
     type: Label
     layout_properties: {x: 717.4106837697327, y: 188.55356707051396, width: 200.00001525878906}
     data_bindings:
-    - {property: text, code: 'self.item[''adhar'']', writeback: false}
+    - {property: text, code: 'self.item[''admin_role'']', writeback: false}
   - name: link_1
     properties: {}
     type: Label
     layout_properties: {x: 712.7142726369202, y: 136.9464198537171, width: 200.00001525878906}
     data_bindings:
-    - {property: text, code: 'self.item[''customer_id'']', writeback: false}
+    - {property: text, code: 'self.item[''admin_id'']', writeback: false}
   - name: outlined_button_1
     properties: {text: View Loan Details, role: outlined-button, align: center, font_size: null,
       background: '#05264d', foreground: white, bold: true}
     type: Button
-    layout_properties: {x: 0, y: 423.16074480488896, width: 937.71435546875}
+    layout_properties: {x: 0, y: 370.16078186035156, width: 937.71435546875}
     event_bindings: {click: outlined_button_1_click}
-is_package: true

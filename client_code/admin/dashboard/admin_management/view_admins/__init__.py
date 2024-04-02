@@ -16,10 +16,13 @@ class view_admins(view_adminsTemplate):
             Notification("No Data Available Here!").show()
         else:
             self.result = [{'admin_email': i['admin_email'],
-                            'admin_name': i['full_name'],
+                            'full_name': i['full_name'],
                             'admin_role': i['admin_role'],
                             'ref_admin_name': i['ref_admin_name'],
-                            'join_date': i['join_date']}
+                            'join_date': i['join_date'],
+                            'admin_id': i['admin_id'],
+                            'join_date': i['join_date'],
+                           }
                            for i in self.data]
 
             self.repeating_panel.items = self.result
