@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"SEKFVG":10,"UCMLOY":15,"NJPWCG":20,"GWCLBN":30}'}
   name: content_panel
   layout_properties: {slot: default}
   components:
@@ -48,58 +48,44 @@ components:
     properties: {height: 32}
     name: spacer_2
     layout_properties: {grid_position: 'WTZFJQ,SEKFVG'}
-  - type: ColumnPanel
-    properties: {role: outlined-card, tooltip: '', border: '', foreground: '', visible: true,
-      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
-      spacing_below: small, background: ''}
-    name: outlined_card_1
-    layout_properties: {grid_position: 'BJKURK,JOABDV', full_width_row: true}
-    components:
-    - type: DataGrid
-      properties:
-        role: null
-        columns:
-        - {id: IKQXMJ, title: Payment Number, data_key: column_1, $$hashKey: 'object:10339',
-          width: 78, expand: false}
-        - {id: CLPOBH, title: Payment Date, data_key: column_2, $$hashKey: 'object:10340',
-          width: 147, expand: false}
-        - {id: SSXXKU, title: Beginning Balance, data_key: column_3, $$hashKey: 'object:10341',
-          width: 137, expand: false}
-        - {id: XEXQGC, title: Scheduled  Payment, data_key: column_4, $$hashKey: 'object:10414',
-          width: 142, expand: false}
-        - {id: IBXUUB, title: Extra Payment, data_key: column_5, $$hashKey: 'object:10416',
-          width: 129, expand: false}
-        - {id: MHNLDT, title: Total Payment, data_key: column_6, $$hashKey: 'object:10418',
-          width: 131, expand: false}
-        - {id: ZSQFCF, title: Principal, data_key: column_7, $$hashKey: 'object:10420',
-          width: 120, expand: false}
-        - {id: ZZIPKX, title: Interest, data_key: column_8, $$hashKey: 'object:10422',
-          width: 115, expand: false}
-        - {id: BBAJUJ, title: Processing Fee, data_key: column_10, $$hashKey: 'object:426',
-          width: 125, expand: false}
-        - {id: BUUGHM, title: Ending Balance, data_key: column_9, $$hashKey: 'object:10424'}
-        auto_header: true
-        tooltip: ''
-        border: ''
-        foreground: ''
-        rows_per_page: 2000
-        visible: true
-        wrap_on: never
-        show_page_controls: false
-        spacing_above: small
-        spacing_below: small
-        background: ''
-      name: data_grid_1
-      layout_properties: {grid_position: 'WNIGSC,NVVGTM', full_width_row: true}
-      components:
-      - type: RepeatingPanel
-        properties: {spacing_above: none, spacing_below: none, item_template: borrower_registration_form.dashboard.new_loan_request.check.RowTemplate27}
-        name: repeating_panel_1
-        layout_properties: {}
-  - type: Spacer
+  - name: label_30
+    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+      visible: true, text: Instalments, font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'WTZFJQ,UCMLOY'}
+  - name: dropdown_payment_numbers
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: white
+      bold: false
+      underline: false
+      include_placeholder: true
+    type: DropDown
+    layout_properties: {grid_position: 'WTZFJQ,NJPWCG'}
+    event_bindings: {change: dropdown_payment_numbers_change}
+  - name: spacer_4
     properties: {height: 32}
-    name: spacer_1
-    layout_properties: {grid_position: 'QIKCJY,ZISDOY'}
+    type: Spacer
+    layout_properties: {grid_position: 'WTZFJQ,GWCLBN'}
+  - name: repeating_panel_2
+    properties: {item_template: borrower_registration_form.dashboard.new_loan_request.check.ItemTemplate95}
+    type: RepeatingPanel
+    layout_properties: {grid_position: 'SRVKNH,PFOEBU'}
   - type: Button
     properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
       foreground: 'theme:On Primary', visible: true, text: Back, font_size: null,

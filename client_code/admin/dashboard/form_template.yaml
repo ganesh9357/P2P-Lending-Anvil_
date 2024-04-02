@@ -16,7 +16,7 @@ components:
   - type: XYPanel
     properties: {height: 505, visible: true}
     name: xy_panel_1
-    layout_properties: {grid_position: 'AJQHBW,IHAEKO'}
+    layout_properties: {grid_position: 'AJQHBW,XCADDT'}
     components:
     - type: Button
       properties: {role: outlined-button, align: center, tooltip: '', border: '',
