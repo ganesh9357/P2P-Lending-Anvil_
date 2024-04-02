@@ -14,6 +14,7 @@ class view_loans(view_loansTemplate):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
         self.user_id = main_form_module.userId
+        print(self.user_id, ' idddd')
 
         # Fetch data based on loan status and user ID
         open_loans = app_tables.fin_loan_details.search(
