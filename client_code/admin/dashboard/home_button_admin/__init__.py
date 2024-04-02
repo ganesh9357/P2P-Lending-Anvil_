@@ -19,7 +19,7 @@ class home_button_admin(home_button_adminTemplate):
     open_form('admin.dashboard')
 
   def Admins_click(self, **event_args):
-    open_form('admin.admin_management')
+    open_form('admin.dashboard.admin_management')
 
   def Borrowers_click(self, **event_args):
     open_form('admin.dashboard.borrowers')

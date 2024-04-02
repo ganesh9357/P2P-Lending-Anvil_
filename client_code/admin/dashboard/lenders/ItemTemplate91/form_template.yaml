@@ -75,7 +75,7 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''loan_details_count'']', writeback: false}
   - name: label_9
-    properties: {text: Lost Apportunity Loans}
+    properties: {text: Lost Opportunity Loans}
     type: Label
     layout_properties: {x: 19.0357295460999, y: 231.75003051757812, width: 200.00001525878906}
   - name: label_10
