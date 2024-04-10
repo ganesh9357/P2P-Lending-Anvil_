@@ -24,6 +24,11 @@ class edit_profile(edit_profileTemplate):
       self.city_text.text=user_profile['city']
       self.pan_text.text=user_profile['pan_number']
       self.image_1.source = user_profile['user_photo']
+
+      photo_1 = self.file_loader_1.file
+      if photo_1:
+        self.image_1.source = photo_1
+        
       
       
       
@@ -32,9 +37,10 @@ class edit_profile(edit_profileTemplate):
       self.gender_down.items = options_string
       
       self.mother_label.text=user_profile['mouther_tounge']
-      uploaded_image = self.file_loader_1.file
-      if uploaded_image :
-        self.image_1.source = uploaded_image
+      
+
+      # if uploaded_image :
+      #   user_profile['user_photo'] = uploaded_image
     # Any code you write here will run before the form opens.
 
   def button_1_click(self, **event_args):
@@ -48,7 +54,9 @@ class edit_profile(edit_profileTemplate):
      user_profile['pan_number']=self.pan_text.text
      user_profile['gender']=self.gender_down.selected_value
      user_profile['mouther_tounge']=self.mother_label.text
-     user_profile['user_photo'] = self.ima
+     photo = self.file_loader_1.file
+     if photo:
+      user_profile['user_photo'] = photo
      user_profile.update()
     alert('saved sucessfully')
     open_form('borrower_registration_form.dashboard')
