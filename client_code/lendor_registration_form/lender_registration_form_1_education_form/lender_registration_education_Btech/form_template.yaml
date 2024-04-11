@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"RUKNLC":30,"MABORK":20,"GYLMGY":10,"QBZSHY":30,"UDIKJN":20,"EEARWQ":10,"UKDPZR":30,"NXMIOE":20,"YRSPJH":10}'}
 components:
 - type: FlowPanel
   properties: {}
@@ -43,6 +43,11 @@ components:
   properties: {}
   name: file_loader_1
   layout_properties: {grid_position: 'GCADCB,MABORK'}
+  event_bindings: {change: file_loader_1_change}
+- name: image_1
+  properties: {height: 105.71417236328125}
+  type: Image
+  layout_properties: {grid_position: 'GCADCB,GYLMGY'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: '12th standard
@@ -55,6 +60,11 @@ components:
   properties: {}
   name: file_loader_2
   layout_properties: {grid_position: 'JDKXXI,UDIKJN'}
+  event_bindings: {change: file_loader_2_change}
+- name: image_2
+  properties: {height: 106.142822265625}
+  type: Image
+  layout_properties: {grid_position: 'JDKXXI,EEARWQ'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Bachelor''s degree
@@ -67,6 +77,11 @@ components:
   properties: {}
   name: file_loader_3
   layout_properties: {grid_position: 'IMTAFK,NXMIOE'}
+  event_bindings: {change: file_loader_3_change}
+- name: image_3
+  properties: {height: 104.71417236328125}
+  type: Image
+  layout_properties: {grid_position: 'IMTAFK,YRSPJH'}
 - name: button_1
   properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: 'theme:On Primary', visible: true, text: Prev, font_size: null, font: '',
