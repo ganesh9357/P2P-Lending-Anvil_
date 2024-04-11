@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"UGSODQ":30,"GGXQEK":20,"GLFRYY":10,"EMZAAK":30,"QISVDQ":20,"KUOTZB":10}'}
 components:
 - type: FlowPanel
   properties: {}
@@ -109,6 +109,11 @@ components:
   properties: {}
   type: FileLoader
   layout_properties: {grid_position: 'OJCELP,GGXQEK'}
+  event_bindings: {change: file_loader_1_change}
+- name: image_1
+  properties: {height: 141.28558349609375}
+  type: Image
+  layout_properties: {grid_position: 'OJCELP,GLFRYY'}
 - name: label_2
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Upload last six months bank Statements
@@ -122,6 +127,11 @@ components:
   properties: {}
   type: FileLoader
   layout_properties: {grid_position: 'FGKBFF,QISVDQ'}
+  event_bindings: {change: file_loader_2_change}
+- name: image_2
+  properties: {height: 144.28558349609375}
+  type: Image
+  layout_properties: {grid_position: 'FGKBFF,KUOTZB'}
 - name: button_2
   properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: 'theme:On Primary', visible: true, text: Prev, font_size: null, font: '',

@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"SXGLPO":30,"CDUXPZ":20,"JWWLME":10}'}
 components:
 - type: FlowPanel
   properties: {}
@@ -78,6 +78,11 @@ components:
   properties: {}
   type: FileLoader
   layout_properties: {grid_position: 'YCSEEF,CDUXPZ'}
+  event_bindings: {change: file_loader_1_change}
+- name: image_1
+  properties: {height: 138.5714111328125}
+  type: Image
+  layout_properties: {grid_position: 'YCSEEF,JWWLME'}
 - name: button_1
   properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: 'theme:On Primary', visible: true, text: Prev, font_size: null, font: '',

@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"RUKNLC":30,"IIFXYA":20,"WZHHJU":10}'}
 components:
 - type: FlowPanel
   properties: {}
@@ -80,6 +80,11 @@ components:
   properties: {}
   type: FileLoader
   layout_properties: {grid_position: 'GCADCB,IIFXYA'}
+  event_bindings: {change: file_loader_1_change}
+- name: image_1
+  properties: {height: 136.9998779296875}
+  type: Image
+  layout_properties: {grid_position: 'GCADCB,WZHHJU'}
 - name: button_1
   properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: 'theme:On Primary', visible: true, text: Prev, font_size: null, font: '',

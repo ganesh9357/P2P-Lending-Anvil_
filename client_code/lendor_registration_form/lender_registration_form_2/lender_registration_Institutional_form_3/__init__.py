@@ -51,4 +51,9 @@ class lender_registration_Institutional_form_3(lender_registration_Institutional
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("bank_users.user_form")
+
+  def file_loader_1_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+      self.image_1.source = self.file_loader_1.file
     

@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"RUKNLC":20,"MABORK":30,"LFXIQU":10,"QBZSHY":20,"UDIKJN":30,"HYMSLH":10}'}
 components:
 - type: FlowPanel
   properties: {}
@@ -43,6 +43,11 @@ components:
   properties: {}
   name: file_loader_1
   layout_properties: {grid_position: 'GCADCB,MABORK'}
+  event_bindings: {change: file_loader_1_change}
+- name: image_1
+  properties: {height: 119.85708618164062}
+  type: Image
+  layout_properties: {grid_position: 'GCADCB,LFXIQU'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: '12th standard
@@ -55,6 +60,11 @@ components:
   properties: {}
   name: file_loader_2
   layout_properties: {grid_position: 'JDKXXI,UDIKJN'}
+  event_bindings: {change: file_loader_2_change}
+- name: image_2
+  properties: {height: 129.42852783203125}
+  type: Image
+  layout_properties: {grid_position: 'JDKXXI,HYMSLH'}
 - name: button_1
   properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: 'theme:On Primary', visible: true, text: Prev, font_size: null, font: '',

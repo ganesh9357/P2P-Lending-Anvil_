@@ -63,5 +63,15 @@ class lender_registration_individual_form_3(lender_registration_individual_form_
               open_form('lendor_registration_form.lender_registration_form_3_marital_details', user_id=self.userId)
   def button_3_click(self, **event_args):
     open_form("bank_users.user_form")
+
+  def file_loader_1_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+      self.image_1.source = self.file_loader_1.file
+
+  def file_loader_2_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+      self.image_2.source = self.file_loader_2.file
     
     

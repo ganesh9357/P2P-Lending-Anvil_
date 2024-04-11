@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"RUKNLC":30,"MABORK":20,"BOQFVB":10,"QBZSHY":30,"UDIKJN":20,"ILCPWR":10,"UKDPZR":30,"NXMIOE":20,"LTJQDP":10,"CJWJBU":30,"TOBOFI":20,"PTJLAA":10}'}
 components:
 - type: FlowPanel
   properties: {}
@@ -43,6 +43,11 @@ components:
   properties: {}
   name: file_loader_1
   layout_properties: {grid_position: 'GCADCB,MABORK'}
+  event_bindings: {change: file_loader_1_change}
+- name: image_1
+  properties: {height: 127.142822265625}
+  type: Image
+  layout_properties: {grid_position: 'GCADCB,BOQFVB'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: '12th standard
@@ -55,6 +60,11 @@ components:
   properties: {}
   name: file_loader_2
   layout_properties: {grid_position: 'JDKXXI,UDIKJN'}
+  event_bindings: {change: file_loader_2_change}
+- name: image_2
+  properties: {height: 122.85711669921875}
+  type: Image
+  layout_properties: {grid_position: 'JDKXXI,ILCPWR'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Bachelor''s degree
@@ -67,6 +77,11 @@ components:
   properties: {}
   name: file_loader_3
   layout_properties: {grid_position: 'IMTAFK,NXMIOE'}
+  event_bindings: {change: file_loader_3_change}
+- name: image_3
+  properties: {height: 126.5714111328125}
+  type: Image
+  layout_properties: {grid_position: 'IMTAFK,LTJQDP'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: Master's degree, font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -78,6 +93,11 @@ components:
   properties: {}
   name: file_loader_4
   layout_properties: {grid_position: 'OJIHRV,TOBOFI'}
+  event_bindings: {change: file_loader_4_change}
+- name: image_4
+  properties: {height: 132.8570556640625}
+  type: Image
+  layout_properties: {grid_position: 'OJIHRV,PTJLAA'}
 - name: button_1
   properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: 'theme:On Primary', visible: true, text: Prev, font_size: null, font: '',
