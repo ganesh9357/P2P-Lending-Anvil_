@@ -78,6 +78,7 @@ class check(checkTemplate):
                   self.product_cat,
                   self.product_name,
                   self.credit_limt,
+                  self.product_discription,
                   entered_values={
                       'loan_amount': self.entered_loan_amount,
                       'tenure': self.entered_tenure,
