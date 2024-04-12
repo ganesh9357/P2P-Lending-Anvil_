@@ -153,7 +153,7 @@ class dashboard(dashboardTemplate):
       pass
 
     def contact_main_form_link_click(self, **event_args):
-      open_form('borrower_registration_form.dashboard.dashboard_contact')
+      open_form('borrower_registration_form.dashboard.borrower_profile')
 
     def Report_A_Problem_click(self, **event_args):
       open_form('borrower_registration_form.dashboard.dashboard_report_a_problem')

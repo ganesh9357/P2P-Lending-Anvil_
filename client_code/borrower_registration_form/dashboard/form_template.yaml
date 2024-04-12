@@ -167,14 +167,6 @@ components:
     layout_properties: {row: CQUDLO, width_xs: 3, col_xs: 9}
     event_bindings: {click: extended_loans_click}
     name: extended_loans
-  - properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:On Primary', visible: true, text: 'View profile                                       ',
-      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-      italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
-    type: Button
-    layout_properties: {row: UGVDTH, width_xs: 3, col_xs: 0}
-    event_bindings: {click: view_profile}
-    name: button_6_copy
   - properties: {}
     type: LinearPanel
     layout_properties: {row: LCEQII, width_xs: 3, col_xs: 9}
