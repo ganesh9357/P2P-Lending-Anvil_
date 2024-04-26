@@ -6,7 +6,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ... import wallet
-
+from datetime import datetime
 
 # this is the method for user_id generate ----> start hear
 
@@ -28,13 +28,16 @@ def find_highest_amigos_id():
     return highest_id
 
 # It creates the ID for only new users
-def add_email_and_user_id(email_id):
+def add_email_and_user_id(email_id ,password):
     generated_id = generate_user_id()
+    signup_date=datetime.now()
+    hashed_password = anvil.server.call('hash_password_2', password)
+
     app_tables.fin_user_profile.add_row(email_user=email_id, customer_id=generated_id,registration_approve=False,profile_status=False,mobile_check=False,last_confirm=False)
     # app_tables.fin_user_beseem_score.add_row(borrower_customer_id=generated_id,borrower_email_id=email_id,documentation_point=0,educational_point=0,language_point=0,loan_point=0,occupation_point=0,region_point=0,relationship_point=0,total_point=50)
     app_tables.fin_user_beseem_score.add_row(borrower_customer_id=generated_id,borrower_email_id=email_id)
     app_tables.fin_wallet.add_row(user_email=email_id,customer_id=generated_id,wallet_amount=0,wallet_id=wallet.create_wallet_id(),status=False)
-
+    app_tables.users.add_row(email=email_id,password_hash=hashed_password,enabled=True,signed_up=signup_date)
 #----- end hear ----- #
 
 # The method check for new user or existing user using email from current user ---> start hear

@@ -9,27 +9,47 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 from ...user_form import user_module
 from .. import main_form_module
+from datetime import datetime
 
 
 class login_page(login_pageTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    # login_date = datetime.now()
 
     # Any code you write here will run before the form opens.
 
   def button_1_click(self, **event_args):
-    login_input = self.text_box_1.text.strip()
+    email = self.text_box_1.text.strip()
         # Get the password
     password = self.text_box_2.text.strip()
+    if not email or not password:
+            self.error_label.text = 'Please enter email and password'
+            self.error_label.visible = True
+            return
         # Get the user based on login input
-    user = anvil.server.call('get_user_for_login',login_input)
-
+    user = anvil.server.call('get_user_for_login',email)
+    if user is None:
+            self.error_label.text = 'Invalid email or password'
+            self.error_label.visible = True
+            return
+    password_hash = user['password_hash']
+    hashed_password = anvil.server.call('hash_password_1', password ,password_hash)
+    print(hashed_password)
+    print(password_hash)
+    print(password)
         # Check if user exists and password matches
-    if user is not None and user['password'] == password:
-            print(login_input)
-            if login_input:
-                user_email = login_input
+    if user is not None and  hashed_password is True:
+            user_row = app_tables.users.get(email=email)
+            # Update the login date for the user
+            user_row['last_login'] = datetime.now()
+            # Save changes to the users table
+            user_row.update()
+            
+            print(email)
+            if email:
+                user_email = email
                 print(user_email)
                 check_user_already_exist = user_module.check_user_profile(user_email)
                 print(check_user_already_exist)
@@ -57,8 +77,9 @@ class login_page(login_pageTemplate):
                             elif user_profile_e['one_time_settlement'] == True:
                                 open_form('borrower_registration_form.ots_dashboard')
 
-                        elif user_profile_e['form_count'] >= 0:
+                        elif user_profile_e['form_count'] is not None and user_profile_e['form_count'] >= 0:
                           open_form('bank_users.user_form')
+
                         else:
                             open_form('bank_users.main_form.basic_registration_form')
                     else:
@@ -85,8 +106,4 @@ class login_page(login_pageTemplate):
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('bank_users.main_form.signup_page')
-
-
-
-
 

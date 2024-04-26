@@ -9,6 +9,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 from ...user_form import user_module
 from .. import main_form_module
+import re
 
 
 class signup_page(signup_pageTemplate):
@@ -23,10 +24,18 @@ class signup_page(signup_pageTemplate):
         # Get the password
     password = self.text_box_2.text.strip()
     retype_password = self.text_box_3.text.strip()
+
+    if not re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email):
+            self.retype_password_error_label.text = ' Please enter a valid email address.'
+            self.retype_password_error_label.visible = True
+            return
+      
     if password != retype_password:
             self.retype_password_error_label.text = 'Passwords do not match. Please re-enter.'
             self.retype_password_error_label.visible = True
             return
+
+    # hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
     if email:
       print(email)
