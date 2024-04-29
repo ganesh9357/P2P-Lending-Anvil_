@@ -52,7 +52,7 @@ components:
     layout_properties: {grid_position: 'NESHTV,LQZNUS ZRUHSQ,VYIRHG'}
   - name: label_9
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '#000337',
-      visible: true, text: Application Status, font_size: null, font: '', spacing_above: small,
+      visible: false, text: Application Status, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     type: Label
@@ -73,7 +73,7 @@ components:
     layout_properties: {grid_position: 'NESHTV,LQZNUS NNRGMP,LPMEGV'}
   - name: label_19
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '#000337',
-      visible: true, text: Total Repayment Date, font_size: null, font: '', spacing_above: small,
+      visible: true, text: Total Repayment Amount, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     type: Label
@@ -137,7 +137,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'NESHTV,RGKGXI NEYSEB,GMVDXB'}
   - name: label_10
-    properties: {}
+    properties: {visible: false}
     type: Label
     layout_properties: {grid_position: 'NESHTV,RGKGXI DQUJIG,GQBJWB'}
   - name: label_16
