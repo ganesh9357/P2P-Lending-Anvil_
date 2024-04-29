@@ -61,8 +61,10 @@ class signup_page(signup_pageTemplate):
     self.password_visible = self.check_box_1.checked
     if self.password_visible:
          self.text_box_3.hide_text = False  # Show decrypted password
+         self.text_box_2.hide_text = False
     else:
         self.text_box_3.hide_text = True
+        self.text_box_2.hide_text = True
 
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""

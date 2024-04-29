@@ -153,7 +153,7 @@ components:
         layout_properties: {grid_position: 'BCREGJ,LGHLJP GASAMI,BJDXSL VLFKXH,ZGCZXK'}
       - name: text_box_2
         properties: {placeholder: '', background: white, visible: true, enabled: true,
-          role: outlined, hide_text: false}
+          role: outlined, hide_text: true}
         type: TextBox
         layout_properties: {grid_position: 'BCREGJ,LGHLJP GASAMI,BJDXSL JHGYMR,PKGYXY
             ASCLYG,SZRTGJ'}
