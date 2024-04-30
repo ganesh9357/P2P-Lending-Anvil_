@@ -122,8 +122,8 @@ db_schema:
       admin_ui: {width: 200, order: 11}
       type: string
     - name: admin_id
-      admin_ui: {width: 200, order: 1}
-      type: number
+      admin_ui: {width: 200}
+      type: string
     title: fin_admin_users
   fin_lendor_salary_type:
     client: full
