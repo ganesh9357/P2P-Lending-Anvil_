@@ -93,15 +93,6 @@ components:
     - type: Button
       properties: {role: outlined-button, align: center, tooltip: '', border: '',
         enabled: true, foreground: 'theme:On Primary', visible: true, text: '     Manage
-          Lenders                ', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '#0b2547',
-        bold: true, underline: false, icon: 'fa:chain-broken'}
-      layout_properties: {x: 627.4875762946904, y: 72.48751525953412, width: 240.9875030517578}
-      event_bindings: {click: button_4_click}
-      name: button_4
-    - type: Button
-      properties: {role: outlined-button, align: center, tooltip: '', border: '',
-        enabled: true, foreground: 'theme:On Primary', visible: true, text: '     Manage
           CMS                      ', font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '#0b2547',
         bold: true, underline: false, icon: 'fa:dribbble'}
@@ -130,3 +121,12 @@ components:
       type: Label
       layout_properties: {x: 346.29998779296875, y: 0, width: 215.3}
       name: label_1
+    - type: Button
+      properties: {role: outlined-button, align: center, tooltip: '', border: '',
+        enabled: true, foreground: 'theme:On Primary', visible: true, text: '     Manage
+          Lenders                ', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '#0b2547',
+        bold: true, underline: false, icon: 'fa:chain-broken'}
+      layout_properties: {x: 636.6606227345765, y: 72.51786150410771, width: 240.98214721679688}
+      event_bindings: {click: button_4_click}
+      name: button_4

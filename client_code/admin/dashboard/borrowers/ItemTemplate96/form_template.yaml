@@ -26,7 +26,7 @@ components:
     - {property: text, code: 'self.item[''mobile'']', writeback: false}
   - name: label_3
     properties: {role: null, align: left, tooltip: '', border: '', foreground: grey,
-      visible: true, text: '------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------',
+      visible: true, text: '--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------',
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
     type: Label

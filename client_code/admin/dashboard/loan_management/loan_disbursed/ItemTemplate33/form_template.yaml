@@ -17,12 +17,6 @@ components:
     layout_properties: {x: 77.17046980559826, y: 85.48864416778088, width: 200}
     data_bindings:
     - {property: text, code: 'self.item[''borrower_mobile'']', writeback: false}
-  - name: borrower_name
-    properties: {bold: true}
-    type: Label
-    layout_properties: {x: 77.06814436614513, y: 59.68181852996349, width: 200}
-    data_bindings:
-    - {property: text, code: 'self.item[''borrower_full_name'']', writeback: false}
   - name: return
     properties: {text: '     ------Not Invested Yet-----', italic: true, bold: false,
       align: center}
@@ -125,21 +119,21 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''product_description'']', writeback: true}
     event_bindings: {}
-  - name: loan_id
-    properties: {visible: false}
-    type: Label
-    layout_properties: {x: 0, y: 0, width: 200}
-    data_bindings:
-    - {property: text, code: 'self.item[''loan_id'']', writeback: false}
-  - name: image_1
-    properties: {height: 63.399932861328125, source: 'self.item[''borrower_photo'']'}
-    type: Image
-    layout_properties: {x: 0.9545464962720871, y: 47.36366133391857, width: 66}
-    data_bindings:
-    - {property: source, code: 'self.item[''borrower_photo'']', writeback: false}
   - name: outlined_button_1
     properties: {text: View Loan Details, role: outlined-button, align: center, font_size: null,
       background: '#05264d', foreground: 'theme:On Primary', bold: true}
     type: Button
     layout_properties: {x: 0, y: 398.7143135070801, width: 937.71435546875}
     event_bindings: {click: outlined_button_1_click}
+  - name: image_1
+    properties: {height: 78.5714111328125, source: 'self.item[''borrower_photo'']'}
+    type: Image
+    layout_properties: {x: 2.124993462115526, y: 13.107155937701464, width: 76.142822265625}
+    data_bindings:
+    - {property: source, code: 'self.item[''borrower_photo'']', writeback: false}
+  - name: borrower_name
+    properties: {bold: true}
+    type: Label
+    layout_properties: {x: 96.51784624531865, y: 16.28571428731084, width: 200.00001525878906}
+    data_bindings:
+    - {property: text, code: 'self.item[''borrower_full_name'']', writeback: false}

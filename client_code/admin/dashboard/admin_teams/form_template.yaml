@@ -1,7 +1,7 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {html: ''}
 components:
 - type: ColumnPanel
   properties: {col_widths: '{}'}
@@ -14,7 +14,7 @@ components:
       full_width_row: true}
     name: home_button_admin_1
   - properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Manage Admin, font_size: 18, font: '', spacing_above: small,
+      visible: true, text: '   Manage Admin', font_size: 18, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
     type: Label
