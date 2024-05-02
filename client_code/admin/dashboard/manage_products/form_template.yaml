@@ -32,9 +32,10 @@ components:
       layout_properties: {grid_position: 'EBRLYP,EDRJXM'}
     - type: Button
       properties: {role: outlined-button, align: full, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:On Primary', visible: true, text: ' ADD PRODUCTS', font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#05264d', bold: false, underline: false, icon: ''}
+        foreground: 'theme:On Primary', visible: true, text: ' ADD PRODUCTS
+
+          ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '#05264d', bold: false, underline: false, icon: ''}
       name: button_1
       layout_properties: {grid_position: 'IBKOJG,LPNHKI RDREJA,CFJDFC'}
       event_bindings: {click: button_1_click}
@@ -48,9 +49,10 @@ components:
       event_bindings: {click: button_1_copy_3_click}
     - type: Button
       properties: {role: tonal-button, align: full, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:On Primary', visible: true, text: MANAGE PRODUCTS, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#05264d', bold: false, underline: false, icon: ''}
+        foreground: 'theme:On Primary', visible: true, text: 'MANAGE PRODUCTS
+
+          ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '#05264d', bold: false, underline: false, icon: ''}
       name: button_1_copy
       layout_properties: {grid_position: 'IBKOJG,DUAONS WZYYHT,BZBDUN'}
       event_bindings: {click: button_1_copy_click}
@@ -64,8 +66,10 @@ components:
       event_bindings: {click: button_1_copy_4_click}
     - type: Button
       properties: {role: tonal-button, align: full, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:On Primary', visible: true, text: ADD PRODUCT GROUP  & CATEGORIES,
-        font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        foreground: 'theme:On Primary', visible: true, text: 'ADD PRODUCT GROUP  &
+          CATEGORIES
+
+          ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
         italic: false, background: '#05264d', bold: false, underline: false, icon: ''}
       name: button_1_copy_2
       layout_properties: {grid_position: 'IBKOJG,AHBFVH'}

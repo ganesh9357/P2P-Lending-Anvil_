@@ -76,7 +76,8 @@ class lenders(lendersTemplate):
                     'loan_details_count': loan_details_count,
                     'lost_apportunity_loans':lost_apportunity_loans,
                     'close': closed_loans,
-                    'user_photo':user_profile['user_photo']
+                    'user_photo':user_profile['user_photo'],
+                    'adhar': user_profile['aadhaar_no'],
                 })
 
         if not self.result:

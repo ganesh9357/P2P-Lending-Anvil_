@@ -102,7 +102,7 @@ components:
   name: grid_panel_2
   components:
   - properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:On Primary', visible: true, text: 'New Loan Request                                        ',
+      foreground: 'theme:On Primary', visible: true, text: '     New Loan Request                         ',
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
     type: Button
@@ -110,7 +110,7 @@ components:
     event_bindings: {click: button_4_click}
     name: button_4
   - properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:On Primary', visible: true, text: 'Today''s  Due                                        ',
+      foreground: 'theme:On Primary', visible: true, text: '          Today''s  Due                                        ',
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
     type: Button
@@ -118,7 +118,7 @@ components:
     event_bindings: {click: outlined_button_1_click}
     name: outlined_button_1
   - properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:On Primary', visible: true, text: 'View  Loans                                        ',
+      foreground: 'theme:On Primary', visible: true, text: '           View  Loans                                        ',
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
     type: Button
@@ -126,7 +126,7 @@ components:
     event_bindings: {click: button_6_click}
     name: button_6
   - properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:On Primary', visible: true, text: 'Loan Foreclosure                                        ',
+      foreground: 'theme:On Primary', visible: true, text: '      Loan Foreclosure                                        ',
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
     type: Button
@@ -134,7 +134,7 @@ components:
     event_bindings: {click: outlined_button_1_copy_3_click}
     name: outlined_button_2
   - properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:On Primary', visible: true, text: 'Application Tracker                                        ',
+      foreground: 'theme:On Primary', visible: true, text: '     Application Tracker                                        ',
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
     type: Button
@@ -142,7 +142,7 @@ components:
     event_bindings: {click: outlined_button_3_click}
     name: outlined_button_3
   - properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:On Primary', visible: true, text: 'Discount Coupons                                        ',
+      foreground: 'theme:On Primary', visible: true, text: '      Discount Coupons                                        ',
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
     type: Button
@@ -150,7 +150,7 @@ components:
     event_bindings: {click: outlined_button_06_click}
     name: outlined_button_06
   - properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:On Primary', visible: true, text: View Transaction History,
+      foreground: 'theme:On Primary', visible: true, text: '  View Transaction History   ',
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
     type: Button
@@ -158,7 +158,7 @@ components:
     event_bindings: {click: outlined_button_7_click}
     name: outlined_button_7
   - properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: 'theme:On Primary', visible: true, text: 'Loan  Extension                                        ',
+      foreground: 'theme:On Primary', visible: true, text: '        Loan  Extension                                        ',
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
     type: Button
