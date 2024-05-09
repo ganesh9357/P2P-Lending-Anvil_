@@ -33,7 +33,7 @@ class dashboard(dashboardTemplate):
 
   def View_Loan_Requests_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.view_borrower_loan_request")
+    open_form("lendor.dashboard.view_borrower_loan_request")
     # email = main_form_module.email
     # user_profile = app_tables.fin_user_profile.get(email_user=email)
     # if user_profile:
@@ -58,35 +58,35 @@ class dashboard(dashboardTemplate):
 
   def View_Lost_Opportunities_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.view_lost_oppurtunities")
+    open_form("lendor.dashboard.view_lost_oppurtunities")
 
   def View_Loans_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.lender_view_loans")
+    open_form("lendor.dashboard.lender_view_loans")
 
   def View_Loan_Extension_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.view_loan_extension_requests")
+    open_form("lendor.dashboard.view_loan_extension_requests")
 
   def View_Loan_Foreclosure_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.view_loan_foreclosure_Requests")
+    open_form("lendor.dashboard.view_loan_foreclosure_Requests")
 
   def View_Edit_Profile_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.lender_profile")
+    open_form("lendor.dashboard.lender_profile")
 
   def View_Send_Notifications_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.view_or_send_notifications")
+    open_form("lendor.dashboard.view_or_send_notifications")
 
   def Change_Password_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.change_password")
+    open_form("lendor.dashboard.change_password")
 
   def historyView_Transaction_History_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.view_transaction_history")
+    open_form("lendor.dashboard.view_transaction_history")
 
   def login_signup_button_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -97,15 +97,15 @@ class dashboard(dashboardTemplate):
 
   def home_main_form_link_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard")
+    open_form("lendor.dashboard")
 
   def about_main_form_link_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.dasboard_about")
+    open_form("lendor.dashboard.dasboard_about")
 
   def contact_main_form_link_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.dasboard_contact")
+    open_form("lendor.dashboard.dasboard_contact")
 
   def button_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -140,7 +140,7 @@ class dashboard(dashboardTemplate):
 
   def notification_link_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form('lendor_registration_form.dashboard.notification')
+    open_form('lendor.dashboard.notification')
 
 
   def wallet_dashboard_link_click(self, **event_args):
