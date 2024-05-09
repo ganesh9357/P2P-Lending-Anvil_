@@ -30,4 +30,4 @@ class borrwer_registration_navigation_bar(borrwer_registration_navigation_barTem
 
   def Report_A_Problem_click(self, **event_args):
     """This method is called when the link is clicked"""
-    pass
+    open_form()
