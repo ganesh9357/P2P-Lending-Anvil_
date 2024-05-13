@@ -45,7 +45,7 @@ class today_dues(today_duesTemplate):
                 latest_loan = all_loans[0]
                 loan_detail = app_tables.fin_loan_details.get(loan_id=latest_loan['loan_id'])
                 user_profile = app_tables.fin_user_profile.get(customer_id=loan_detail['lender_customer_id'])
-                if loan_detail is not None and user_profile is not None:
+                if loan_detail is not None and user_profile is not None:        # and (loan_detail['remaining_amount'] is None or loan_detail['remaining_amount'] > 0)
                     loan_amount = loan_detail['loan_amount']
                     scheduled_payment = latest_loan['scheduled_payment']
                     next_payment = latest_loan['next_payment']
