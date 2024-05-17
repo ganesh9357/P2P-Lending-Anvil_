@@ -188,7 +188,7 @@ class part_payment(part_paymentTemplate):
                                   next_scheduled_payment = prev_scheduled_payment + timedelta(days=180)
                                   next_next_payment = prev_next_payment + timedelta(days=180)
                               elif emi_payment_type == 'One Time':
-                                  # if tenure:
+                                  if self.:
                                       next_scheduled_payment = prev_scheduled_payment + timedelta(days=30 * tenure)
                                       next_next_payment = self.selected_row['next_payment'] + timedelta(days=30 * tenure)
                           else:

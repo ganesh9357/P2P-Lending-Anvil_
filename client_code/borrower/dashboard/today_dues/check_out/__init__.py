@@ -618,7 +618,7 @@ class check_out(check_outTemplate):
         'loan_state_status' : self.selected_row['loan_state_status'],
         # 'part_payment_date' : self.selected_row['part_payment_date'],
         # 'payment_type' : self.selected_row['payment_type'],
-        
+        'tenure':self.tenure_label.text,
     }
     
     # Open the part_payment form and pass loan_details as a parameter
