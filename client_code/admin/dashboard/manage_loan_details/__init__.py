@@ -22,4 +22,8 @@ class manage_loan_details(manage_loan_detailsTemplate):
 
   def view_loans(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('admin.dashboard.loan_management')
+    open_form('admin.dashboard.manage_loan_details.loan_management')
+
+  def button_1_copy_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard')

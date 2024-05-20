@@ -1,4 +1,6 @@
-container: {type: ColumnPanel}
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"RVZBCR":30,"YUYNGW":30,"NXKICY":45}'}
 components:
 - name: home_button_admin_1
   properties: {}
@@ -40,4 +42,16 @@ components:
     type: Button
     layout_properties: {grid_position: 'TSDWZF,VCNTGA'}
     event_bindings: {click: loan_settings}
+- name: spacer_2
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'RZCAZP,UKCLLO'}
+- name: button_1_copy_2
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: 'theme:On Primary', visible: true, text: Back, font_size: null, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#0b2547',
+    bold: true, underline: false, icon: 'fa:angle-double-left'}
+  type: Button
+  layout_properties: {grid_position: 'RUSXKW,ZQFPZN'}
+  event_bindings: {click: button_1_copy_2_click}
 is_package: true

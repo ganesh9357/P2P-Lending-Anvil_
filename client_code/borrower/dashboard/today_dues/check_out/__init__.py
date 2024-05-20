@@ -317,6 +317,10 @@ class check_out(check_outTemplate):
           self.label_5.visible = False
           self.label_9.visible = False
           self.label_12.visible = False
+          self.total_emi_amount_label.visible = False
+          self.lapsed.visible = False
+          self.default.visible = False
+          self.npa.visible = False
           
   
     def get_extension_details(self, loan_id, emi_number):

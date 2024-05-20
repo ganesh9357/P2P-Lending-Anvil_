@@ -140,9 +140,7 @@ components:
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '#0b2547', bold: true, underline: false, icon: 'fa:angle-double-left'}
     type: Button
-    layout_properties:
-      col_widths: {}
-      grid_position: MSEXQT,FEBQYX
+    layout_properties: {grid_position: 'MSEXQT,FEBQYX'}
     event_bindings: {click: button_1_copy_2_click}
     name: button_1_copy_2
   - properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
