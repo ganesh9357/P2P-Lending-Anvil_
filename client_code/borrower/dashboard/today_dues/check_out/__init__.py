@@ -322,6 +322,16 @@ class check_out(check_outTemplate):
           self.default.visible = False
           self.npa.visible = False
 
+
+        adding_remaining_part_payment = app_tables.fin_emi_table.get(
+            loan_id=loan_id,
+            emi_number=selected_row['emi_number'] -1
+        )
+        if adding_remaining_part_payment:
+          part_pay = adding_remaining_part_payment['payment_type']
+          if part_pay == 'part payment':
+            remaining_part_payment = adding_remaining_part_payment['part_payment_amount']
+
   
           
   
