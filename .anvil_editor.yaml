@@ -161,6 +161,7 @@ unique_ids:
     admin.dashboard.manage_cms.add_borrower_dropdown_details.ItemTemplate85: '1710495046477101407015295.04103'
     borrower.dashboard.foreclosure_request.borrower_foreclosure.foreclose: '1700730776806358375111007.35254'
     borrower.dashboard.notification: '1710759928351738411832417.4897'
+    lendor.dashboard.today_dues.View_Details.part_payment_copy: OSMJLIDI46YODBDWEA7WKC3XREUKDPBQ
     admin.dashboard.manage_bessem.add_subcategory.ItemTemplate92: '171108796269972522221607.73813'
     lendor.dashboard.view_loan_extension_requests.ItemTemplate79: '1709795534095955316024149.9836'
     bank_users.main_form.products_main_form.vehicle_loan: '1714373140105534036320579.5613'

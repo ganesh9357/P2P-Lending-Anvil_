@@ -287,7 +287,8 @@ class part_payment(part_paymentTemplate):
 
   def calculate_additional_fees(self, emi_row):
         # Retrieve the part_payment_date from emi_row
-        part_payment_date = emi_row['scheduled_payment']
+        part_payment_date = self.loan_details['next_payment']
+        print(part_payment_date)
 
         # Calculate the difference in days between part_payment_date and today's date
         days_elapsed = self.calculate_date_difference(part_payment_date, datetime.now().date())
