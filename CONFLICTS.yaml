@@ -1,0 +1,12 @@
+merge:
+  parents: [3aa8a79c35b4a3613b3d29942587fdbc3b7c4cda, 7ab1ba67608cbc3e1d6ee84e4f22025221f69ed0]
+  base: e411b4006da0e058aeef8a1e1e80bc23fde3282a
+conflicting_items:
+- text_chunks:
+  - start: 3
+    alternatives:
+    - {s: A, l: 3, n: 117}
+    - {s: B, l: 120, n: 14}
+  components: []
+  item: [client_code, borrower.dashboard.Form1]
+  app_path: [CODE, forms/borrower.dashboard.Form1]
