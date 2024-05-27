@@ -37,7 +37,7 @@ components:
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-        visible: true, text: '© 2023 - 2024, Ascends - All Rights Reserved', font_size: null,
+        visible: true, text: '© 2023 - 2024, Ascend - All Rights Reserved', font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '#05264d', bold: true, underline: false, icon: ''}
       name: label_4_copy

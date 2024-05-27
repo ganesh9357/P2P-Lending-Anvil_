@@ -78,14 +78,14 @@ components:
       type: Spacer
       layout_properties: {grid_position: 'LOUJDS,QSUOUY'}
     - name: label_6
-      properties: {role: display, text: Welcome to Ascends P2P, foreground: white}
+      properties: {role: display, text: Welcome to Ascend's P2P, foreground: white}
       type: Label
       layout_properties: {grid_position: 'LOUJDS,RTKSOW QUVAAZ,ZIPZDI'}
     - name: label_9
-      properties: {text: 'Ascends P2P it is a Peer to Peer Lending platform. The company
-          uses technology to match borrowers and lenders and in the process eliminates
-          the margin which is charged by traditional banks and NBFCs, thus, making
-          borrowing cheaper and investing a more lucrative opportunity as compared
+      properties: {text: 'Ascend''s P2P it is a Peer to Peer Lending platform. The
+          company uses technology to match borrowers and lenders and in the process
+          eliminates the margin which is charged by traditional banks and NBFCs, thus,
+          making borrowing cheaper and investing a more lucrative opportunity as compared
           to traditional investment avenues.', background: '', foreground: white,
         font_size: 20, role: input-prompt}
       type: Label

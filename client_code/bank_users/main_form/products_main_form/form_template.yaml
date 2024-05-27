@@ -1,82 +1,82 @@
+is_package: true
 container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
 components:
-- name: main_header_1
-  properties: {}
+- properties: {}
   type: form:bank_users.main_form.main_header
   layout_properties: {grid_position: 'XSDWWI,PEBPAZ', full_width_row: true}
-- name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy
-  properties: {col_widths: '{}', background: '#Edf0f4', role: null}
+  name: main_header_1
+- properties: {col_widths: '{}', background: '#Edf0f4', role: null}
   type: ColumnPanel
   layout_properties: {grid_position: 'JZNURZ,ZOPFYD', full_width_row: true}
+  name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy
   components:
-  - name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_copy
-    properties: {col_widths: '{}', background: 'theme:Surface Variant', role: elevated-card}
+  - properties: {col_widths: '{}', background: 'theme:Surface Variant', role: elevated-card}
     type: ColumnPanel
     layout_properties: {grid_position: 'DYBEYE,DWXCGB'}
+    name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_copy
     components:
-    - name: image_13
-      properties: {source: _/theme/bank_users/personal_loan/personal%20loan1.jpg,
+    - properties: {source: _/theme/bank_users/personal_loan/personal%20loan1.jpg,
         height: '200'}
       type: Image
       layout_properties: {grid_position: 'CNSXUR,FJQAJE'}
       event_bindings: {mouse_up: image_13_mouse_up}
-    - name: button_3
-      properties: {text: Personal Loan, bold: true, foreground: black, font_size: 20}
+      name: image_13
+    - properties: {text: Personal Loan, bold: true, foreground: black, font_size: 20}
       type: Button
       layout_properties: {grid_position: 'RKTBKN,QKEDVY'}
       event_bindings: {click: button_3_click}
-  - name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_copy_3
-    properties: {col_widths: '{}', background: 'theme:Surface Variant', role: elevated-card}
+      name: button_3
+  - properties: {col_widths: '{}', background: 'theme:Surface Variant', role: elevated-card}
     type: ColumnPanel
     layout_properties: {grid_position: 'DYBEYE,BAEGYX'}
+    name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_copy_3
     components:
-    - name: image_14
-      properties: {source: _/theme/bank_users/main_form/business_loan/business-loan-pic.jpg,
+    - properties: {source: _/theme/bank_users/main_form/business_loan/business-loan-pic.jpg,
         height: '200'}
       type: Image
       layout_properties: {grid_position: 'TZJSYL,UCWSYL'}
       event_bindings: {mouse_up: image_14_mouse_up}
-    - name: button_4
-      properties: {text: Business Loan, bold: true, font_size: 20, foreground: black}
+      name: image_14
+    - properties: {text: Business Loan, bold: true, font_size: 20, foreground: black}
       type: Button
       layout_properties: {grid_position: 'WXLHXI,ZPCSZF'}
       event_bindings: {click: button_4_click}
-  - name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_copy_2
-    properties: {col_widths: '{}', background: 'theme:Surface Variant', role: elevated-card}
+      name: button_4
+  - properties: {col_widths: '{}', background: 'theme:Surface Variant', role: elevated-card}
     type: ColumnPanel
     layout_properties: {grid_position: 'DYBEYE,NZXWWU'}
+    name: content_panel_copy_copy_3_copy_3_copy_copy_copy_2_copy_copy_2
     components:
-    - name: spacer_1
-      properties: {height: 12.133331298828125}
+    - properties: {height: 12.133331298828125}
       type: Spacer
       layout_properties: {grid_position: 'MROKWF,BGEFWD'}
-    - name: image_15
-      properties: {height: 159.46664428710938, source: _/theme/bank_users/main_form/vehicle_loan/vehicle%20laon1.png,
+      name: spacer_1
+    - properties: {height: 159.46664428710938, source: _/theme/bank_users/main_form/vehicle_loan/vehicle%20laon1.png,
         display_mode: zoom_to_fill}
       type: Image
       layout_properties: {grid_position: 'CJKLEL,YEAVIE'}
       event_bindings: {mouse_up: image_15_mouse_up}
-    - name: spacer_8
-      properties: {height: '11'}
+      name: image_15
+    - properties: {height: '11'}
       type: Spacer
       layout_properties: {grid_position: 'VBRBWB,XXUCXU'}
-    - name: button_5
-      properties: {text: Vehicle Loan, bold: true, font_size: 20, foreground: black}
+      name: spacer_8
+    - properties: {text: Vehicle Loan, bold: true, font_size: 20, foreground: black}
       type: Button
       layout_properties: {grid_position: 'RHBIPV,DQFGUU'}
       event_bindings: {click: button_5_click}
-    - name: spacer_7
-      properties: {height: -4.46673583984375}
+      name: button_5
+    - properties: {height: -4.46673583984375}
       type: Spacer
       layout_properties: {grid_position: 'FZHFDZ,CFPCDK'}
-- name: spacer_2
-  properties: {height: '10'}
+      name: spacer_7
+- properties: {height: '10'}
   type: Spacer
   layout_properties: {grid_position: 'NQSQNF,OUQAKH'}
-- name: label_4
-  properties: {text: 'Whether you should choose a business or personal loan depends
+  name: spacer_2
+- properties: {text: 'Whether you should choose a business or personal loan depends
       mainly on your situation and needs. If you are starting up a new business, a
       personal loan may be easier to qualify for as you get your venture off the ground;
       however, not every personal loan lender lets you use funds for business-related
@@ -85,45 +85,45 @@ components:
     font_size: 18, align: left}
   type: Label
   layout_properties: {grid_position: 'SISZBP,FFXOPX'}
-- name: label_1
-  properties: {text: 'What is a Personal Loan?', align: center, bold: true, font_size: 30}
+  name: label_4
+- properties: {text: 'What is a Personal Loan?', align: center, bold: true, font_size: 30}
   type: Label
   layout_properties: {grid_position: 'GZDXPD,XPIBBH'}
-- name: label_2
-  properties: {text: 'An Personal Loan or an Instant loan is a form of loan taken
+  name: label_1
+- properties: {text: 'An Personal Loan or an Instant loan is a form of loan taken
       from a lender or a financial institution for personal uses such as family vacations,
       medical needs, consumer electronics and appliances, debt consolidation, credit
       card bill consolidation, wedding or any other such needs.', align: center, font_size: 18}
   type: Label
   layout_properties: {grid_position: 'RYNGHL,GYAWQY'}
-- name: label_3
-  properties: {text: 'In a personal loan, lenders lend money to borrower at a fixed
+  name: label_2
+- properties: {text: 'In a personal loan, lenders lend money to borrower at a fixed
       or floating interest rate for a certain period of time which can range from
       3 months to 3 years or even more depending on the amount without providing any
       collateral or asset as security or a guarantor. After that borrower repays the
       loan amount with easy monthly installments.', align: center, font_size: 18}
   type: Label
   layout_properties: {grid_position: 'YBLTAS,UTESYA'}
-- name: spacer_4
-  properties: {height: '10'}
+  name: label_3
+- properties: {height: '10'}
   type: Spacer
   layout_properties: {grid_position: 'VUEXOO,VIFQFY'}
-- name: button_1
-  properties: {text: Apply for Personal Loan, role: filled-button, align: center,
+  name: spacer_4
+- properties: {text: Apply for Personal Loan, role: filled-button, align: center,
     font_size: null, background: '#013065', bold: false}
   type: Button
   layout_properties: {grid_position: 'CGXAMJ,AAROPC'}
   event_bindings: {click: button_1_click}
+  name: button_1
 - type: Spacer
   properties: {height: 18}
-  name: spacer_5
   layout_properties: {grid_position: 'HZBPBW,ATDPAN', full_width_row: true}
-- name: label_5
-  properties: {text: 'What Is a Business Loan?', align: center, bold: true, font_size: 30}
+  name: spacer_5
+- properties: {text: 'What Is a Business Loan?', align: center, bold: true, font_size: 30}
   type: Label
   layout_properties: {grid_position: 'HTZUAJ,GQJZHR'}
-- name: label_6
-  properties: {text: 'A business loan is a financial product specifically designed
+  name: label_5
+- properties: {text: 'A business loan is a financial product specifically designed
       to finance the operation or expansion of a business. Business owners can use
       this type of financing for many different purposes, including capital investments,
       operational expenses and working capital needs. Small business loans typically
@@ -132,157 +132,156 @@ components:
     font_size: 18}
   type: Label
   layout_properties: {grid_position: 'BSXJAK,HXFROO'}
-- name: spacer_3
-  properties: {height: '10'}
+  name: label_6
+- properties: {height: '10'}
   type: Spacer
   layout_properties: {grid_position: 'JQQSFD,JQBGZV'}
-- name: button_2
-  properties: {text: Apply for Business Loan, bold: false, font_size: null, role: filled-button,
+  name: spacer_3
+- properties: {text: Apply for Business Loan, bold: false, font_size: null, role: filled-button,
     background: '#013065'}
   type: Button
   layout_properties: {grid_position: 'IQUOJL,JHRMOI'}
   event_bindings: {click: button_2_click}
-- name: spacer_6
-  properties: {height: '10'}
+  name: button_2
+- properties: {height: '10'}
   type: Spacer
   layout_properties: {grid_position: 'YJBZDI,HUYMYG'}
-- name: label_5_copy
-  properties: {text: 'What Is a Vehicle Loan?', align: center, bold: true, font_size: 30}
+  name: spacer_6
+- properties: {text: 'What Is a Vehicle Loan?', align: center, bold: true, font_size: 30}
   type: Label
   layout_properties: {grid_position: 'RINNAQ,CCJMHP'}
-- name: label_6_copy
-  properties: {text: 'A vehicle loan, also known as an auto loan or car loan, is a
+  name: label_5_copy
+- properties: {text: 'A vehicle loan, also known as an auto loan or car loan, is a
       type of financing provided by a financial institution, such as a bank or a credit
       union, or through alternative lending platforms like peer-to-peer (P2P) lending.
       It is specifically designed to help individuals purchase a vehicle, such as
       a car, motorcycle, or truck.', align: center, font_size: 18}
   type: Label
   layout_properties: {grid_position: 'IIPENM,ATKZUD'}
-- name: spacer_6_copy
-  properties: {height: '10'}
+  name: label_6_copy
+- properties: {height: '10'}
   type: Spacer
   layout_properties: {grid_position: 'DIODIK,GWSEYQ'}
-- name: button_6
-  properties: {text: Apply for Vehicle Loan, background: '#013065', foreground: white}
+  name: spacer_6_copy
+- properties: {text: Apply for Vehicle Loan, background: '#013065', foreground: white}
   type: Button
   layout_properties: {grid_position: 'BJZPPQ,KGQKFO'}
   event_bindings: {click: button_6_click}
-- name: spacer_6_copy_copy
-  properties: {height: '10'}
+  name: button_6
+- properties: {height: '10'}
   type: Spacer
   layout_properties: {grid_position: 'YQGSBJ,MDRSYL'}
-- name: column_panel_2
-  properties: {background: white, col_widths: '{"XHAILN":12,"SPJHOO":8,"WNWVDK":16,"YBBTWP":12,"QNSOAB":12}'}
+  name: spacer_6_copy_copy
+- properties: {background: white, col_widths: '{"XHAILN":12,"SPJHOO":8,"WNWVDK":16,"YBBTWP":12,"QNSOAB":12}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'ABVJOL,QDPVCL', full_width_row: true}
+  name: column_panel_2
   components:
-  - name: spacer_15_copy
-    properties: {height: 14.888885498046875}
+  - properties: {height: 14.888885498046875}
     type: Spacer
     layout_properties: {grid_position: 'MMFQSR,XHAILN GZEMUS,BUIUBY'}
-  - name: image_29
-    properties: {vertical_align: center, height: 113, border: '', display_mode: zoom_to_fill,
+    name: spacer_15_copy
+  - properties: {vertical_align: center, height: 113, border: '', display_mode: zoom_to_fill,
       spacing_above: none, source: _/theme/titled-design.jpg, spacing_below: large,
       background: '', horizontal_align: left}
     type: Image
     layout_properties: {grid_position: 'MMFQSR,XHAILN'}
-    data_bindings: []
-  - name: spacer_41_copy_2
-    properties: {height: 21.555511474609375}
+    name: image_29
+  - properties: {height: 21.555511474609375}
     type: Spacer
     layout_properties: {grid_position: 'MMFQSR,SPJHOO SCGGTB,GABWCY'}
-  - name: spacer_35_copy
-    properties: {height: 32}
+    name: spacer_41_copy_2
+  - properties: {height: 32}
     type: Spacer
     layout_properties: {grid_position: 'MMFQSR,SPJHOO DARVGB,SPSXSM'}
-  - name: link_7
-    properties: {text: Home, bold: true, font_size: 16, underline: false, foreground: black}
+    name: spacer_35_copy
+  - properties: {text: Home, bold: true, font_size: 16, underline: false, foreground: black}
     type: Link
     layout_properties: {grid_position: 'MMFQSR,WNWVDK'}
     event_bindings: {click: link_7_click}
-  - name: link_10
-    properties: {text: Investment, foreground: black, bold: true, font_size: 16, underline: false}
+    name: link_7
+  - properties: {text: Investment, foreground: black, bold: true, font_size: 16, underline: false}
     type: Link
     layout_properties: {grid_position: 'MMFQSR,WNWVDK NYPJXO,GZMCYD'}
-  - name: link_13
-    properties: {text: How It Works, foreground: black, bold: true, font_size: 16,
+    name: link_10
+  - properties: {text: How It Works, foreground: black, bold: true, font_size: 16,
       underline: false}
     type: Link
     layout_properties: {grid_position: 'MMFQSR,WNWVDK KEVRNO,FAGUHN'}
-  - name: link_11
-    properties: {text: Borrow, font_size: 16, bold: true, foreground: black, underline: false}
+    name: link_13
+  - properties: {text: Borrow, font_size: 16, bold: true, foreground: black, underline: false}
     type: Link
     layout_properties: {grid_position: 'MMFQSR,YBBTWP MOYVBC,DMAAWC'}
-  - name: link_8
-    properties: {text: Contact Us, foreground: black, underline: false, font_size: 16,
+    name: link_11
+  - properties: {text: Contact Us, foreground: black, underline: false, font_size: 16,
       bold: true, align: left}
     type: Link
     layout_properties: {grid_position: 'MMFQSR,YBBTWP KKGCYO,GSVXOQ'}
     event_bindings: {click: link_8_click}
-  - name: link_12
-    properties: {text: Help, foreground: black, bold: true, font_size: 16, underline: false}
+    name: link_8
+  - properties: {text: Help, foreground: black, bold: true, font_size: 16, underline: false}
     type: Link
     layout_properties: {grid_position: 'MMFQSR,QNSOAB IRVWEK,HAZHMM', full_width_row: true}
     event_bindings: {click: link_12_click}
-  - name: link_9
-    properties: {text: About Us, bold: true, font_size: 16, underline: false, foreground: black}
+    name: link_12
+  - properties: {text: About Us, bold: true, font_size: 16, underline: false, foreground: black}
     type: Link
     layout_properties: {grid_position: 'MMFQSR,QNSOAB MCUKZK,LUZRLG'}
     event_bindings: {click: link_9_click}
-  - name: spacer_16_copy
-    properties: {height: 32.5999755859375}
+    name: link_9
+  - properties: {height: 32.5999755859375}
     type: Spacer
     layout_properties: {grid_position: 'EEWYZY,CQBPUE'}
-  - name: grid_panel_2_copy
-    properties: {spacing_above: small, spacing_below: small, background: '#05264d',
+    name: spacer_16_copy
+  - properties: {spacing_above: small, spacing_below: small, background: '#05264d',
       foreground: '', border: '', visible: true, role: null, tooltip: ''}
     type: GridPanel
     layout_properties: {grid_position: 'RBHEDE,EWADTZ', full_width_row: true}
+    name: grid_panel_2_copy
     components:
-    - name: flow_panel_3_copy_1
-      properties: {role: null, vertical_align: full, spacing: medium, align: left,
+    - properties: {role: null, vertical_align: full, spacing: medium, align: left,
         tooltip: '', border: '', foreground: '', visible: true, spacing_above: none,
         spacing_below: none, background: '#05264d'}
       type: FlowPanel
       layout_properties: {row: JUWDTC, width_xs: 5, col_xs: 0, width: 198.328}
+      name: flow_panel_3_copy_1
       components:
-      - name: label_4_copy_2
-        properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-          visible: true, text: '© 2023 - 2024, Ascends - All Rights    Reserved',
-          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      - properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+          visible: true, text: '© 2023 - 2024, Ascend - All Rights    Reserved', font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
           italic: false, background: '#05264d', bold: true, underline: false, icon: ''}
         type: Label
         layout_properties: {}
-    - name: link_5_copy
-      properties: {role: null, url: 'https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558718_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9179915&mcid=6844056167778418689&cid=&gclid=EAIaIQobChMI1pr54ZHVggMVF6dmAh2IxgGNEAAYASAAEgKqevD_BwE&gclsrc=aw.ds',
+        name: label_4_copy_2
+    - properties: {role: null, url: 'https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558718_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9179915&mcid=6844056167778418689&cid=&gclid=EAIaIQobChMI1pr54ZHVggMVF6dmAh2IxgGNEAAYASAAEgKqevD_BwE&gclsrc=aw.ds',
         align: left, tooltip: '', border: '', foreground: white, visible: true, text: '',
         font_size: 30, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
         icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '',
         bold: false, underline: false, icon: 'fa:linkedin-square'}
       type: Link
       layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 8, width: 93.6875}
-    - name: link_2
-      properties: {role: null, url: 'https://www.facebook.com/', align: left, tooltip: '',
+      name: link_5_copy
+    - properties: {role: null, url: 'https://www.facebook.com/', align: left, tooltip: '',
         border: '', foreground: white, visible: true, text: '', font_size: 30, wrap_on: mobile,
         font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
         spacing_below: small, italic: false, background: '', bold: false, underline: false,
         icon: 'fa:facebook-square'}
       type: Link
       layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 9, width: 93.6875}
-    - name: link_4_copy
-      properties: {role: null, url: 'https://www.instagram.com/accounts/login/', align: left,
+      name: link_2
+    - properties: {role: null, url: 'https://www.instagram.com/accounts/login/', align: left,
         tooltip: '', border: '', foreground: white, visible: true, text: '', font_size: 30,
         wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left,
         col_widths: '', spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: 'fa:instagram'}
       type: Link
       layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 10, width: 93.6875}
-    - name: link_3
-      properties: {role: null, url: 'https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D',
+      name: link_4_copy
+    - properties: {role: null, url: 'https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D',
         align: left, tooltip: '', border: '', foreground: white, visible: true, text: '',
         font_size: 30, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
         icon_align: left, col_widths: '', spacing_below: small, italic: false, background: th,
         bold: false, underline: false, icon: 'fa:twitter'}
       type: Link
       layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 11, width: 93.6875}
-is_package: true
+      name: link_3

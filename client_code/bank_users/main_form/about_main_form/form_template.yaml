@@ -62,12 +62,12 @@ components:
       layout_properties: {}
       event_bindings: {click: button_10_copy_click}
 - name: label_2
-  properties: {text: Ascends is a Leading Peer to Peer Lending Platform in India,
-    align: center, bold: true, font_size: 25}
+  properties: {text: Ascend is a Leading Peer to Peer Lending Platform in India, align: center,
+    bold: true, font_size: 25}
   type: Label
   layout_properties: {grid_position: 'IRIMNO,KBDRET'}
 - name: label_3
-  properties: {text: Ascends offers non-traditional investment opportunities for investors and access to low-cost personal loans for borrowers,
+  properties: {text: Ascend offers non-traditional investment opportunities for investors and access to low-cost personal loans for borrowers,
     font_size: 23, align: center}
   type: Label
   layout_properties: {grid_position: 'IGSOPT,XIRLTP'}
@@ -112,7 +112,7 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'JYQKOZ,RAUEBS'}
 - name: label_7
-  properties: {text: 'About Ascends ', align: center, bold: true, font_size: 30}
+  properties: {text: About Ascend, align: center, bold: true, font_size: 30}
   type: Label
   layout_properties: {grid_position: 'WGOGKC,YFWYFJ'}
 - name: spacer_13
@@ -129,21 +129,21 @@ components:
   type: Image
   layout_properties: {grid_position: ',undefined TKSFBE,XSHAZS'}
 - name: label_8
-  properties: {text: 'Ascends is more than just a place to borrow and lend money.
-      We carefully look at each loan to see how risky it is and suggest an interest
-      rate based on that. Borrowers can then borrow money at that rate or higher.
-      This helps borrowers get money at a fair price based on how risky their loan
-      is. It also helps investors earn more money compared to how risky the loans
-      are. If a borrower can''t pay back the money, we help investors with legal stuff
+  properties: {text: 'Ascend is more than just a place to borrow and lend money. We
+      carefully look at each loan to see how risky it is and suggest an interest rate
+      based on that. Borrowers can then borrow money at that rate or higher. This
+      helps borrowers get money at a fair price based on how risky their loan is.
+      It also helps investors earn more money compared to how risky the loans are.
+      If a borrower can''t pay back the money, we help investors with legal stuff
       to get their money back
 
       ', font_size: 19, align: left}
   type: Label
   layout_properties: {grid_position: ',ERTZBE TWOCQM,BVGNUV'}
 - name: label_9
-  properties: {text: 'Ascends is ready to shake up how we do money stuff. The old
-      way of doing things, like banks, costs a lot because they have fancy offices
-      and pay lots of staff. Because of this, they can''t really check each person''s
+  properties: {text: 'Ascend is ready to shake up how we do money stuff. The old way
+      of doing things, like banks, costs a lot because they have fancy offices and
+      pay lots of staff. Because of this, they can''t really check each person''s
       risk properly. So, they treat loans for regular people as just a big bunch of
       business. This means people with good credit get mixed in with everyone else.
       It''s not fair to people who are good with money, and it''s not good for using
@@ -223,7 +223,7 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'SIHKPS,IRVYPV'}
 - name: label_33
-  properties: {text: 'Ascends operates as an internet-based platform for Peer-to-Peer
+  properties: {text: 'Ascend operates as an internet-based platform for Peer-to-Peer
       Lending (P2P Lending), linking verified borrowers seeking unsecured loans with
       investors seeking higher risk-adjusted returns through investment opportunities.
 
@@ -266,7 +266,7 @@ components:
   type: Image
   layout_properties: {grid_position: 'LAZYRH,EKJKUU WUWVYB,CYQCZU'}
 - name: label_36
-  properties: {text: 'Ascends ', align: center, font_size: 18, bold: true}
+  properties: {text: Ascend, align: center, font_size: 18, bold: true}
   type: Label
   layout_properties: {grid_position: 'LAZYRH,EKJKUU CBLPRW,BTKLIE'}
 - name: image_8
@@ -295,7 +295,7 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'YXOIZD,BQTJIG'}
 - name: label_39
-  properties: {text: 'Ascends conducts thorough credit evaluations of borrowers prior
+  properties: {text: 'Ascend conducts thorough credit evaluations of borrowers prior
       to approving loan proposals and provides support throughout the entire loan
       cycle, from approval to repayment.
 
@@ -337,7 +337,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'OEGLXS,MWEDAB KVQMDR,HUTSVV'}
 - name: label_13
-  properties: {text: 'Ascends does the profile verification for each and every listing.
+  properties: {text: 'Ascend does the profile verification for each and every listing.
       It collects personal, professional and financial data and verifies these to
       the best extent possible from all available data sources such as government
       databank, credit information bureau, social media etc. We take all due care
@@ -351,14 +351,14 @@ components:
   type: Label
   layout_properties: {grid_position: 'WTMTKM,DZNXXZ'}
 - name: label_15
-  properties: {text: Credit Risk Assessment using Ascends Score, font_size: 20, bold: true}
+  properties: {text: Credit Risk Assessment using Ascend Score, font_size: 20, bold: true}
   type: Label
   layout_properties: {grid_position: 'DETCYM,RXWHJU'}
 - name: label_16
-  properties: {text: 'Ascends has an in-house underwriting team which does the credit
-      analysis of each of the borrowers. Ascends has also developed a proprietary
-      Credit Score Model which incorporates a number of parameters such as credit
-      history, financial and another behavioral pattern of the borrower', font_size: 18}
+  properties: {text: 'Ascend has an in-house underwriting team which does the credit
+      analysis of each of the borrowers. Ascend has also developed a proprietary Credit
+      Score Model which incorporates a number of parameters such as credit history,
+      financial and another behavioral pattern of the borrower', font_size: 18}
   type: Label
   layout_properties: {grid_position: 'VISWWS,DIRGNU'}
 - name: image_4_copy
@@ -386,7 +386,7 @@ components:
   layout_properties: {grid_position: 'LVZTKO,MZBUKN MZZVCY,RVNNKY'}
 - name: label_18
   properties: {text: 'Based on the detailed credit analysis, the underwriting team
-      assigns a risk category  and provides an Ascends Recommended Interest Rate along
+      assigns a risk category  and provides an Ascend Recommended Interest Rate along
       with an  Report for each of the loans. This acts as a benchmark for both the
       borrowers and the investors to not only set the final interest rate but also
       to understand the risks associated with each of the loans', font_size: 18}
@@ -402,11 +402,11 @@ components:
   type: Label
   layout_properties: {grid_position: 'NAHKHD,IIHDLH'}
 - name: label_20
-  properties: {text: 'Ascends has drafted detailed loan agreements where utmost care
+  properties: {text: 'Ascend has drafted detailed loan agreements where utmost care
       has been taken to cover various scenarios along with suitable recourse. This
       loan agreement is signed post payment of requisite stamp duty which is borne
-      by Ascends and hence, is legally enforceable in the court of law. In case, either
-      party seeks to enforce the agreement at any time, Ascends also helps that party
+      by Ascend and hence, is legally enforceable in the court of law. In case, either
+      party seeks to enforce the agreement at any time, Ascend also helps that party
       to seek legal opinion though at an additional cost as charged by the lawyer',
     font_size: 18}
   type: Label
@@ -435,7 +435,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'LPJRZM,TCOENG DOCQAZ,NATRXF'}
 - name: label_22
-  properties: {text: 'Ascends facilitates the fund transfer from investor to the borrower
+  properties: {text: 'Ascend facilitates the fund transfer from investor to the borrower
       through Escrow accounts. For investors, it becomes a seamless process as investors
       can transfer funds to any borrower through the unique virtual account assigned
       to them', font_size: 18}
@@ -464,7 +464,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'ONVAVF,KRXCWE OGUNNZ,DTBYUD'}
 - name: label_25
-  properties: {text: Borrowers can easily apply for the loan from anywhere as the entire loan application process is online and does not require the borrower to visit any branch of Ascends applying for the loan,
+  properties: {text: Borrowers can easily apply for the loan from anywhere as the entire loan application process is online and does not require the borrower to visit any branch of Ascend applying for the loan,
     font_size: 18}
   type: Label
   layout_properties: {grid_position: 'ONVAVF,KRXCWE JMFPRS,LQHQXL'}
@@ -505,7 +505,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'BSUBQA,SEGFMP LGCYSH,OLCGGK'}
 - name: label_29
-  properties: {text: Approved loans are listed for investments where Ascends registered investors can show their interest. Once the loan is fully funded then Ascends completes other formalities to prior to fund transfer,
+  properties: {text: Approved loans are listed for investments where Ascend registered investors can show their interest. Once the loan is fully funded then Ascend completes other formalities to prior to fund transfer,
     font_size: 18}
   type: Label
   layout_properties: {grid_position: 'BSUBQA,SEGFMP DFDUTQ,DIJWNY'}
@@ -519,7 +519,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'SDFAEE,WLRBEB'}
 - name: label_31
-  properties: {text: 'Ascends operates two separate Escrow accounts for loan disbursal
+  properties: {text: 'Ascend operates two separate Escrow accounts for loan disbursal
       and EMI repayment. Investors transfer the fund to the Disbursal escrow account
       and from there it is transferred to the borrower. Similarly, borrowers transfer
       funds to EMI repayment Escrow account and from there it is transferred to respective
@@ -609,8 +609,8 @@ components:
       components:
       - type: Label
         properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-          visible: true, text: '© 2023 - 2024, Ascends - All Rights    Reserved',
-          font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          visible: true, text: '© 2023 - 2024, Ascend - All Rights    Reserved', font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
           italic: false, background: '#05264d', bold: true, underline: false, icon: ''}
         name: label_4
         layout_properties: {}

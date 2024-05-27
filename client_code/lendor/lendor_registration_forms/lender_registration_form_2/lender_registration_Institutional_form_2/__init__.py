@@ -20,6 +20,7 @@ class lender_registration_Institutional_form_2(lender_registration_Institutional
     if user_data:
             self.industry_type = user_data.get('industry_type', '')
             self.turn_over = user_data.get('six_month_turnover', '')
+            self.last_six_statements = user_data.get('last_six_month_bank_proof')
             self.year = user_data.get('year_estd', '')
            
     

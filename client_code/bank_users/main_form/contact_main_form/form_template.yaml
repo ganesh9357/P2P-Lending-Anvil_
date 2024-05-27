@@ -78,7 +78,7 @@ components:
     type: Label
     layout_properties: {}
   - name: label_6
-    properties: {icon: 'fa:envelope', text: '  Ascendsinvestment@p2p.coom', align: center,
+    properties: {icon: 'fa:envelope', text: '  Ascendinvestment@p2p.coom', align: center,
       bold: true, font_size: 19}
     type: Label
     layout_properties: {}
@@ -93,7 +93,7 @@ components:
     type: Label
     layout_properties: {}
   - name: label_6_copy
-    properties: {icon: 'fa:envelope', text: Ascendsloan@p2p.coom, align: center, bold: true,
+    properties: {icon: 'fa:envelope', text: Ascendloan@p2p.coom, align: center, bold: true,
       font_size: 20}
     type: Label
     layout_properties: {}
@@ -128,7 +128,7 @@ components:
     components:
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-        visible: true, text: '© 2023 - 2024, Ascends - All Rights Reserved', font_size: null,
+        visible: true, text: '© 2023 - 2024, Ascend - All Rights Reserved', font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
         background: '#05264d', bold: true, underline: false, icon: ''}
       name: label_4

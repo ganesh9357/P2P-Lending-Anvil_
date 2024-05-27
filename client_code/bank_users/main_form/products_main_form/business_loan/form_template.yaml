@@ -27,8 +27,8 @@ components:
       layout_properties: {grid_position: 'JIZFNE,AEXDNX'}
     - name: label_2
       properties: {text: "Looking to grow your team, diversify your services, or finance\
-          \ your next business milestone? \nExplore Ascends peer-to-peer business\
-          \ loans in India.\n", bold: false, font_size: 23}
+          \ your next business milestone? \nExplore Ascend peer-to-peer business loans\
+          \ in India.\n", bold: false, font_size: 23}
       type: Label
       layout_properties: {grid_position: 'RPUBYC,GZZIWE'}
     - name: spacer_1
@@ -195,7 +195,7 @@ components:
       type: Spacer
       layout_properties: {grid_position: 'ARPCUW,XDKEFC'}
     - name: label_12
-      properties: {text: 'At Ascends, we empower businesses of every scale to propel
+      properties: {text: 'At Ascend, we empower businesses of every scale to propel
           forward. Secure your business''s growth with our online P2P business loans,
           starting from just 12% per annum.', align: center, font_size: 18, foreground: white}
       type: Label
@@ -286,7 +286,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'IGFUMH,ZYKFOT'}
   - name: label_24
-    properties: {text: 'Why choose Ascends for your business loan needs?
+    properties: {text: 'Why choose Ascend for your business loan needs?
 
         ', align: center, bold: true, font_size: 30}
     type: Label
@@ -296,7 +296,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'KPUGBM,FNOTVU'}
   - name: label_37
-    properties: {text: 'Ascends provides hassle-free, unsecured business loans online
+    properties: {text: 'Ascend provides hassle-free, unsecured business loans online
         at low-interest rates. Applying for a business loan on our platform takes
         just ten minutes of your valuable time.
 
@@ -409,7 +409,7 @@ components:
 
           Banks often employ highly-paid professionals to assess business loan applications,
           and these expenses are ultimately passed on to you through higher interest
-          rates. However, at Ascends, we''ve streamlined our operations by leveraging
+          rates. However, at Ascend, we''ve streamlined our operations by leveraging
           dependable technology to digitize the entire loan application process. Because
           we prioritize our customers, we pass on the savings from reduced costs to
           you in the form of lower interest rates, unmatched by banks or NBFCs.
@@ -466,15 +466,15 @@ components:
       type: Label
       layout_properties: {grid_position: 'XQMMMY,HFTTOG BDOSTW,BWFMNA'}
     - name: label_30
-      properties: {text: 'At Ascends, we boast a vast network of hundreds of investors
+      properties: {text: 'At Ascend, we boast a vast network of hundreds of investors
           ready to support your aspirations. Once your business loan application receives
           approval from our system, it''s listed on our platform for funding. Typically,
           5-10 investors participate in funding every lakh rupees raised on the platform.
           Once committed, investors transfer funds into an escrow account managed
-          by Ascends and overseen by a SEBI-approved trustee. Subsequently, the funds
+          by Ascend and overseen by a SEBI-approved trustee. Subsequently, the funds
           are directly transferred to your account.This entire process is digital
           and seamless, ensuring that you can access your business capital upfront
-          within a few hours of applying on Ascends.', font_size: 18}
+          within a few hours of applying on Ascend.', font_size: 18}
       type: Label
       layout_properties: {grid_position: 'XQMMMY,HFTTOG KMLKJU,FOIKIA'}
     - name: label_47_copy
@@ -521,13 +521,13 @@ components:
       type: Label
       layout_properties: {grid_position: 'KCHXXB,MSBQFS QJEQTF,QJQXKX'}
     - name: label_32
-      properties: {text: 'Discover the concept of equitable business loans at Ascends
+      properties: {text: 'Discover the concept of equitable business loans at Ascend
           – a customer-centric lending platform committed to providing the best terms
-          for both borrowers and investors.When you borrow from Ascends, you have
-          the freedom to prepay your loan at your convenience. Unlike banks and NBFCs,
+          for both borrowers and investors.When you borrow from Ascend, you have the
+          freedom to prepay your loan at your convenience. Unlike banks and NBFCs,
           we don''t impose any prepayment penalties. Whether you prefer to make early
           repayments or settle your loan the very next day, the choice is yours –
-          it''s your money, after all!Simply reach out to Ascends support and select
+          it''s your money, after all!Simply reach out to Ascend support and select
           from various modes to prepay. Once the process is complete, we''ll promptly
           send you a revised account statement online.', font_size: 18}
       type: Label
@@ -548,7 +548,7 @@ components:
       type: Label
       layout_properties: {grid_position: 'JGUDEZ,FZVWNJ OLTCXH,MGFAMU'}
     - name: label_34
-      properties: {text: 'At Ascends, we prioritize our customers'' interests above
+      properties: {text: 'At Ascend, we prioritize our customers'' interests above
           all else. Our core values revolve around honesty, fairness, and transparency
           in all our dealings.For every financial product offered on our platform,
           you''ll find comprehensive information regarding the applicable interest
@@ -760,7 +760,7 @@ components:
       type: Spacer
       layout_properties: {grid_position: 'FTRYFN,KRRVLT'}
     - name: label_48
-      properties: {text: 'Getting a business loan through Ascends is swift, effortless,
+      properties: {text: 'Getting a business loan through Ascend is swift, effortless,
           and smooth. You can complete the application process in just ten minutes
           on our entirely digital platform.
 
@@ -839,7 +839,7 @@ components:
       type: Image
       layout_properties: {grid_position: 'IEHCSV,DSABOJ YSIHXX,ZINAJQ'}
     - name: label_52_copy
-      properties: {text: Ascends will verify your details and documents online. We may reach out to you in case any clarification or additional documents are needed.,
+      properties: {text: Ascend will verify your details and documents online. We may reach out to you in case any clarification or additional documents are needed.,
         font_size: 18}
       type: Label
       layout_properties: {grid_position: 'IEHCSV,DSABOJ YSIHXX,PMTGNO'}
@@ -857,7 +857,7 @@ components:
       type: Image
       layout_properties: {grid_position: 'IEHCSV,DSABOJ GRUMXZ,DWJQEH'}
     - name: label_52_copy_copy
-      properties: {text: 'Ascends will assess your credit using its proprietary credit
+      properties: {text: 'Ascend will assess your credit using its proprietary credit
           evaluation model based on multiple parameters such as credit score, financial
           history, outstanding debts, demographics, etc.', font_size: 18}
       type: Label
@@ -991,7 +991,7 @@ components:
       type: Label
       layout_properties: {grid_position: 'IEHCSV,YRFHPN CYLGOJ,RCVKTO'}
     - name: label_68
-      properties: {text: You must also sign the mandate of the National Automated Clearing House (NACH) to ensure easy repayment and provide three blank cheques to Ascends to be used in case of delay/default in repayment.,
+      properties: {text: You must also sign the mandate of the National Automated Clearing House (NACH) to ensure easy repayment and provide three blank cheques to Ascend to be used in case of delay/default in repayment.,
         font_size: 18}
       type: Label
       layout_properties: {grid_position: 'IEHCSV,YRFHPN VEWHWD,WCWLWI'}
@@ -1036,7 +1036,7 @@ components:
     layout_properties: {grid_position: 'LZHUWO,RPQZEQ'}
   - name: label_80
     properties: {text: 'Experience the convenience of fixed repayments with flexible
-        terms, only on Ascends
+        terms, only on Ascend
 
         ', align: center, font_size: 18}
     type: Label
@@ -1100,7 +1100,7 @@ components:
       type: Label
       layout_properties: {grid_position: 'KWLPDO,VYCWVG QFPSFA,YEPPJU'}
     - name: label_89
-      properties: {text: Access to full repayment history available on your Ascends account,
+      properties: {text: Access to full repayment history available on your Ascend account,
         font_size: 18, foreground: white}
       type: Label
       layout_properties: {grid_position: 'KWLPDO,VYCWVG QFPSFA,QXNAAZ'}
@@ -1114,7 +1114,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'GBCPBB,QNMXRM'}
   - name: label_91
-    properties: {text: 'Who can Apply for a Business Loan on Ascends?', align: center,
+    properties: {text: 'Who can Apply for a Business Loan on Ascend?', align: center,
       bold: true, font_size: 30}
     type: Label
     layout_properties: {grid_position: 'FCLBBK,WIZBPK'}
@@ -1412,7 +1412,7 @@ components:
         components:
         - name: label_4_copy_2
           properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-            visible: true, text: '© 2023 - 2024, Ascends - All Rights    Reserved',
+            visible: true, text: '© 2023 - 2024, Ascend - All Rights    Reserved',
             font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
             italic: false, background: '#05264d', bold: true, underline: false, icon: ''}
           type: Label
