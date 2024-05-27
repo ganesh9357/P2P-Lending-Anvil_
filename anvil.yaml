@@ -198,9 +198,6 @@ db_schema:
     - name: account_id
       admin_ui: {width: 200, order: 6}
       type: string
-    - name: upi_id
-      admin_ui: {width: 200, order: 7}
-      type: string
     - name: customer_id
       admin_ui: {width: 200, order: 0.5}
       type: number
@@ -382,68 +379,7 @@ db_schema:
     - name: duration_at_address
       admin_ui: {width: 200}
       type: string
-  fin_foreclosure:
-    title: fin_foreclosure
-    client: full
-    server: full
-    columns:
-    - name: foreclose_fee
-      admin_ui: {width: 200}
-      type: number
-    - name: interest_rate
-      admin_ui: {width: 200}
-      type: number
-    - name: borrower_name
-      admin_ui: {width: 200}
-      type: string
-    - name: loan_id
-      admin_ui: {width: 200}
-      type: string
-    - name: penalty_amount
-      admin_ui: {width: 200}
-      type: number
-    - name: outstanding_amount
-      admin_ui: {width: 200}
-      type: number
-    - name: reason
-      admin_ui: {width: 200}
-      type: string
-    - name: foreclose_amount
-      admin_ui: {width: 200}
-      type: number
-    - name: loan_amount
-      admin_ui: {width: 200}
-      type: number
-    - name: emi_amount
-      admin_ui: {width: 200}
-      type: number
-    - name: paid_amount
-      admin_ui: {width: 200}
-      type: number
-    - name: requested_on
-      admin_ui: {width: 200}
-      type: datetime
-    - name: total_due_amount
-      admin_ui: {width: 200}
-      type: number
-    - name: status
-      admin_ui: {width: 200}
-      type: string
-    - name: foreclosure_emi_num
-      admin_ui: {width: 200, order: 14}
-      type: number
-  fin_admin_beseem_groups:
-    client: full
-    server: full
-    columns:
-    - name: group_name
-      admin_ui: {order: 1, width: 200}
-      type: string
-    - name: max_points
-      admin_ui: {width: 200, order: 2}
-      type: number
-    title: fin_admin_beseem_groups
-  fin_user_beseem_score:
+  fin_user_ascend_score:
     client: full
     server: full
     columns:
@@ -498,7 +434,74 @@ db_schema:
     - name: vehicle_loan_point
       admin_ui: {width: 200, order: 21}
       type: number
-    title: fin_user_beseem_score
+    title: fin_user_ascend_score
+  fin_foreclosure:
+    title: fin_foreclosure
+    client: full
+    server: full
+    columns:
+    - name: foreclose_fee
+      admin_ui: {width: 200}
+      type: number
+    - name: interest_rate
+      admin_ui: {width: 200}
+      type: number
+    - name: borrower_name
+      admin_ui: {width: 200}
+      type: string
+    - name: loan_id
+      admin_ui: {width: 200}
+      type: string
+    - name: penalty_amount
+      admin_ui: {width: 200}
+      type: number
+    - name: outstanding_amount
+      admin_ui: {width: 200}
+      type: number
+    - name: reason
+      admin_ui: {width: 200}
+      type: string
+    - name: foreclose_amount
+      admin_ui: {width: 200}
+      type: number
+    - name: loan_amount
+      admin_ui: {width: 200}
+      type: number
+    - name: emi_amount
+      admin_ui: {width: 200}
+      type: number
+    - name: paid_amount
+      admin_ui: {width: 200}
+      type: number
+    - name: requested_on
+      admin_ui: {width: 200}
+      type: datetime
+    - name: total_due_amount
+      admin_ui: {width: 200}
+      type: number
+    - name: status
+      admin_ui: {width: 200}
+      type: string
+    - name: foreclosure_emi_num
+      admin_ui: {width: 200, order: 14}
+      type: number
+  fin_admin_ascend_categories:
+    client: full
+    server: full
+    columns:
+    - name: group_name
+      admin_ui: {order: 1, width: 200}
+      type: string
+    - name: min_points
+      admin_ui: {order: 2, width: 200}
+      type: number
+    - name: sub_category
+      admin_ui: {order: 1, width: 220}
+      type: string
+    - name: age
+      admin_ui: {order: 2.5, width: 200}
+      type: string
+    title: fin_admin_ascend_categories
   fin_borrower_employee_type:
     client: full
     server: full
@@ -544,6 +547,17 @@ db_schema:
       admin_ui: {width: 200, order: 0}
       type: string
     title: fin_lendor_employee_type
+  fin_admin_ascend_groups:
+    client: full
+    server: full
+    columns:
+    - name: group_name
+      admin_ui: {order: 1, width: 200}
+      type: string
+    - name: max_points
+      admin_ui: {width: 200, order: 2}
+      type: number
+    title: fin_admin_ascend_groups
   fin_lendor_organization_type:
     client: full
     server: full
@@ -575,8 +589,8 @@ db_schema:
     - name: credit_limit
       admin_ui: {order: 2.375, width: 200}
       type: number
-    - name: beseem_score
-      admin_ui: {width: 200, order: 3.5}
+    - name: ascend_score
+      admin_ui: {order: 3, width: 200}
       type: number
     - name: total_loan_amount
       admin_ui: {width: 200, order: 9}
@@ -848,7 +862,7 @@ db_schema:
     - name: form_count
       admin_ui: {order: -1.59375, width: 200}
       type: number
-    - name: bessem_value
+    - name: ascend_value
       admin_ui: {order: -1.5625, width: 200}
       type: number
     - name: tenth_class
@@ -979,23 +993,6 @@ db_schema:
       admin_ui: {order: 49.9921875, width: 200}
       type: string
     title: fin_user_profile
-  fin_admin_beseem_categories:
-    client: full
-    server: full
-    columns:
-    - name: group_name
-      admin_ui: {order: 1, width: 200}
-      type: string
-    - name: min_points
-      admin_ui: {order: 2, width: 200}
-      type: number
-    - name: sub_category
-      admin_ui: {order: 1, width: 220}
-      type: string
-    - name: age
-      admin_ui: {order: 2.5, width: 200}
-      type: string
-    title: fin_admin_beseem_categories
   fin_wallet_transactions:
     title: fin_wallet_transactions
     client: full
@@ -1043,7 +1040,7 @@ db_schema:
     server: full
     columns:
     - name: borrower_customer_id
-      admin_ui: {order: 1.75, width: 200}
+      admin_ui: {order: -1, width: 200}
       type: number
     - name: borrower_email
       admin_ui: {order: 1.9375, width: 200}
@@ -1115,16 +1112,16 @@ db_schema:
       admin_ui: {width: 200, order: 10}
       type: number
     - name: final_repayment_amount
-      admin_ui: {width: 200}
+      admin_ui: {order: -1.25, width: 200}
       type: number
     - name: final_repayment_date
-      admin_ui: {width: 200}
+      admin_ui: {order: -1.125, width: 200}
       type: date
     - name: status
       admin_ui: {width: 200}
       type: string
     - name: total_extension_months
-      admin_ui: {width: 200}
+      admin_ui: {order: -1.0625, width: 200}
       type: number
     - name: reason
       admin_ui: {width: 200}
@@ -1139,7 +1136,7 @@ db_schema:
       admin_ui: {width: 200}
       type: number
     - name: borrower_full_name
-      admin_ui: {order: -0.5, width: 200}
+      admin_ui: {order: -2, width: 200}
       type: string
     - name: borrower_email_id
       admin_ui: {width: 200}
@@ -1157,7 +1154,7 @@ db_schema:
       admin_ui: {width: 200, order: 18}
       type: number
     - name: borrower_customer_id
-      admin_ui: {order: -0.25, width: 200}
+      admin_ui: {order: -1.5, width: 200}
       type: number
     - name: lender_full_name
       admin_ui: {width: 200, order: 14.5}
@@ -1374,8 +1371,8 @@ db_schema:
     - name: lender_customer_id
       admin_ui: {order: 6.5, width: 156}
       type: number
-    - name: beseem_score
-      admin_ui: {order: 15.4765625, width: 129}
+    - name: ascend_score
+      admin_ui: {order: 23, width: 129}
       type: number
     - name: emi_due_date
       admin_ui: {order: 23, width: 138}
@@ -1474,7 +1471,7 @@ db_schema:
       admin_ui: {order: 1.5, width: 200}
       type: string
     - name: customer_id
-      admin_ui: {order: 5, width: 200}
+      admin_ui: {order: -1, width: 200}
       type: string
   fin_lendor_qualification:
     client: full
