@@ -203,133 +203,132 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'BGTBAA,JGZFPN'}
     name: spacer_9
-- name: content_panel_copy_3_copy
-  properties: {col_widths: '{"OHZSYC":45,"YNUSTO":45,"TRRXRD":45,"SFHJNS":45,"PGYUMF":45,"VEOGOV":45,"PCKMGS":45,"QTCHNM":45,"CCTMMS":45,"ZHMDPW":45}',
+- properties: {col_widths: '{"OHZSYC":45,"YNUSTO":45,"TRRXRD":45,"SFHJNS":45,"PGYUMF":45,"VEOGOV":45,"PCKMGS":45,"QTCHNM":45,"CCTMMS":45,"ZHMDPW":45}',
     background: '', visible: true, spacing_above: none, spacing_below: none, role: null,
     foreground: '', border: 1px solid white}
   type: ColumnPanel
   layout_properties: {grid_position: 'XJNATW,SKVUZK XMDQCN,QOZGJB'}
+  name: content_panel_copy_3_copy
   components:
-  - name: button_1_copy
-    properties: {text: New Loan Request, align: left, foreground: '#339AF0', bold: true,
+  - properties: {text: New Loan Request, align: left, foreground: '#339AF0', bold: true,
       icon: _/theme/borrower/dashboard/new%20loan%20request%202.png, visible: true,
       font_size: 16}
     type: Button
     layout_properties: {grid_position: 'JRTGWO,OHZSYC', full_width_row: true}
     event_bindings: {click: button_1_click}
-  - name: spacer_4_copy
-    properties: {height: '1'}
+    name: button_1_copy
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'WYKKLQ,EOSGHO'}
-  - name: button_2_copy
-    properties: {text: Today's  Due, align: left, bold: true, foreground: '#339AF0',
+    name: spacer_4_copy
+  - properties: {text: Today's  Due, align: left, bold: true, foreground: '#339AF0',
       font_size: 16, icon: _/theme/borrower/dashboard/todays%20dues.png}
     type: Button
     layout_properties: {grid_position: 'KMQVGZ,YNUSTO', full_width_row: true}
     event_bindings: {click: button_2_click}
-  - name: spacer_2_copy
-    properties: {height: '1'}
+    name: button_2_copy
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'CWCSUC,NFGRHL'}
-  - name: button_3_copy
-    properties: {text: 'View  Loans ', align: left, foreground: '#339AF0', bold: true,
+    name: spacer_2_copy
+  - properties: {text: 'View  Loans ', align: left, foreground: '#339AF0', bold: true,
       font_size: 16, icon: _/theme/borrower/dashboard/borrower_view_loans.png}
     type: Button
     layout_properties: {grid_position: 'BBNVSF,TRRXRD', full_width_row: true}
     event_bindings: {click: button_3_click}
-  - name: spacer_5_copy
-    properties: {height: '1'}
+    name: button_3_copy
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'QNNOCC,LGBASS'}
-  - name: button_4_copy_copy
-    properties: {text: ' Loan Foreclosure', align: left, bold: true, foreground: '#339AF0',
+    name: spacer_5_copy
+  - properties: {text: ' Loan Foreclosure', align: left, bold: true, foreground: '#339AF0',
       font_size: 16, icon: _/theme/borrower/dashboard/foreclosure.png}
     type: Button
     layout_properties: {grid_position: 'IXDBCZ,SFHJNS', full_width_row: true}
     event_bindings: {click: button_4_copy_click}
-  - name: spacer_6_copy
-    properties: {height: '1'}
+    name: button_4_copy_copy
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'IOLHML,FZHPZW'}
-  - name: button_5_copy
-    properties: {text: 'Application Tracker ', align: left, foreground: '#339AF0',
+    name: spacer_6_copy
+  - properties: {text: 'Application Tracker ', align: left, foreground: '#339AF0',
       bold: true, font_size: null, icon: _/theme/borrower/dashboard/application%20tracker.png,
       icon_align: left}
     type: Button
     layout_properties: {grid_position: 'OQIIWH,PGYUMF', full_width_row: true}
     event_bindings: {click: button_5_click}
-    data_bindings: []
-  - name: spacer_7_copy
-    properties: {height: '1'}
+    name: button_5_copy
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'QDQQQK,NUVJGL'}
-  - name: button_6_copy_copy
-    properties: {text: 'Loan  Extension  ', align: left, foreground: '#339AF0', bold: true,
+    name: spacer_7_copy
+  - properties: {text: 'Loan  Extension  ', align: left, foreground: '#339AF0', bold: true,
       font_size: 16, icon: _/theme/borrower/dashboard/loan%20extension1.png}
     type: Button
     layout_properties: {grid_position: 'RKKUUW,VEOGOV', full_width_row: true}
     event_bindings: {click: button_6_copy_click}
-  - name: spacer_11_copy
-    properties: {height: '1'}
+    name: button_6_copy_copy
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'BHJZHG,LKOHHE'}
-  - name: button_7_copy
-    properties: {text: Transaction History, align: left, bold: true, foreground: '#339AF0',
+    name: spacer_11_copy
+  - properties: {text: Transaction History, align: left, bold: true, foreground: '#339AF0',
       font_size: 16, icon: _/theme/borrower/dashboard/view%20transaction%20history.png,
       icon_align: left}
     type: Button
     layout_properties: {grid_position: 'QHSUTS,PCKMGS', full_width_row: true}
     event_bindings: {click: button_7_click}
-  - name: spacer_13_copy
-    properties: {height: '1'}
+    name: button_7_copy
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'RXSOBG,VOIZVA'}
-  - name: spacer_8_copy
-    properties: {height: ''}
+    name: spacer_13_copy
+  - properties: {height: ''}
     type: Spacer
     layout_properties: {grid_position: 'DXEAVR,IAUQLP'}
-  - name: button_8_copy
-    properties: {text: Discount Coupons, align: left, bold: true, foreground: '#339AF0',
+    name: spacer_8_copy
+  - properties: {text: Discount Coupons, align: left, bold: true, foreground: '#339AF0',
       font_size: 16, icon: _/theme/borrower/dashboard/discount%20coupons.png}
     type: Button
     layout_properties: {grid_position: 'TRWKIA,QTCHNM', full_width_row: true}
     event_bindings: {click: button_8_click}
-  - name: spacer_14_copy
-    properties: {height: '1'}
+    name: button_8_copy
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'OCCMCT,LXNASM'}
-  - name: button_4_copy_2
-    properties: {text: Part Payment, bold: true, foreground: '#339AF0', font_size: 16,
+    name: spacer_14_copy
+  - properties: {text: Part Payment, bold: true, foreground: '#339AF0', font_size: 16,
       align: left, icon: _/theme/borrower/dashboard/borrower_partpayment.png}
     type: Button
     layout_properties: {grid_position: 'GJHBNI,CCTMMS'}
     event_bindings: {click: button_4_click}
-  - name: spacer_19_copy
-    properties: {height: '1'}
+    name: button_4_copy_2
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'NGWGKF,AGVJIF'}
-  - name: button_6_copy_2
-    properties: {text: Portfolio, font_size: 16, bold: true, foreground: '#339AF0',
+    name: spacer_19_copy
+  - properties: {text: Portfolio, font_size: 16, bold: true, foreground: '#339AF0',
       align: left, icon: _/theme/borrower/dashboard/borrower_portfolio.png}
     type: Button
     layout_properties: {grid_position: 'TGHKYS,ZHMDPW'}
-  - name: spacer_9_copy
-    properties: {height: '1'}
+    name: button_6_copy_2
+  - properties: {height: '1'}
     type: Spacer
     layout_properties: {grid_position: 'BGTBAA,JGZFPN'}
-  - name: button_10
-    properties: {text: abc, icon: _/theme/borrower/dashboard/borrower_partpayment.png,
+    name: spacer_9_copy
+  - properties: {text: abc, icon: _/theme/borrower/dashboard/borrower_partpayment.png,
       align: left}
     type: Button
     layout_properties: {grid_position: 'WLWLOV,JCPCZU'}
-- name: button_11
-  properties: {text: abc, align: left, icon: _/theme/borrower/dashboard/borrower_partpayment.png}
+    name: button_10
+- properties: {text: abc, align: left, icon: _/theme/borrower/dashboard/borrower_partpayment.png}
   type: Button
   layout_properties: {grid_position: 'XJNATW,SKVUZK SZKBJI,VSVZXD'}
-- name: link_1
-  properties: {text: me, icon: 'fa:address-book', align: left}
+  name: button_11
+- properties: {text: me, icon: 'fa:address-book', align: left}
   type: Link
   layout_properties: {grid_position: 'XJNATW,SKVUZK VGKRRK,HLGOSV'}
+  name: link_1
 - properties: {height: '20'}
   type: Spacer
   layout_properties: {grid_position: 'XJNATW,EICYCB'}
@@ -457,120 +456,119 @@ components:
     type: RepeatingPanel
     layout_properties: {pinned: false}
     name: repeating_panel_1
-- name: outlined_button_1
-  properties: {text: form1, role: outlined-button}
+- properties: {text: form1, role: outlined-button}
   type: Button
   layout_properties: {grid_position: 'XJNATW,EICYCB EWUFOT,PHNRDJ'}
   event_bindings: {click: outlined_button_1_click}
-- name: spacer_20
-  properties: {height: 108.99996948242188}
+  name: outlined_button_1
+- properties: {height: 108.99996948242188}
   type: Spacer
   layout_properties: {grid_position: 'XJNATW,EICYCB ARAUFT,ZIBQLN'}
-- name: label_9
-  properties: {text: Profile Overview, bold: true, font_size: 20}
+  name: spacer_20
+- properties: {text: Profile Overview, bold: true, font_size: 20}
   type: Label
   layout_properties: {grid_position: 'XJNATW,EICYCB KOOQAT,WEQQWI'}
-- name: image_1_copy_copy_copy
-  properties: {height: '140', source: _/theme/women.avif, horizontal_align: center,
+  name: label_9
+- properties: {height: '140', source: _/theme/women.avif, horizontal_align: center,
     role: null}
   type: Image
   layout_properties: {grid_position: 'XJNATW,EICYCB RHVNEG,PCKUPV PFSKII,IYXJWK'}
   event_bindings: {mouse_up: image_1_copy_copy_mouse_up}
-- name: button_12_copy
-  properties: {text: View profile, bold: true, foreground: Black, font_size: 16}
+  name: image_1_copy_copy_copy
+- properties: {text: View profile, bold: true, foreground: Black, font_size: 16}
   type: Button
   layout_properties: {grid_position: 'XJNATW,EICYCB RHVNEG,PCKUPV OKTHVI,ZBTGOE'}
   event_bindings: {click: button_12_click}
-- name: spacer_21
-  properties: {height: 32}
+  name: button_12_copy
+- properties: {height: 32}
   type: Spacer
   layout_properties: {grid_position: 'XJNATW,EICYCB RHVNEG,XTIPIZ HBSNDU,JACLZC'}
-- name: label_2_copy_copy
-  properties: {text: Welcome Rahul Ganiger, align: left, bold: true, font_size: 26}
+  name: spacer_21
+- properties: {text: Welcome Rahul Ganiger, align: left, bold: true, font_size: 26}
   type: Label
   layout_properties: {grid_position: 'XJNATW,EICYCB RHVNEG,XTIPIZ UNZWVZ,DSVPVG'}
-- name: column_panel_7
-  properties: {role: elevated-card, col_widths: '{"EITWZQ":25,"DMUXBO":35}'}
+  name: label_2_copy_copy
+- properties: {role: elevated-card, col_widths: '{"EITWZQ":25,"DMUXBO":35}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'XJNATW,EICYCB ZZMVKJ,ZPVNQL'}
+  name: column_panel_7
   components:
-  - name: image_1_copy
-    properties: {height: 48.199981689453125, display_mode: shrink_to_fit, source: _/theme/borrower/dashboard/borrower_mobile.png}
+  - properties: {height: 48.199981689453125, display_mode: shrink_to_fit, source: _/theme/borrower/dashboard/borrower_mobile.png}
     type: Image
     layout_properties: {grid_position: 'BJUXXD,EITWZQ'}
-  - name: label_2_copy_2
-    properties: {icon: '', text: 'Mobile no
+    name: image_1_copy
+  - properties: {icon: '', text: 'Mobile no
 
         '}
     type: Label
     layout_properties: {grid_position: 'BJUXXD,DMUXBO GGORVD,QGVFNC'}
-  - name: label_3_copy
-    properties: {}
+    name: label_2_copy_2
+  - properties: {}
     type: Label
     layout_properties: {grid_position: 'BJUXXD,DMUXBO ZCKWPG,MKRQYJ'}
-- name: column_panel_7_copy
-  properties: {role: elevated-card, col_widths: '{"EITWZQ":25,"DMUXBO":35}'}
+    name: label_3_copy
+- properties: {role: elevated-card, col_widths: '{"EITWZQ":25,"DMUXBO":35}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'XJNATW,EICYCB ZZMVKJ,OSZIER'}
+  name: column_panel_7_copy
   components:
-  - name: image_1_copy_copy_2
-    properties: {height: 48.199981689453125, display_mode: shrink_to_fit, source: _/theme/borrower/dashboard/borrower_member_since.png}
+  - properties: {height: 48.199981689453125, display_mode: shrink_to_fit, source: _/theme/borrower/dashboard/borrower_member_since.png}
     type: Image
     layout_properties: {grid_position: 'BJUXXD,EITWZQ'}
-  - name: label_2_copy_2_copy
-    properties: {icon: '', text: 'Member Since
+    name: image_1_copy_copy_2
+  - properties: {icon: '', text: 'Member Since
 
         '}
     type: Label
     layout_properties: {grid_position: 'BJUXXD,DMUXBO GGORVD,QGVFNC'}
-  - name: label_3_copy_copy
-    properties: {}
+    name: label_2_copy_2_copy
+  - properties: {}
     type: Label
     layout_properties: {grid_position: 'BJUXXD,DMUXBO ZCKWPG,MKRQYJ'}
-- name: column_panel_7_copy_2
-  properties: {role: elevated-card, col_widths: '{"EITWZQ":25,"DMUXBO":35}'}
+    name: label_3_copy_copy
+- properties: {role: elevated-card, col_widths: '{"EITWZQ":25,"DMUXBO":35}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'XJNATW,EICYCB ZZMVKJ,NZZCPF'}
+  name: column_panel_7_copy_2
   components:
-  - name: image_1_copy_copy_3
-    properties: {height: 48.199981689453125, display_mode: shrink_to_fit, source: _/theme/borrower/dashboard/borrower_credit_limit.png}
+  - properties: {height: 48.199981689453125, display_mode: shrink_to_fit, source: _/theme/borrower/dashboard/borrower_credit_limit.png}
     type: Image
     layout_properties: {grid_position: 'BJUXXD,EITWZQ'}
-  - name: label_2_copy_2_copy_2
-    properties: {icon: '', text: 'Credit Limit
+    name: image_1_copy_copy_3
+  - properties: {icon: '', text: 'Credit Limit
 
         '}
     type: Label
     layout_properties: {grid_position: 'BJUXXD,DMUXBO GGORVD,QGVFNC'}
-  - name: label_3_copy_copy_2
-    properties: {}
+    name: label_2_copy_2_copy_2
+  - properties: {}
     type: Label
     layout_properties: {grid_position: 'BJUXXD,DMUXBO ZCKWPG,MKRQYJ'}
-- name: column_panel_7_copy_3
-  properties: {role: elevated-card, col_widths: '{"EITWZQ":25,"DMUXBO":35}'}
+    name: label_3_copy_copy_2
+- properties: {role: elevated-card, col_widths: '{"EITWZQ":25,"DMUXBO":35}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'XJNATW,EICYCB ZZMVKJ,MBGEVL'}
+  name: column_panel_7_copy_3
   components:
-  - name: image_1_copy_copy_4
-    properties: {height: 48.199981689453125, display_mode: shrink_to_fit, source: _/theme/borrower/dashboard/borrower_balance.png}
+  - properties: {height: 48.199981689453125, display_mode: shrink_to_fit, source: _/theme/borrower/dashboard/borrower_balance.png}
     type: Image
     layout_properties: {grid_position: 'BJUXXD,EITWZQ'}
-  - name: label_2_copy_2_copy_3
-    properties: {icon: '', text: 'Available Balance
+    name: image_1_copy_copy_4
+  - properties: {icon: '', text: 'Available Balance
 
         '}
     type: Label
     layout_properties: {grid_position: 'BJUXXD,DMUXBO GGORVD,QGVFNC'}
-  - name: label_3_copy_copy_3
-    properties: {}
+    name: label_2_copy_2_copy_3
+  - properties: {}
     type: Label
     layout_properties: {grid_position: 'BJUXXD,DMUXBO ZCKWPG,MKRQYJ'}
-- name: spacer_22
-  properties: {height: 32}
+    name: label_3_copy_copy_3
+- properties: {height: 32}
   type: Spacer
   layout_properties: {grid_position: 'XJNATW,EICYCB JOPPPP,CWFFNX'}
-- name: data_grid_1_copy
-  properties:
+  name: spacer_22
+- properties:
     columns:
     - {id: JKSDUP, title: Product Name, data_key: column_1, width: 155.2666015625,
       expand: false}
@@ -583,8 +581,9 @@ components:
     border: ''
   type: DataGrid
   layout_properties: {grid_position: 'XJNATW,EICYCB VQSAZU,XMEUJF'}
+  name: data_grid_1_copy
   components:
-  - name: repeating_panel_1_copy
-    properties: {item_template: borrower.dashboard.RowTemplate7, role: null, border: ''}
+  - properties: {item_template: borrower.dashboard.RowTemplate7, role: null, border: ''}
     type: RepeatingPanel
     layout_properties: {pinned: false}
+    name: repeating_panel_1_copy
