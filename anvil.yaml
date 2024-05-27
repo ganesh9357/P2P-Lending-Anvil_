@@ -1233,7 +1233,7 @@ db_schema:
       type: number
     title: fin_loan_settings
   fin_wallet_bank_account_table:
-    client: full
+    client: none
     server: full
     columns:
     - name: account_id
