@@ -17,7 +17,7 @@ components:
   name: label_3
   layout_properties: {column: GYGCMD}
   data_bindings:
-  - {property: text, code: 'self.item[''loan_id'']', writeback: false}
+  - {property: text, code: 'self.item[''borrower_full_name'']', writeback: false}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: '#0876e8', visible: true, text: view details, font_size: null, font: '',

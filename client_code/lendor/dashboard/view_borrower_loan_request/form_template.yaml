@@ -62,9 +62,9 @@ components:
         - {id: QLOWGE, title: Product Name, data_key: column_1, $$hashKey: 'object:3833'}
         - {id: FIZMCQ, title: Loan Amount, data_key: column_2, $$hashKey: 'object:3834',
           expand: false}
-        - {id: GYGCMD, title: Loan_id, data_key: column_3, $$hashKey: 'object:3835',
+        - {id: GYGCMD, title: Borrower Full Name, data_key: column_3, $$hashKey: 'object:3835',
           expand: false}
-        - {id: XQSISW, title: Beseem Score, data_key: column_5, $$hashKey: 'object:918'}
+        - {id: XQSISW, title: Ascend Score, data_key: column_5, $$hashKey: 'object:918'}
         - {id: IZHOQY, title: '', data_key: column_4, $$hashKey: 'object:3876'}
         auto_header: true
         tooltip: ''

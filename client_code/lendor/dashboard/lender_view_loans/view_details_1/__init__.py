@@ -21,7 +21,7 @@ class view_details_1(view_details_1Template):
 
     def display_loan_details(self, selected_row):
         # Display loan details
-        self.loan_id_label.text = f"{selected_row['loan_id']}"
+        self.loan_id_label.text = f"{selected_row['borrower_full_name']}"
         self.loan_amount_label.text = f"{selected_row['loan_amount']}"
         self.interest_rate_label.text = f"{selected_row['interest_rate']}"
         self.tenure_label.text = f"{selected_row['tenure']}"

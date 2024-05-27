@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"JLWSFC":25,"JNFGNN":35,"FXDAEC":25,"WXMQBR":35,"PHHBWB":25,"FTDFJY":35,"HSNNKG":25,"AQSEPS":35,"EBSVCE":25,"UYSBHV":35}'}
+  properties: {col_widths: '{}'}
 components:
 - name: image_1_copy_1_copy_1_copy_1_copy_1_copy_1
   properties: {role: null, vertical_align: center, height: 48, tooltip: '', border: '',
@@ -20,162 +20,170 @@ components:
 - type: Spacer
   properties: {height: 27}
   name: spacer_1
-  layout_properties: {grid_position: 'GAQDQF,NOUIYL'}
-- type: Label
-  properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
-    visible: true, text: Credit Limit, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-    underline: false, icon: ''}
-  name: label_5
-  layout_properties:
-    col_widths: {}
-    grid_position: RIFDPA,FXDAEC
-- name: max_amount_lb
-  properties: {role: headline, align: left, tooltip: '', border: '', foreground: green,
-    visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: white, bold: false, underline: false,
-    icon: ''}
-  type: Label
-  layout_properties: {grid_position: 'RIFDPA,WXMQBR'}
-  event_bindings: {show: max_amount_lb_show}
-- type: Spacer
-  properties: {height: 32}
-  name: spacer_2
-  layout_properties: {grid_position: 'NJMYBL,OMVYHI'}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Product Group, font_size: 20, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: true, underline: false,
-    icon: ''}
-  name: label_1
-  layout_properties: {grid_position: 'ADFVSS,JLWSFC'}
-- type: DropDown
-  properties:
-    role: null
-    align: full
-    tooltip: ''
-    placeholder: Select Product Group
-    border: ''
-    enabled: true
-    foreground: ''
-    items: ['']
-    visible: true
-    font_size: null
-    font: ''
-    spacing_above: small
-    spacing_below: none
-    italic: false
-    background: white
-    bold: false
-    underline: false
-    include_placeholder: true
-  name: name
-  layout_properties: {grid_position: 'ADFVSS,JNFGNN GDAPSK,LTBWCT'}
-  data_bindings: []
-  event_bindings: {change: name_change}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: '', font_size: null, font: '', spacing_above: none, icon_align: left, spacing_below: small,
-    italic: false, background: '', bold: false, underline: false, icon: ''}
-  name: label_3
-  layout_properties: {grid_position: 'ADFVSS,JNFGNN IUDENR,DWXZPJ'}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: false,
-    text: Product Categories, font_size: 20, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: true, underline: false,
-    icon: ''}
-  name: label_2
-  layout_properties: {grid_position: 'LNCQEK,HSNNKG'}
-- type: DropDown
-  properties:
-    role: null
-    align: full
-    tooltip: ''
-    placeholder: Select Product Categories
-    border: ''
-    enabled: true
-    foreground: ''
-    items: []
-    visible: false
-    font_size: null
-    font: ''
-    spacing_above: small
-    spacing_below: none
-    italic: false
-    background: white
-    bold: false
-    underline: false
-    include_placeholder: true
-  name: drop_down_2
-  layout_properties: {grid_position: 'LNCQEK,AQSEPS IGISWJ,OIEUHQ'}
-  event_bindings: {change: drop_down_2_change}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: false,
-    text: '', font_size: null, font: '', spacing_above: none, icon_align: left, spacing_below: small,
-    italic: false, background: '', bold: false, underline: false, icon: ''}
-  name: label_4
-  layout_properties: {grid_position: 'LNCQEK,AQSEPS YCGANG,DJYAVH'}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: false,
-    text: Product Name, font_size: 20, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: true, underline: false,
-    icon: ''}
-  name: label_6
-  layout_properties: {grid_position: 'CZUMNX,PHHBWB'}
-- type: DropDown
-  properties:
-    role: null
-    align: full
-    tooltip: ''
-    placeholder: Select Product Name
-    border: ''
-    enabled: true
-    foreground: ''
-    items: []
-    visible: false
-    font_size: null
-    font: ''
-    spacing_above: small
-    spacing_below: small
-    italic: false
-    background: white
-    bold: false
-    underline: false
-    include_placeholder: true
-  name: drop_down_1
-  layout_properties: {grid_position: 'CZUMNX,FTDFJY ACKBZZ,PRVDAC'}
-  event_bindings: {change: drop_down_1_change}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: false,
-    text: '', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-    italic: false, background: '', bold: false, underline: false, icon: ''}
-  name: label_7
-  layout_properties: {grid_position: 'CZUMNX,FTDFJY TIJCZH,CKYEYI'}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: false,
-    text: Product Description, font_size: 20, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: true, underline: false,
-    icon: ''}
-  name: label_8
-  layout_properties: {grid_position: 'EPGENU,EBSVCE', full_width_row: false}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: '', font_size: 17, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-    italic: false, background: '', bold: false, underline: false, icon: ''}
-  name: product_description_label
-  layout_properties: {grid_position: 'EPGENU,UYSBHV', full_width_row: false}
+  layout_properties: {grid_position: 'GAQDQF,NOUIYL', full_width_row: true}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'TWUABF,NARORF', full_width_row: true}
+  components:
+  - type: Label
+    properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Credit Limit, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_5
+    layout_properties: {grid_position: 'RJDNEA,EMDBYU'}
+  - name: max_amount_lb
+    properties: {role: headline, align: left, tooltip: '', border: '', foreground: green,
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: white, bold: true, underline: false,
+      icon: 'fa:rupee'}
+    type: Label
+    layout_properties: {grid_position: 'RJDNEA,FGRQDB'}
+    event_bindings: {show: max_amount_lb_show}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_2
+    layout_properties: {grid_position: 'UXUHCK,UYDCZH'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Product Group, font_size: 20, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'FLKQUO,KXAVNK'}
+  - type: DropDown
+    properties:
+      role: outlined
+      align: full
+      tooltip: ''
+      placeholder: Select Product Group
+      border: ''
+      enabled: true
+      foreground: ''
+      items: ['']
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: none
+      italic: false
+      background: white
+      bold: false
+      underline: false
+      include_placeholder: true
+    name: name
+    layout_properties: {grid_position: 'FLKQUO,FITPAV KBPYGI,ZTTQKX'}
+    data_bindings: []
+    event_bindings: {change: name_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: none, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'FLKQUO,FITPAV JHDWCQ,QCOMBH'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: false, text: Product Categories, font_size: 20, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'OKVKVL,JFIOHM'}
+  - type: DropDown
+    properties:
+      role: outlined
+      align: full
+      tooltip: ''
+      placeholder: Select Product Categories
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: false
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: none
+      italic: false
+      background: white
+      bold: false
+      underline: false
+      include_placeholder: true
+    name: drop_down_2
+    layout_properties: {grid_position: 'OKVKVL,OREFLN HXRJOG,RUPYSY'}
+    event_bindings: {change: drop_down_2_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: false, text: '', font_size: null, font: '', spacing_above: none, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_4
+    layout_properties: {grid_position: 'OKVKVL,OREFLN YDXAOO,GDBETA'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: false, text: Product Name, font_size: 20, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_6
+    layout_properties: {grid_position: 'CXDLVS,KKFRAA'}
+  - type: DropDown
+    properties:
+      role: outlined
+      align: full
+      tooltip: ''
+      placeholder: Select Product Name
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: false
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: white
+      bold: false
+      underline: false
+      include_placeholder: true
+    name: drop_down_1
+    layout_properties: {grid_position: 'CXDLVS,VZLAOL MOMIWI,DNCTYE'}
+    event_bindings: {change: drop_down_1_change}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: false, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_7
+    layout_properties: {grid_position: 'CXDLVS,VZLAOL CFDMEN,KVLKOW'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: false, text: Product Description, font_size: 20, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_8
+    layout_properties: {grid_position: 'JFERTE,AOURRD'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: 17, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: product_description_label
+    layout_properties: {grid_position: 'JFERTE,NDTWSY'}
 - type: Spacer
   properties: {height: 24}
   name: spacer_3
-  layout_properties: {grid_position: 'BWNJEM,UWWRKW'}
+  layout_properties: {grid_position: 'BWNJEM,UWWRKW', full_width_row: true}
 - type: Button
   properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
-    foreground: 'theme:On Primary', visible: true, text: Next, font_size: null, font: '',
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d',
-    bold: true, underline: false, icon: 'fa:angle-double-right'}
+    foreground: 'theme:On Primary', visible: true, text: Apply, font_size: null, font: '',
+    spacing_above: small, icon_align: right, spacing_below: small, italic: false,
+    background: '#05264d', bold: true, underline: false, icon: 'fa:angle-double-right'}
   name: button_1_copy
   layout_properties:
     col_widths: {}
     grid_position: DUFTTD,RERXNC
+    full_width_row: true
   event_bindings: {click: button_1_copy_click}
 is_package: true

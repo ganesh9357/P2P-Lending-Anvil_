@@ -38,13 +38,13 @@ components:
     layout_properties: {x: 10, y: 150.3392791748047, width: 200}
   - name: label_8
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Loan Amount, font_size: null, font: '', spacing_above: small,
+      visible: true, text: 'Loan Amount:', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     type: Label
     layout_properties: {x: 10, y: 190.25001525878906, width: 200}
   - name: label_9
-    properties: {text: Besseem Score, bold: false}
+    properties: {text: 'Ascend Score:', bold: false}
     type: Label
     layout_properties: {x: 13.803573608398438, y: 236.25001525878906, width: 103.554}
   - name: interest_rate

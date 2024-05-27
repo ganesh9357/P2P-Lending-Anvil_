@@ -40,7 +40,7 @@ components:
     name: label_25
     layout_properties: {row: AUFPKE, width_xs: 12, col_xs: 0, width: 937.714}
   - type: Label
-    properties: {role: title, align: right, tooltip: '', border: '', foreground: '',
+    properties: {role: title, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Loan Amount, font_size: 15, font: '', spacing_above: small,
       icon_align: right, spacing_below: none, italic: false, background: '', bold: false,
       underline: false, icon: ''}
@@ -64,7 +64,7 @@ components:
     layout_properties: {grid_position: 'TKDJYE,KYSGJQ', row: QBXVRJ, width_xs: 4,
       col_xs: 6, width: 219.462}
   - type: Label
-    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Interest Rate (%), font_size: 15, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
@@ -90,7 +90,7 @@ components:
         col_xs: 6, width: 157}
       event_bindings: {show: label_7_show}
   - type: Label
-    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Processing fee(%), font_size: 15, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
@@ -116,7 +116,7 @@ components:
         col_xs: 7, width: 157}
       event_bindings: {show: label_21_show}
   - type: Label
-    properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Loan Periods(months), font_size: 15, font: '', spacing_above: small,
       icon_align: left, spacing_below: none, italic: false, background: '', bold: false,
       underline: false, icon: ''}

@@ -44,7 +44,7 @@ components:
     name: spacer_1
   - properties:
       columns:
-      - {id: JKSDUP, title: Loan Id, data_key: column_1}
+      - {id: JKSDUP, title: Borrower Full Name, data_key: column_1}
       - {id: VJQQOR, title: Loan Amount, data_key: column_2}
       - {id: OJLQEN, title: Schedule payment, data_key: column_3}
       - {id: VLUBHH, data_key: column_1, title: Days passed due date}

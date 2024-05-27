@@ -5,7 +5,7 @@ components:
   name: loan_id_label
   layout_properties: {column: JKSDUP}
   data_bindings:
-  - {property: text, code: 'self.item[''loan_id'']'}
+  - {property: text, code: 'self.item[''borrower_full_name'']', writeback: false}
 - type: Label
   properties: {}
   name: loan_amount_label

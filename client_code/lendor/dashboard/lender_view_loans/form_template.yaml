@@ -161,7 +161,7 @@ components:
       properties:
         role: null
         columns:
-        - {id: JKSDUP, title: Loan Id, data_key: column_1, $$hashKey: 'object:2857'}
+        - {id: JKSDUP, title: Borrower Full Name, data_key: column_1, $$hashKey: 'object:2857'}
         - {id: VJQQOR, title: Loan Amount, data_key: column_2, $$hashKey: 'object:2858'}
         - {id: OJLQEN, title: Loan Status, data_key: column_3, $$hashKey: 'object:2859'}
         - {id: QSSLLG, data_key: column_4, title: '', $$hashKey: 'object:2860'}
@@ -198,7 +198,7 @@ components:
       properties:
         role: null
         columns:
-        - {id: JKSDUP, title: Loan Id, data_key: column_1, $$hashKey: 'object:98386'}
+        - {id: JKSDUP, title: Borrower Full Name, data_key: column_1, $$hashKey: 'object:98386'}
         - {id: VJQQOR, title: Loan Amount, data_key: column_2, $$hashKey: 'object:98387'}
         - {id: OJLQEN, title: Loan Status, data_key: column_3, $$hashKey: 'object:98388'}
         - {id: QSSLLG, data_key: column_4, title: '', $$hashKey: 'object:98389'}
@@ -231,9 +231,10 @@ components:
       properties:
         role: null
         columns:
-        - {id: JKSDUP, title: Loan Id, data_key: column_1, $$hashKey: 'object:29189',
-          width: 135, expand: false}
-        - {id: VJQQOR, title: Loan Amount, data_key: column_2, $$hashKey: 'object:29190'}
+        - {id: JKSDUP, title: Borrower Full Name, data_key: column_1, $$hashKey: 'object:29189',
+          width: 205, expand: false}
+        - {id: VJQQOR, title: Loan Amount, data_key: column_2, $$hashKey: 'object:29190',
+          width: 200.20001220703125, expand: false}
         - {id: OJLQEN, title: Loan Status, data_key: column_3, $$hashKey: 'object:29191'}
         - {id: QSSLLG, data_key: column_4, title: '', $$hashKey: 'object:29192'}
         auto_header: true
@@ -268,8 +269,8 @@ components:
       properties:
         role: null
         columns:
-        - {id: JKSDUP, title: Loan Id, data_key: column_1, $$hashKey: 'object:27853',
-          width: 134, expand: false}
+        - {id: JKSDUP, title: Borrower Full Name, data_key: column_1, $$hashKey: 'object:27853',
+          width: 200.39999389648438, expand: false}
         - {id: VJQQOR, title: Loan Amount, data_key: column_2, $$hashKey: 'object:27854'}
         - {id: OJLQEN, title: Loan Status, data_key: column_3, $$hashKey: 'object:27855'}
         - {id: QSSLLG, data_key: column_4, title: '', $$hashKey: 'object:27856'}
@@ -303,7 +304,7 @@ components:
     - name: data_grid_5
       properties:
         columns:
-        - {id: JKSDUP, title: Loan Id, data_key: column_1}
+        - {id: JKSDUP, title: Borrower Full Name, data_key: column_1}
         - {id: VJQQOR, title: Loan Amount, data_key: column_2}
         - {id: OJLQEN, title: Loan Status, data_key: column_3}
         - {id: QSSLLG, data_key: column_4, title: ''}

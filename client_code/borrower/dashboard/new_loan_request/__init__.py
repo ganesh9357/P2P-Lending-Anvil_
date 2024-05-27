@@ -94,7 +94,11 @@ class new_loan_request(new_loan_requestTemplate):
         if name and category and product_name:
 
             if any(row['product_name']==product_name for row in app_tables.fin_loan_details.search(borrower_customer_id=self.user_id)):
+              self.name.selected_value = None
+              self.drop_down_1.selected_value = None
+              self.drop_down_2.selected_value = None
               alert(f'Product "{product_name}" already exists. Please choose a different Product name.')
+
             else:
   
               # Fetch product details based on the selected product name
