@@ -22,6 +22,7 @@ class F(FTemplate):
     self.disable_land_farming_details_fields()
     self.disable_borrower_profile_info_fields()
     self.disable_business_details_fields()
+    self.disable_bank_details_fields()
     self.load_user_profile()
     self.disable_company_employment_fields()
 
