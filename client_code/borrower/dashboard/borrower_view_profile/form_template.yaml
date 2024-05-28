@@ -1,0 +1,856 @@
+container: {type: ColumnPanel}
+components:
+- name: content_panel_copy
+  properties: {col_widths: '{"XHHUAF":15,"WCIGSN":32}', role: elevated-card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'UZKZHM,SRYSRJ', full_width_row: true}
+  components:
+  - name: home_button_admin_1_copy
+    properties: {}
+    type: form:admin.dashboard.home_button_admin
+    layout_properties: {grid_position: 'FLGBQD,WIMJQL', full_width_row: true}
+  - name: column_panel_2
+    properties: {role: elevated-card, col_widths: '{"ZWJJCA":15,"YAUNIP":15,"EUCVVS":30}',
+      background: ''}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'DXTZII,XHHUAF', full_width_row: true}
+    components:
+    - name: spacer_4
+      properties: {height: 130.85708618164062}
+      type: Spacer
+      layout_properties: {grid_position: 'XQEDZC,ZWJJCA'}
+    - name: image_1
+      properties: {height: 192.42852783203125}
+      type: Image
+      layout_properties: {grid_position: 'XQEDZC,EUCVVS'}
+    - name: spacer_3
+      properties: {height: 127.7142333984375}
+      type: Spacer
+      layout_properties: {grid_position: 'XQEDZC,YAUNIP'}
+    - name: user_photo
+      properties: {}
+      type: FileLoader
+      layout_properties: {grid_position: 'AUAHNV,FWOJUW'}
+      event_bindings: {change: user_photo_change}
+    - name: name_label
+      properties: {align: center, role: title, text: '', foreground: ''}
+      type: Label
+      layout_properties: {grid_position: 'NQCTGU,DUYLPU'}
+    - name: email_id_label
+      properties: {text: '', bold: false, font_size: 16, icon: 'fa:window-maximize',
+        align: center}
+      type: Label
+      layout_properties: {grid_position: 'AQPMDH,XPUZFG'}
+    - name: button_1_copy_6
+      properties: {text: Personal Information, align: full, background: 'theme:On
+          Disabled'}
+      type: Button
+      layout_properties: {grid_position: 'SLFWWB,FYUCMX'}
+      event_bindings: {click: personal_information_click}
+    - name: button_1_copy_9
+      properties: {text: Profile Information, align: full, background: 'theme:On Disabled'}
+      type: Button
+      layout_properties: {grid_position: 'EVVWUP,QNNLJZ'}
+      event_bindings: {click: Profile_Information_click}
+    - name: button_1_copy_10
+      properties: {text: Student_information, align: full, background: 'theme:On Disabled'}
+      type: Button
+      layout_properties: {grid_position: 'CQGEJR,GWTKUB'}
+      event_bindings: {click: Student_information_click}
+    - name: button_1_copy_11
+      properties: {text: Employee Information, align: full, background: 'theme:On
+          Disabled'}
+      type: Button
+      layout_properties: {grid_position: 'XPLRWF,NQPABL'}
+      event_bindings: {click: Employee_Information_click}
+    - name: button_1_copy_12
+      properties: {text: farmer_infromation, align: full, background: 'theme:On Disabled'}
+      type: Button
+      layout_properties: {grid_position: 'WFVZSE,MIEXUX'}
+      event_bindings: {click: farmer_infromation_click}
+    - name: button_1_copy_12_copy
+      properties: {text: Business Information, align: full, background: 'theme:On
+          Disabled'}
+      type: Button
+      layout_properties: {grid_position: 'RJDASP,JFFAES'}
+      event_bindings: {click: Business_Information_click}
+    - name: button_1_copy_12_copy_2
+      properties: {text: Bank Details, align: full, background: 'theme:On Disabled'}
+      type: Button
+      layout_properties: {grid_position: 'NEMQIC,GRKKUO'}
+      event_bindings: {click: Bank_Details_click}
+    - name: spacer_1
+      properties: {height: 396.142822265625}
+      type: Spacer
+      layout_properties: {grid_position: 'PXMPXY,HWWXMI'}
+  - name: column_panel_3_copy
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'DXTZII,WCIGSN'}
+    components:
+    - name: personal_information_panel
+      properties: {col_widths: '{"JMWRZL":25,"JNUESH":35,"XQSWFO":25,"QJAPZN":25,"IXDCZJ":25,"TLNBEN":25,"EGSFLR":25,"KGQXHY":5,"KLESAL":55,"ZCPZRF":35,"DATHWX":35,"LVJSXW":25,"HYVXAC":35,"NFSLAK":25,"JFBSNP":35,"ZFFVFA":25,"PJCMGZ":35,"DUACGL":25,"ZFULZJ":35,"VAVODZ":25,"NCNLMF":25,"BEMUDH":35,"SPMTQD":25,"YYVQHV":35,"LPGPDR":25,"TLJQVF":35,"DLXMPU":25,"KTXPQT":35,"JRYIFF":25,"FFEKIU":35,"KHSZQT":25,"RZMRRS":35,"USYQIB":25,"RUGPEC":35,"UICXOL":25,"GIEGUE":35,"BZAMHW":25,"ESNGXI":35,"SSGVTB":35,"LETFXN":25,"YNBCAU":35,"IMHPVD":35,"ORARGK":25,"LBAQLI":35,"GJDUAS":25,"HFIOKG":35,"FBVMCM":35,"VGTTOU":35}',
+        role: elevated-card, visible: true}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'VNYQWZ,XCYJCJ', full_width_row: true}
+      components:
+      - name: personal_details
+        properties: {role: title, bold: true, text: '                          Personal
+            Information', align: left}
+        type: Label
+        layout_properties: {grid_position: 'ROTWLU,EFDKWR'}
+      - name: spacer_2
+        properties: {height: 444.71417236328125}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KGQXHY'}
+      - name: spacer_4_copy
+        properties: {height: 16.142791748046875}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCAEKK,OVVUQA'}
+      - name: label_4
+        properties: {text: 'Name :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SJNJMR,NFSLAK'}
+      - name: name_text_box
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SJNJMR,JFBSNP'}
+      - name: label_1_copy
+        properties: {text: 'Date Of Birth :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,JMWRZL'}
+      - name: d_o_b_text_box
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,JNUESH'}
+      - name: label_4_copy_3
+        properties: {text: 'Email :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SQBAVF,XQSWFO'}
+      - name: email_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SQBAVF,ZCPZRF'}
+        event_bindings: {pressed_enter: text_box_1_copy_2_pressed_enter}
+      - name: label_4_copy
+        properties: {text: 'Mobile No :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VCIULX,DUACGL'}
+      - name: mobile_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VCIULX,ZFULZJ'}
+      - name: label_4_copy_4
+        properties: {text: 'Gender :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WHIKUG,QJAPZN'}
+      - name: gender_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WHIKUG,IMHPVD'}
+      - name: label_1_copy_copy
+        properties: {text: 'Marrital Status :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL TKAGKT,KHSZQT'}
+      - name: marrital_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL TKAGKT,RZMRRS'}
+      - name: label_3_copy_copy_copy_copy
+        properties: {text: 'Age :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WSPWCU,LETFXN'}
+      - name: age_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WSPWCU,YNBCAU'}
+      - name: label_4_copy_5
+        properties: {text: 'Govt Id 1 :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HJFUYQ,IXDCZJ'}
+      - name: g_i_1_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HJFUYQ,VGTTOU'}
+      - name: label_17
+        properties: {text: 'Govt Id 1 Image :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NKNCPO,ORARGK'}
+      - name: govt_id_1_image
+        properties: {height: 157.71420288085938}
+        type: Image
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NKNCPO,LBAQLI SUJBVO,MKJSAG'}
+      - name: govt_1_file_loader_1
+        properties: {visible: false}
+        type: FileLoader
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NKNCPO,LBAQLI ZMECWG,QUPXSJ'}
+        event_bindings: {change: govt_1_file_loader_1_change}
+      - name: label_2
+        properties: {text: 'Govt Id 2 :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VTZCTS,EGSFLR'}
+      - name: g_i_2_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VTZCTS,FBVMCM'}
+      - name: label_18
+        properties: {text: 'Govt Id 2 Image :', font_size: 16, bold: true}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL CVMOXV,GJDUAS'}
+      - name: govt_id_2_image
+        properties: {height: 145.85711669921875}
+        type: Image
+        layout_properties: {grid_position: 'NQDUFW,KLESAL CVMOXV,HFIOKG UKEVYA,AVYUUC'}
+      - name: govt_2_file_loader_2
+        properties: {visible: false}
+        type: FileLoader
+        layout_properties: {grid_position: 'NQDUFW,KLESAL CVMOXV,HFIOKG BCTRAA,MUUUGL'}
+        event_bindings: {change: govt_2_file_loader_2_change}
+      - name: label_3
+        properties: {text: 'City :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL OCPHXI,TLNBEN'}
+      - name: city_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL OCPHXI,DATHWX'}
+      - name: label_6
+        properties: {text: 'State :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL XAKUGP,LVJSXW'}
+      - name: state_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL XAKUGP,HYVXAC'}
+      - name: label_6_copy
+        properties: {text: 'Language :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL TOVHKN,ZFFVFA'}
+      - name: Language_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL TOVHKN,PJCMGZ'}
+      - name: label_4_copy_3_copy
+        properties: {text: Type of Addres, bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL AUCDTK,VAVODZ'}
+      - name: present_addres_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL AUCDTK,SSGVTB'}
+      - name: label_4_copy_4_copy
+        properties: {text: 'Address 2 :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL GMJQFG,NCNLMF'}
+      - name: address_1_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: '', bold: false}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL GMJQFG,BEMUDH'}
+      - name: label_4_copy_5_copy
+        properties: {text: 'Address 2 :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL TRNDKU,SPMTQD'}
+      - name: address_2_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL TRNDKU,YYVQHV'}
+      - name: label_2_copy
+        properties: {text: 'how long you are staying at this address :', bold: true,
+          font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL UMFKMW,LPGPDR'}
+      - name: how_long_stay_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL UMFKMW,TLJQVF'}
+      - name: label_3_copy
+        properties: {text: 'Profession :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL MLFVJH,DLXMPU'}
+      - name: profession_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL MLFVJH,KTXPQT'}
+      - name: label_3_copy_copy
+        properties: {text: 'Qualification :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL RIBNXC,JRYIFF'}
+      - name: qualification_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL RIBNXC,FFEKIU'}
+      - name: label_3_copy_copy_copy
+        properties: {text: 'Zip code :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VVTFJI,USYQIB'}
+      - name: pincode_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VVTFJI,RUGPEC'}
+      - name: label_3_copy_copy_copy_2
+        properties: {text: 'Vehicle Loans :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL ELQKVQ,UICXOL'}
+      - name: vehicle_loan_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: gana@gmail.com}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL ELQKVQ,GIEGUE'}
+      - name: label_3_copy_copy_copy_3
+        properties: {text: 'Credit Cart Loans :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL LYDAHE,BZAMHW'}
+      - name: credit_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: gana@gmail.com}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL LYDAHE,ESNGXI'}
+      - name: edit_personal_details_button
+        properties: {text: Edit Details, background: 'theme:On Disabled', align: right}
+        type: Button
+        layout_properties: {grid_position: 'EZWNNW,KUNIRM'}
+        event_bindings: {click: edit_personal_details_click}
+      - name: save_personal_details_button
+        properties: {text: '    Save     ', background: 'theme:On Disabled', align: left,
+          visible: false}
+        type: Button
+        layout_properties: {grid_position: 'EZWNNW,POYCFW'}
+        event_bindings: {click: save_personal_details_click}
+    - name: business_information_panel
+      properties: {col_widths: '{"KGQXHY":5,"KLESAL":55,"LTYSQY":30,"JPIBNI":30,"JFHHLL":30,"SCIUFE":15,"FRTPSY":15,"YZMMRA":30,"ETNTXW":15,"IMNUVQ":15}',
+        role: elevated-card, visible: false}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'YGOATC,BDOYYL'}
+      components:
+      - name: personal_details_copy_copy_copy_copy_copy_copy
+        properties: {role: title, bold: true, text: Business Information, align: left}
+        type: Label
+        layout_properties: {grid_position: 'ROTWLU,EFDKWR'}
+      - name: spacer_2_copy_copy_copy_copy_copy_copy
+        properties: {height: 334.5714111328125}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KGQXHY'}
+      - name: spacer_4_copy_copy_copy_copy_copy_copy_copy
+        properties: {height: 16.142791748046875}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCAEKK,OVVUQA'}
+      - name: label_1
+        properties: {text: 'Business name :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,VQILIQ'}
+      - name: business_name_tex
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,LTYSQY'}
+      - name: label_5
+        properties: {text: 'Business address :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,TQHDAR'}
+      - name: business_address_tex
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,IHGOFY'}
+      - name: label_7
+        properties: {text: 'Business Type :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SQBAVF,VALCHL'}
+      - name: business_type_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SQBAVF,KGUBQO'}
+      - name: label_8
+        properties: {text: 'No of Employees Working :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WHIKUG,GDCGAE'}
+      - name: no_of_emp_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WHIKUG,ZRXTMG'}
+      - name: label_9
+        properties: {text: 'Year of Establishment :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HJFUYQ,BARDJM'}
+      - name: year_of_yest_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HJFUYQ,JPIBNI'}
+      - name: label_10
+        properties: {text: 'Industry Type :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VTZCTS,OHTTBV'}
+      - name: industry_type_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VTZCTS,XLWWQC'}
+      - name: label_11
+        properties: {text: 'Last six months turnover  :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL LPZUYW,KUTKGI'}
+      - name: last_six_turnover_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL LPZUYW,QQSDPX'}
+      - name: label_12
+        properties: {text: 'last six month''s bank statements :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HABTSM,JFHHLL'}
+      - name: last_six_month_for_business
+        properties: {height: 161.5714111328125}
+        type: Image
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HABTSM,SCIUFE OWXAFW,DMVKHC'}
+      - name: business_bank_st_image
+        properties: {visible: false}
+        type: FileLoader
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HABTSM,SCIUFE HEKDIQ,DQMYXA'}
+        event_bindings: {change: business_bank_st_image_change}
+      - name: spacer_5
+        properties: {height: 162.5714111328125}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HABTSM,FRTPSY'}
+      - name: label_13
+        properties: {text: 'DIN :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SKNZJG,TZGVDL'}
+      - name: din_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SKNZJG,NMBGTQ'}
+      - name: label_14
+        properties: {text: 'CIN :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL RANHZH,NLAXZU'}
+      - name: cin_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL RANHZH,TZZALR'}
+      - name: label_15
+        properties: {text: 'Office address :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL DWQGSH,TOEQAG'}
+      - name: office_address_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL DWQGSH,DIPHSL'}
+      - name: label_16
+        properties: {text: 'Proof verification :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL UTGDVH,YZMMRA'}
+      - name: proof_varification
+        properties: {height: 175.71417236328125}
+        type: Image
+        layout_properties: {grid_position: 'NQDUFW,KLESAL UTGDVH,ETNTXW KPHYDT,UKMEPT'}
+      - name: business_proof_varificaions_image
+        properties: {visible: false}
+        type: FileLoader
+        layout_properties: {grid_position: 'NQDUFW,KLESAL UTGDVH,ETNTXW BWTLBZ,TFICOZ'}
+        event_bindings: {change: business_proof_varificaions_image_change}
+      - name: spacer_6
+        properties: {height: 126.42852783203125}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL UTGDVH,IMNUVQ'}
+      - name: edit_business_details_button
+        properties: {text: edit, background: 'theme:On Disabled', align: right}
+        type: Button
+        layout_properties: {grid_position: 'FEQCWG,TPCPSD'}
+        event_bindings: {click: edit_business_details_click}
+      - name: save_business_details_button
+        properties: {text: '    Save     ', background: 'theme:On Disabled', align: left,
+          visible: false}
+        type: Button
+        layout_properties: {grid_position: 'FEQCWG,PRRLQI'}
+        event_bindings: {click: save_business_details_click}
+    - name: farmer_information_panel
+      properties: {col_widths: '{"EYUVDS":30,"JMWRZL":30,"KGQXHY":5,"KLESAL":55,"BGUZEE":30,"ZNLJDO":30,"IUFHGQ":30,"IIBTJV":30}',
+        role: elevated-card, visible: false}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'JUWSUV,OMKJRK', full_width_row: true}
+      components:
+      - name: personal_details_copy_copy_copy_copy_3
+        properties: {role: title, bold: true, text: '                     Professional
+            Information   for farmer', align: left}
+        type: Label
+        layout_properties: {grid_position: 'ROTWLU,EFDKWR'}
+      - name: spacer_2_copy_copy_copy_copy_4
+        properties: {height: 228.42852783203125}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KGQXHY'}
+      - name: spacer_4_copy_copy_copy_copy_copy_3
+        properties: {height: 16.142791748046875}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCAEKK,OVVUQA'}
+      - name: label_4_copy_copy_copy_copy_3
+        properties: {text: 'Type of land :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,EYUVDS'}
+      - name: type_of_land_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,SBVCWJ'}
+      - name: label_1_copy_copy_copy_copy_copy_3
+        properties: {text: 'Number of acres of land :', bold: true, font_size: 16,
+          icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,JMWRZL'}
+      - name: no_of_acers
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,IUFHGQ'}
+      - name: label_4_copy_4_copy_copy_copy_copy_2
+        properties: {text: 'Crop name :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL QPBOGU,BGUZEE'}
+      - name: crop_name
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL QPBOGU,ZNLJDO'}
+      - name: label_4_copy_3_copy_copy_copy_copy_2
+        properties: {text: 'Yearly income :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL DDRTFJ,IIBTJV'}
+      - name: yearly_income
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL DDRTFJ,SAQKJQ'}
+      - name: edit_land_farming_details_button
+        properties: {text: edit, background: 'theme:On Disabled', align: right}
+        type: Button
+        layout_properties: {grid_position: 'AURCIS,MFXVGA'}
+        event_bindings: {click: edit_land_farming_details_click}
+      - name: save_land_farming_details_button
+        properties: {text: '    Save     ', background: 'theme:On Disabled', align: left,
+          visible: false}
+        type: Button
+        layout_properties: {grid_position: 'AURCIS,DDHVMK'}
+        event_bindings: {click: save_land_farming_details_click}
+    - name: employee_information_panel
+      properties: {col_widths: '{"EYUVDS":30,"JMWRZL":30,"XQSWFO":30,"QJAPZN":30,"IXDCZJ":30,"EGSFLR":30,"KGQXHY":5,"KLESAL":55,"LTYSQY":30,"JPIBNI":30,"IHVXBU":30,"MNSTRU":30,"VJUZWW":30,"PZOSCC":30,"ZWVXZO":30,"CEGBWH":30,"QANZQS":30,"BUJJIC":30,"GHLGSS":30,"TZZALR":30,"SBEZLO":30,"ZRXTMG":30,"KGUBQO":30,"PJRDRR":30}',
+        role: elevated-card, visible: false}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'JNOBDG,XWGBKV', full_width_row: true}
+      components:
+      - name: personal_details_copy_copy_copy_copy_copy
+        properties: {role: title, bold: true, text: Professional Information  if  Employee,
+          align: left}
+        type: Label
+        layout_properties: {grid_position: 'ROTWLU,EFDKWR'}
+      - name: spacer_2_copy_copy_copy_copy_copy
+        properties: {height: 334.5714111328125}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KGQXHY'}
+      - name: spacer_4_copy_copy_copy_copy_copy_copy
+        properties: {height: 16.142791748046875}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCAEKK,OVVUQA'}
+      - name: label_4_copy_copy_copy_copy_copy
+        properties: {text: 'company name :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,EYUVDS'}
+      - name: company_name_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,LTYSQY'}
+      - name: label_1_copy_copy_copy_copy_copy_copy
+        properties: {text: 'Occupation type :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,JMWRZL'}
+      - name: occupation_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,PJRDRR'}
+      - name: label_4_copy_3_copy_copy_copy_copy_copy
+        properties: {text: 'employment type :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SQBAVF,XQSWFO'}
+      - name: employee_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SQBAVF,KGUBQO'}
+      - name: label_4_copy_4_copy_copy_copy_copy_copy
+        properties: {text: 'Organization type :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WHIKUG,QJAPZN'}
+      - name: organization_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WHIKUG,ZRXTMG'}
+      - name: label_4_copy_5_copy_copy_copy_copy_copy
+        properties: {text: company address, bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HJFUYQ,IXDCZJ'}
+      - name: company_address_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HJFUYQ,JPIBNI'}
+      - name: label_2_copy_copy_copy_copy_copy
+        properties: {text: 'landmark :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VTZCTS,EGSFLR'}
+      - name: landmark_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VTZCTS,IHVXBU'}
+      - name: label_4_copy_5_copy_copy_copy_copy_copy_copy
+        properties: {text: company phone number, bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL LPZUYW,MNSTRU'}
+      - name: company_no_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL LPZUYW,SBEZLO'}
+      - name: label_4_copy_5_copy_copy_copy_copy_copy_copy_3
+        properties: {text: 'Annual salary :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL XFHEMZ,VJUZWW'}
+      - name: annual_salary_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL XFHEMZ,PZOSCC'}
+      - name: label_4_copy_5_copy_copy_copy_copy_copy_copy_2
+        properties: {text: 'salary type :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SKNZJG,IJGDYM'}
+      - name: salary_type_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SKNZJG,XJTGGM'}
+      - name: label_4_copy_5_copy_copy_copy_copy_copy_copy_2_copy
+        properties: {text: 'designation :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL RANHZH,GHLGSS'}
+      - name: designation_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL RANHZH,TZZALR'}
+      - name: label_4_copy_5_copy_copy_copy_copy_copy_copy_2_copy_3
+        properties: {text: 'employee id :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL FVHFPC,QANZQS'}
+      - name: emp_id_proof
+        properties: {height: 153.5714111328125}
+        type: Image
+        layout_properties: {grid_position: 'NQDUFW,KLESAL FVHFPC,BUJJIC UPEGRB,HBCDQT'}
+      - name: employee_id_image
+        properties: {visible: false}
+        type: FileLoader
+        layout_properties: {grid_position: 'NQDUFW,KLESAL FVHFPC,BUJJIC RVNVZZ,UJAMMA'}
+        event_bindings: {change: employee_id_image_change}
+      - name: label_4_copy_5_copy_copy_copy_copy_copy_copy_2_copy_2
+        properties: {text: 'last six months bank statement :', bold: true, font_size: 16,
+          icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL UHAUTE,ZWVXZO'}
+      - name: last_six_month_proof
+        properties: {height: 161.142822265625}
+        type: Image
+        layout_properties: {grid_position: 'NQDUFW,KLESAL UHAUTE,CEGBWH HGASRD,CTSZJH'}
+      - name: employee_last_six_bank_state_image
+        properties: {visible: false}
+        type: FileLoader
+        layout_properties: {grid_position: 'NQDUFW,KLESAL UHAUTE,CEGBWH UCWZUE,WDZZTV'}
+        event_bindings: {change: employee_last_six_bank_state_image_change}
+      - name: edit_company_employment_details_button
+        properties: {text: edit, background: 'theme:On Disabled', align: right}
+        type: Button
+        layout_properties: {grid_position: 'KROHZI,EGPGPA'}
+        event_bindings: {click: edit_company_employment_details_click}
+      - name: save_company_employment_details_button
+        properties: {text: '    Save     ', background: 'theme:On Disabled', align: left,
+          visible: false}
+        type: Button
+        layout_properties: {grid_position: 'KROHZI,QZMEWQ'}
+        event_bindings: {click: save_company_employment_details_click}
+    - name: profile_information_paenl
+      properties: {col_widths: '{"EYUVDS":25,"JMWRZL":25,"JNUESH":30,"KGQXHY":5,"KLESAL":55,"LTYSQY":30}',
+        role: elevated-card, visible: false}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'YQUCAQ,SGMAXX', full_width_row: true}
+      components:
+      - name: personal_details_copy_copy_copy_copy_2
+        properties: {role: title, bold: true, text: '                     Profile
+            Information', align: left}
+        type: Label
+        layout_properties: {grid_position: 'ROTWLU,EFDKWR'}
+      - name: spacer_2_copy_copy_copy_copy_2
+        properties: {height: 147.428466796875}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KGQXHY'}
+      - name: spacer_4_copy_copy_copy_copy_copy_2
+        properties: {height: 16.142791748046875}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCAEKK,OVVUQA'}
+      - name: label_4_copy_copy_copy_copy_2
+        properties: {text: 'credit_limit :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,EYUVDS'}
+      - name: credit_limit_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,LTYSQY'}
+      - name: label_1_copy_copy_copy_copy_copy_2
+        properties: {text: 'member since(borrower_since) :', bold: true, font_size: 16,
+          icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,JMWRZL'}
+      - name: member_since_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,JNUESH'}
+      - name: edit_borrower_profile_info_button
+        properties: {text: edit, background: 'theme:On Disabled', align: right}
+        type: Button
+        layout_properties: {grid_position: 'BZZGWY,FTQEKT'}
+        event_bindings: {click: edit_borrower_profile_info_click}
+      - name: save_borrower_profile_info_button
+        properties: {text: '    Save     ', background: 'theme:On Disabled', align: left,
+          visible: false}
+        type: Button
+        layout_properties: {grid_position: 'BZZGWY,GWAHSV'}
+        event_bindings: {click: save_borrower_profile_info_click}
+    - name: bank_details_panel
+      properties: {col_widths: '{"EYUVDS":25,"JMWRZL":25,"JNUESH":30,"XQSWFO":25,"QJAPZN":25,"IXDCZJ":25,"EGSFLR":25,"KGQXHY":5,"KLESAL":55,"LTYSQY":30,"ZCPZRF":30,"BSYPUV":30,"JPIBNI":30,"IHVXBU":30}',
+        role: elevated-card, visible: false}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'MGECOP,ARVNQL', full_width_row: true}
+      components:
+      - name: personal_details_copy_copy_copy_copy
+        properties: {role: title, bold: true, text: '                         Bank
+            Details ', align: left}
+        type: Label
+        layout_properties: {grid_position: 'ROTWLU,EFDKWR'}
+      - name: spacer_2_copy_copy_copy_copy
+        properties: {height: 334.5714111328125}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KGQXHY'}
+      - name: spacer_4_copy_copy_copy_copy_copy
+        properties: {height: 16.142791748046875}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCAEKK,OVVUQA'}
+      - name: label_4_copy_copy_copy_copy
+        properties: {text: 'Account holder name :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,EYUVDS'}
+      - name: holder_name_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,LTYSQY'}
+      - name: label_1_copy_copy_copy_copy_copy
+        properties: {text: 'Account type Account :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,JMWRZL'}
+      - name: acccount_type_dropdown
+        properties: {role: outlined}
+        type: DropDown
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,MFWLVO'}
+      - name: label_4_copy_3_copy_copy_copy_copy
+        properties: {text: 'Account number :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SQBAVF,XQSWFO'}
+      - name: account_no_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL SQBAVF,ZCPZRF'}
+      - name: label_4_copy_4_copy_copy_copy_copy
+        properties: {text: 'Bank name :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WHIKUG,QJAPZN'}
+      - name: bank_name_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL WHIKUG,BSYPUV'}
+      - name: label_4_copy_5_copy_copy_copy_copy
+        properties: {text: 'bank id :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HJFUYQ,IXDCZJ'}
+      - name: bank_id_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL HJFUYQ,JPIBNI'}
+      - name: label_2_copy_copy_copy_copy
+        properties: {text: 'branch name :', bold: true, font_size: 16}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VTZCTS,EGSFLR'}
+      - name: brach_name_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL VTZCTS,IHVXBU'}
+      - name: edit_bank_details_button
+        properties: {text: edit, background: 'theme:On Disabled', align: right}
+        type: Button
+        layout_properties: {grid_position: 'NQDUFW,KLESAL ARRRNY,HZRXNA'}
+        event_bindings: {click: edit_bank_details_click}
+      - name: save_bank_details_button
+        properties: {text: '    Save     ', background: 'theme:On Disabled', align: left,
+          visible: false}
+        type: Button
+        layout_properties: {grid_position: 'NQDUFW,KLESAL ARRRNY,SLBBUV'}
+        event_bindings: {click: save_bank_details_click}
+    - name: professional_information_paenl
+      properties: {col_widths: '{"EYUVDS":30,"JMWRZL":30,"KGQXHY":5,"KLESAL":55,"BGUZEE":30,"ZNLJDO":30,"IUFHGQ":30,"ZPGTQV":30,"IIBTJV":30,"CECQCA":20,"KXDMFM":10}',
+        role: elevated-card, visible: false}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'VJEFFN,KKSDKE', full_width_row: true}
+      components:
+      - name: personal_details_copy_copy_copy
+        properties: {role: title, bold: true, text: '                     Professional
+            Information   for Student', align: left}
+        type: Label
+        layout_properties: {grid_position: 'ROTWLU,EFDKWR'}
+      - name: spacer_2_copy_copy_copy
+        properties: {height: 228.42852783203125}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KGQXHY'}
+      - name: spacer_4_copy_copy_copy_copy
+        properties: {height: 16.142791748046875}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCAEKK,OVVUQA'}
+      - name: label_4_copy_copy_copy
+        properties: {text: 'college name ', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,EYUVDS'}
+      - name: college_name_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL NGTOCT,ZPGTQV'}
+      - name: label_1_copy_copy_copy_copy
+        properties: {text: 'college id :', bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,JMWRZL'}
+      - name: college_id_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL YCJUMM,IUFHGQ'}
+      - name: label_4_copy_4_copy_copy_copy
+        properties: {text: college address, bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL QPBOGU,BGUZEE'}
+      - name: college_address_tx
+        properties: {background: 'theme:On Primary', role: outlined, text: ''}
+        type: TextBox
+        layout_properties: {grid_position: 'NQDUFW,KLESAL QPBOGU,ZNLJDO'}
+      - name: label_4_copy_3_copy_copy_copy
+        properties: {text: College Proof, bold: true, font_size: 16, icon: ''}
+        type: Label
+        layout_properties: {grid_position: 'NQDUFW,KLESAL DDRTFJ,IIBTJV'}
+      - name: college_proof
+        properties: {height: 157.71417236328125}
+        type: Image
+        layout_properties: {grid_position: 'NQDUFW,KLESAL DDRTFJ,CECQCA BEZNLZ,HLUVAA'}
+      - name: college_proof_image
+        properties: {visible: false}
+        type: FileLoader
+        layout_properties: {grid_position: 'NQDUFW,KLESAL DDRTFJ,CECQCA EEALGU,ZCPOFE'}
+        event_bindings: {change: college_proof_image_change}
+      - name: spacer_2_copy_copy_copy_copy_3
+        properties: {height: 113.428466796875}
+        type: Spacer
+        layout_properties: {grid_position: 'NQDUFW,KLESAL DDRTFJ,KXDMFM'}
+      - name: edit_college_details_button
+        properties: {text: edit, background: 'theme:On Disabled', align: right}
+        type: Button
+        layout_properties: {grid_position: 'AURCIS,MFXVGA'}
+        event_bindings: {click: edit_college_details_click}
+      - name: save_college_details_button
+        properties: {text: '    Save     ', background: 'theme:On Disabled', align: left,
+          visible: false}
+        type: Button
+        layout_properties: {grid_position: 'AURCIS,JALJOF'}
+        event_bindings: {click: save_college_details_click}
+is_package: true
