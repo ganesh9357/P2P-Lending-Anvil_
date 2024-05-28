@@ -363,17 +363,17 @@ class Borr_loan_request(Borr_loan_requestTemplate):
         self.lender_customer_id = None
         
         # Populate labels with the selected row details
-        self.label_user_id.text = f"{selected_row['borrower_customer_id']}"
+        self.label_2.text = f"{selected_row['borrower_customer_id']}"
         self.label_name.text = f"{selected_row['borrower_full_name']}"
         self.label_loan_amount_applied.text = f"{selected_row['loan_amount']}"
-        self.label_loan_id.text = f"{selected_row['loan_id']}"
+        self.label_10.text = f"{selected_row['loan_id']}"
         self.label_beseem_score.text = f"{selected_row['beseem_score']}"
         self.label_loan_tenure.text = f"{selected_row['tenure']}"
         self.label_credit_limit.text = f"{selected_row['credit_limit']}"
         self.label_interest_rate.text = f"{selected_row['interest_rate']}"
 
 
-        loan_deta = app_tables.fin_loan_details.get(loan_id=self.label_loan_id.text)
+        loan_deta = app_tables.fin_loan_details.get(loan_id=self.label_10.text)
         if loan_deta is not None:
             self.lender_customer_id = loan_deta['lender_customer_id']
             print("lender", self.lender_customer_id)
@@ -418,9 +418,9 @@ class Borr_loan_request(Borr_loan_requestTemplate):
             self.label_member_since.text = "N/A"
             self.label_bank_acc_details.text = f"Error fetching user details: {e}"
            
-        loan_id = self.label_loan_id.text
+        loan_id = self.label_10.text
         self.entered_loan_id = loan_id
-        borrower_customer_id = self.label_user_id.text
+        borrower_customer_id = self.label_2.text
         self.entered_borrower_customer_id = borrower_customer_id
         
         
@@ -662,4 +662,4 @@ class Borr_loan_request(Borr_loan_requestTemplate):
 
 
     def link_1_click(self, **event_args):
-      open_form('lendor_registration_form.dashboard.view_borrower_loan_request.payment_details_view_loan_request', selected_row=self.selected_row)
+      open_form('lendor.dashboard.view_borrower_loan_request.payment_details_view_loan_request', selected_row=self.selected_row)

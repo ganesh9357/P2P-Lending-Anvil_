@@ -144,7 +144,7 @@ components:
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: false, text: Approved Foreclosure Requests, font_size: 18, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: true, icon: ''}
+      background: '', bold: true, underline: false, icon: ''}
     layout_properties:
       col_widths: {}
       grid_position: RWXMSJ,EIUUYU
@@ -153,21 +153,21 @@ components:
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: false, text: Rejected Foreclosure Requests, font_size: 18, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: true, icon: ''}
+      background: '', bold: true, underline: false, icon: ''}
     layout_properties: {grid_position: 'JACKKU,BLMTVD'}
     name: label_3
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: false, text: New Foreclosure Requests, font_size: 18, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-      underline: true, icon: ''}
+      underline: false, icon: ''}
     layout_properties: {grid_position: 'INJHZV,FBQGWB'}
     name: new
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: false, text: View All Loan Foreclosure Requests, font_size: 20, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: true, icon: ''}
+      background: '', bold: true, underline: false, icon: ''}
     layout_properties: {grid_position: 'SPJKDA,RGQWFI'}
     name: label_1
   - properties: {item_template: lendor.dashboard.view_loan_foreclosure_Requests.ItemTemplate55,
