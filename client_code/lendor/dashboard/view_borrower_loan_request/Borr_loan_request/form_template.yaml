@@ -54,7 +54,7 @@ components:
       properties: {role: outlined-card, align: center, tooltip: '', border: '', foreground: 'theme:On
           Primary', visible: true, text: Borrower Loan Details, font_size: 25, font: '',
         spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#05264d', bold: true, underline: true, icon: ''}
+        background: '#05264d', bold: true, underline: false, icon: ''}
       layout_properties: {grid_position: 'MYUDSN,HSNNFB', full_width_row: true}
       name: label_1
     - properties: {col_widths: '{"HTYHIR":15,"DNHZSW":25,"UHOCXU":15,"BMUVEY":5}'}
@@ -66,13 +66,6 @@ components:
         type: Spacer
         layout_properties: {grid_position: 'DZRYFS,HTYHIR'}
         name: spacer_4
-      - type: Label
-        properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-          visible: true, text: 'User ID :', font_size: null, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-          underline: false, icon: ''}
-        layout_properties: {grid_position: 'DZRYFS,DNHZSW WNHPML,PLZAMI'}
-        name: label_2
       - type: Label
         properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
           visible: true, text: 'Name :', font_size: null, font: '', spacing_above: small,
@@ -131,13 +124,6 @@ components:
         name: label_9
       - type: Label
         properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-          visible: true, text: 'Loan_id :', font_size: null, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-          underline: false, icon: ''}
-        layout_properties: {grid_position: 'DZRYFS,DNHZSW LLPZPZ,SQOIVL'}
-        name: label_10
-      - type: Label
-        properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
           visible: true, text: 'Bank Account Details :', font_size: null, font: '',
           spacing_above: small, icon_align: left, spacing_below: small, italic: false,
           background: '', bold: true, underline: false, icon: ''}
@@ -150,13 +136,6 @@ components:
           underline: false, icon: ''}
         layout_properties: {grid_position: 'DZRYFS,DNHZSW JPROVG,OIMLSL'}
         name: label_12
-      - type: Label
-        properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-          visible: true, text: '', font_size: null, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-          underline: false, icon: ''}
-        layout_properties: {grid_position: 'DZRYFS,UHOCXU HRORBC,BXKBQR'}
-        name: label_user_id
       - type: Label
         properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
           visible: true, text: '', font_size: null, font: '', spacing_above: small,
@@ -218,13 +197,6 @@ components:
           visible: true, text: '', font_size: null, font: '', spacing_above: small,
           icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
           underline: false, icon: ''}
-        layout_properties: {grid_position: 'DZRYFS,UHOCXU JOAXPN,WVBEJW'}
-        name: label_loan_id
-      - type: Label
-        properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-          visible: true, text: '', font_size: null, font: '', spacing_above: small,
-          icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-          underline: false, icon: ''}
         layout_properties: {grid_position: 'DZRYFS,UHOCXU WMCEGH,DYHZBA'}
         name: label_bank_acc_details
       - type: Link
@@ -236,6 +208,14 @@ components:
         layout_properties: {grid_position: 'DZRYFS,UHOCXU AQJJFM,GVNSNF'}
         event_bindings: {click: link_1_click}
         name: link_1
+      - name: label_2
+        properties: {visible: false}
+        type: Label
+        layout_properties: {grid_position: 'DZRYFS,UHOCXU OUOTJL,KRYQIC'}
+      - name: label_10
+        properties: {visible: false}
+        type: Label
+        layout_properties: {grid_position: 'DZRYFS,UHOCXU OUOTJL,TIQTBB'}
       - properties: {height: 389.0714111328125}
         type: Spacer
         layout_properties: {grid_position: 'DZRYFS,BMUVEY'}

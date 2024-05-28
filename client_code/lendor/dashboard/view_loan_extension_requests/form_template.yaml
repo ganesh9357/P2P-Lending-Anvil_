@@ -162,7 +162,7 @@ components:
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: false, text: Approved Loan Extension Requests, font_size: 18, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: true, icon: ''}
+      background: '', bold: true, underline: false, icon: ''}
     layout_properties:
       col_widths: {}
       grid_position: JPZZFE,GNTMZE
@@ -171,7 +171,7 @@ components:
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: false, text: Rejected Loan Extension  Requests, font_size: 18, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: true, icon: ''}
+      background: '', bold: true, underline: false, icon: ''}
     layout_properties:
       col_widths: {}
       grid_position: FBABJK,OCKETI
@@ -180,7 +180,7 @@ components:
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: false, text: Under Process Loan Extension  Requests, font_size: 18,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: true, icon: ''}
+      background: '', bold: true, underline: false, icon: ''}
     layout_properties:
       col_widths: {}
       grid_position: UUWETI,OYKXYD
@@ -189,7 +189,7 @@ components:
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: false, text: New Loan Extension  Requests, font_size: 18, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: true, icon: ''}
+      background: '', bold: true, underline: false, icon: ''}
     layout_properties:
       col_widths: {}
       grid_position: QHWSYK,HARUDK
@@ -198,7 +198,7 @@ components:
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: false, text: View All Loan  Extension  Requests, font_size: 20, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: true, icon: ''}
+      background: '', bold: true, underline: false, icon: ''}
     layout_properties:
       col_widths: {}
       grid_position: YGGCZE,VOBKGG

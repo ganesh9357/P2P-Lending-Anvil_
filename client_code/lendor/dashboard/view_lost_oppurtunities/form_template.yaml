@@ -50,7 +50,7 @@ components:
     properties:
       role: null
       columns:
-      - {id: JUPHMF, title: Loan id, data_key: column_1, $$hashKey: 'object:2363'}
+      - {id: JUPHMF, title: Borrower Full Name, data_key: column_1, $$hashKey: 'object:2363'}
       - {id: VWOLXX, title: Loan Amount, data_key: column_2, $$hashKey: 'object:2364'}
       - {id: CFQYPT, title: Loan_status, data_key: column_3, $$hashKey: 'object:2365'}
       - {id: ZTUHWY, title: '', data_key: column_4, $$hashKey: 'object:7800'}

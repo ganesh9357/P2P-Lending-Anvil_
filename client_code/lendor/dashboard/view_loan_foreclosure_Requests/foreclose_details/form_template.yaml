@@ -40,7 +40,7 @@ components:
       - properties: {role: outlined-card, align: center, tooltip: '', border: '',
           foreground: 'theme:On Primary', visible: true, text: Foreclosure details,
           font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '#0b2547', bold: false, underline: true, icon: ''}
+          italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
         type: Label
         layout_properties: {grid_position: 'ERORUW,NZLPXX'}
         name: label_6

@@ -5,7 +5,7 @@ components:
   name: label_1
   layout_properties: {column: JUPHMF}
   data_bindings:
-  - {property: text, code: 'self.item[''loan_id'']'}
+  - {property: text, code: 'self.item[''borrower_full_name'']', writeback: false}
 - type: Label
   properties: {}
   name: label_2
