@@ -1,5 +1,5 @@
 
-from ._anvil_designer import FTemplate
+from ._anvil_designer import borrower_view_profileTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -11,7 +11,7 @@ from anvil.tables import app_tables
 from .. import main_form_module as main_form_module
 
 
-class F(FTemplate):
+class borrower_view_profile(borrower_view_profileTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -40,6 +40,8 @@ class F(FTemplate):
       self.city_tx.text = user_profile['city']
       self.g_i_1_tx.text = user_profile['aadhaar_no']
       self.g_i_2_tx.text = user_profile['pan_number']
+      self.govt_id_1_image.source = user_profile['aadhaar_photo']
+      self.govt_id_2_image.source = user_profile['pan_photo']
       self.gender_dropdown.selected_value = user_profile['gender']
       self.Language_tx.text = user_profile['mouther_tounge']
       self.image_1.source = user_profile['user_photo']
@@ -88,11 +90,12 @@ class F(FTemplate):
       self.office_address_tx.text = user_profile['registered_off_add']
       self.proof_varification.source = user_profile['proof_verification']
       self.holder_name_tx.text = user_profile['account_name']
-      self.account_no_tx.source = user_profile['account_number']
+      self.account_no_tx.text = user_profile['account_number']
       self.brach_name_tx.text = user_profile['account_bank_branch']
       self.bank_id_tx.text = user_profile['bank_id']
       self.bank_name_tx.text = user_profile['bank_name']
       self.acccount_type_dropdown.selected_value = user_profile['account_type']
+
 
       options = app_tables.fin_borrower_account_type.search()
       options_string = [str(option['borrower_account_type']) for option in options]
@@ -169,7 +172,7 @@ class F(FTemplate):
 
   def enable_personal_fields(self):
       self.name_text_box.enabled = True
-      self.email_tx.enabled = True
+      # self.email_tx.enabled = True
       self.mobile_tx.enabled = True
       # self.d_o_b_text_box.enabled = True
       self.city_tx.enabled = True
@@ -201,7 +204,7 @@ class F(FTemplate):
     user_profile = app_tables.fin_user_profile.get(customer_id=self.user_id)
     if user_profile:
       user_profile['full_name'] = self.name_text_box.text
-      user_profile['email_user'] = self.email_tx.text
+      # user_profile['email_user'] = self.email_tx.text
       user_profile['mobile'] = self.mobile_tx.text
       user_profile['date_of_birth'] = self.d_o_b_text_box.text
       user_profile['city'] = self.city_tx.text
@@ -222,6 +225,28 @@ class F(FTemplate):
       user_profile['qualification'] = self.qualification_dropdown.selected_value
       user_profile['profession'] = self.profession_dropdown.selected_value
       user_profile['other_loan'] = self.Language_tx.text
+      self.govt_1_file_loader_1.visible = False
+      self.govt_2_file_loader_2.visible = False
+      self.name_label.text = self.name_text_box.text
+      
+      photo = self.govt_1_file_loader_1.file
+      if photo:
+        user_profile['aadhaar_photo'] = photo
+
+      photo = self.govt_2_file_loader_2.file
+      if photo:
+        user_profile['pan_photo'] = photo
+      # user_profile.update()
+
+      # wallet = app_tables.fin_wallet.get(customer_id=self.user_id)
+      # if wallet:
+      #   wallet['user_email'] = self.email_tx.text
+      #   wallet.update()
+
+      # wallet = app_tables.fin_wallet.get(customer_id=self.user_id)
+      # if wallet:
+      #   wallet['user_email'] = self.email_tx.text
+      #   wallet.update()
 
     self.disable_personal_fields()
     self.save_personal_details_button.visible = False
@@ -281,9 +306,19 @@ class F(FTemplate):
       user_profile['emp_id_proof'] = self.emp_id_proof.source
       user_profile['last_six_month_bank_proof'] = self.last_six_month_proof.source
 
+      photo = self.employee_id_image.file
+      if photo:
+        user_profile['emp_id_proof'] = photo
+
+      photo = self.employee_last_six_bank_state_image.file
+      if photo:
+        user_profile['last_six_month_bank_proof'] = photo
+
     self.disable_company_employment_fields()
     self.save_company_employment_details_button.visible = False
     self.edit_company_employment_details_button.visible = True
+    self.employee_id_image.visible = False
+    self.employee_last_six_bank_state_image.visible = False
 
 
   def disable_college_details_fields(self):
@@ -314,9 +349,14 @@ class F(FTemplate):
       user_profile['college_address'] = self.college_address_tx.text
       user_profile['college_proof'] = self.college_proof.source
 
+      photo = self.college_proof_image.file
+      if photo:
+        user_profile['college_proof'] = photo
+
     self.disable_college_details_fields()
     self.save_college_details_button.visible = False
     self.edit_college_details_button.visible = True
+    self.college_proof_image.visible = False
 
   def disable_land_farming_details_fields(self):
     # Disable land and farming details fields
@@ -355,7 +395,7 @@ class F(FTemplate):
 
   def enable_borrower_profile_info_fields(self):
     self.credit_limit_tx.enabled = True
-    self.member_since_tx.enabled = True
+    # self.member_since_tx.enabled = True
 
   def edit_borrower_profile_info_click(self, **event_args):
     self.enable_borrower_profile_info_fields()
@@ -366,7 +406,7 @@ class F(FTemplate):
     borrower_details = app_tables.fin_borrower.get(customer_id=self.user_id)
     if borrower_details:
       borrower_details['credit_limit'] = float(self.credit_limit_tx.text)
-      borrower_details['borrower_since'] = self.member_since_tx.text
+      # borrower_details['borrower_since'] = self.member_since_tx.text
 
     self.disable_borrower_profile_info_fields()
     self.save_borrower_profile_info_button.visible = False
@@ -423,9 +463,19 @@ class F(FTemplate):
       user_profile['registered_off_add'] = self.office_address_tx.text
       user_profile['proof_verification'] = self.proof_varification.source
 
+      photo = self.business_bank_st_image.file
+      if photo:
+        user_profile['last_six_month_bank_proof'] = photo
+
+      photo = self.business_proof_varificaions_image.file
+      if photo:
+        user_profile['proof_verification'] = photo
+
     self.disable_business_details_fields()
     self.save_business_details_button.visible = False
     self.edit_business_details_button.visible = True
+    self.business_bank_st_image.visible = False
+    self.business_proof_varificaions_image.visible = False
 
   def disable_bank_details_fields(self):
     self.holder_name_tx.enabled = False
@@ -547,3 +597,56 @@ class F(FTemplate):
   #   """This method is called when the button is clicked"""
   #   personal_s
 
+  def govt_1_file_loader_1_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+            # Update Image_1 with the uploaded image
+            self.govt_id_1_image.source = self.govt_1_file_loader_1.file
+
+  def govt_2_file_loader_2_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+            # Update Image_1 with the uploaded image
+            self.govt_id_2_image.source = self.govt_2_file_loader_2.file
+
+  def business_bank_st_image_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+            # Update Image_1 with the uploaded image
+            self.last_six_month_for_business.source = self.business_bank_st_image.file
+
+  def business_proof_varificaions_image_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+            # Update Image_1 with the uploaded image
+            self.proof_varification.source = self.business_proof_varificaions_image.file
+
+  def employee_id_image_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+            # Update Image_1 with the uploaded image
+            self.emp_id_proof.source = self.employee_id_image.file
+
+  def employee_last_six_bank_state_image_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+            # Update Image_1 with the uploaded image
+            self.last_six_month_proof.source = self.employee_last_six_bank_state_image.file
+
+  def college_proof_image_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+            # Update Image_1 with the uploaded image
+            self.college_proof.source = self.college_proof_image.file
+
+  def user_photo_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file:
+            # Update Image_1 with the uploaded image
+            self.image_1.source = self.user_photo.file
+            user_profile=app_tables.fin_user_profile.get(customer_id=self.user_id)
+            if user_profile:
+              photo = self.user_photo.file
+              if photo:
+                user_profile['user_photo'] = photo
+              user_profile.update()

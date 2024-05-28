@@ -73,6 +73,7 @@ unique_ids:
     admin.dashboard.manage_reports: '1699528696451136679061767.8162'
     admin.user_issue.user_buganalysis.RowTemplate17: '1701189107287981500115093.1753'
     borrower.ots_dashboard: '1707465922694896334564412.1901'
+    borrower.dashboard.borrower_view_profile: '171654657221485665663770.40962'
     admin.dashboard.manage_loan_details.loan_management.under_process: '1699528976374246220307697.87708'
     admin.dashboard.manage_loan_details.loan_management.loan_disbursed.ItemTemplate33: '1709545875544537395271715.33875'
     ? borrower.borrower_registration_forms.star_1_borrower_registration_form_2_employment.star_1_borrower_registration_form_2_employment_business_1
@@ -284,7 +285,6 @@ unique_ids:
     admin.dashboard.manage_bessem.view_bessem_group.ItemTemplate76: '1709796398278162864431750.42664'
     borrower.dashboard.view_loans.ItemTemplate44: '1709550448558692458624049.312'
     lendor.dashboard.view_loan_foreclosure_Requests.ItemTemplate56: '1709797512187353599372144.2636'
-    borrower.dashboard.Form1: '171654657221485665663770.40962'
     ? borrower.borrower_registration_forms.star_1_borrower_registration_form_2_employment.star_1_borrower_registration_form_2_employment_emp_detail_2
     : '1700037622301754064674185.6132'
     admin.dashboard.manage_bessem.add_subcategory.edit_gender: '1709634844761878991953950.8804'
