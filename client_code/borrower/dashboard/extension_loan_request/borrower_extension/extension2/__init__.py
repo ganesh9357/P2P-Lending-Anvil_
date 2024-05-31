@@ -113,6 +113,9 @@ class extension2(extension2Template):
                 borrower_customer_id = loan_details_row['borrower_customer_id']
                 borrower_email_id = loan_details_row['borrower_email_id']
                 borrower_full_name = loan_details_row['borrower_full_name']
+                lender_customer_id = loan_details_row['lender_customer_id']
+                lender_email_id = loan_details_row['lender_email_id']
+                lender_full_name = loan_details_row['lender_full_name']
             else:
                 borrower_customer_id = None
                 borrower_email_id = None
@@ -135,7 +138,9 @@ class extension2(extension2Template):
                     reason=reason,
                     status='under process',
                     emi_number=self.emi_number,
-                  
+                    lender_customer_id=lender_customer_id,
+                    lender_email_id=lender_email_id,
+                    lender_full_name=lender_full_name,
                     extension_request_date=datetime.now()
                 )
                 # updated_remaining_amount = loan_details_row['remaining_amount'] + extension_amount_numeric

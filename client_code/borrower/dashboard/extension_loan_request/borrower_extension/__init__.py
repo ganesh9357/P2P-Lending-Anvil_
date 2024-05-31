@@ -44,6 +44,27 @@ class borrower_extension(borrower_extensionTemplate):
         loan_id = selected_row['loan_id']
         extend_rows = app_tables.fin_extends_loan.search(loan_id=loan_id)
 
+        if extend_rows:
+          for extend_row in extend_rows :
+            if extend_row['status'] not in ('approved', 'rejected'):
+              approval_days_row = app_tables.fin_approval_days.get(loans='Extension')
+            
+              if approval_days_row:
+                  approval_days = approval_days_row['days_for_approval']
+                  
+                  # Calculate the time difference between now and the request date
+                  print("Extension Request Date:", extend_row['extension_request_date'])
+                  time_difference = datetime.now() - datetime.combine(extend_row['extension_request_date'], datetime.min.time())
+                  print("Time Difference (seconds):", time_difference.total_seconds())
+      
+                  # Check if the time difference is more than the approval days
+                  if time_difference.total_seconds() > (approval_days * 86400):  # 86400 seconds in a day
+                      extend_row['status'] = 'approved'
+                      extend_row['status_timestamp '] = datetime.now()
+                      extend_row.update()
+      
+        extend_rows = app_tables.fin_extends_loan.search(loan_id=loan_id)
+
         approved_status = False
         rejected_status = False
 

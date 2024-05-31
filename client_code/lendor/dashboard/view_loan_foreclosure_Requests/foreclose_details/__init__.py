@@ -7,6 +7,8 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+from datetime import datetime ,timedelta
+
 
 class foreclose_details(foreclose_detailsTemplate):
     def __init__(self, selected_row, **properties):
@@ -22,6 +24,31 @@ class foreclose_details(foreclose_detailsTemplate):
         self.oa.text = f"{selected_row['outstanding_amount']}"
         self.reason.text = f"{selected_row['reason']}"
         self.due_amount.text = f"{selected_row['total_due_amount']}"
+
+        loan_id = selected_row['loan_id']
+        foreclosure_rows = app_tables.fin_foreclosure.search(loan_id=loan_id)
+
+        if foreclosure_rows:
+          for extend_row in foreclosure_rows :
+            if extend_row['status'] not in ('approved', 'rejected'):
+              approval_days_row = app_tables.fin_approval_days.get(loans='Foreclosure')
+            
+              if approval_days_row:
+                  approval_days = approval_days_row['days_for_approval']
+                  
+                  # Calculate the time difference between now and the request date
+                  print("Extension Request Date:", extend_row['requested_on'])
+                  time_difference = datetime.now() - datetime.combine(extend_row['requested_on'], datetime.min.time())
+                  print("Time Difference (seconds):", time_difference.total_seconds())
+      
+                  # Check if the time difference is more than the approval days
+                  if time_difference.total_seconds() > (approval_days * 86400):  # 86400 seconds in a day
+                      extend_row['status'] = 'approved'
+                      extend_row['status_timestamp '] = datetime.now()
+                      extend_row.update()
+                      self.approve.visible = False
+                      self.decline.visible = False
+                      Notification("Your request has been accepted.").show()
 
     def button_1_click(self, **event_args):
         """This method is called when the button is clicked"""
@@ -54,4 +81,5 @@ class foreclose_details(foreclose_detailsTemplate):
         foreclosure_row = app_tables.fin_foreclosure.get(loan_id=self.selected_row['loan_id'])
         if foreclosure_row is not None:
             foreclosure_row['status'] = new_status
+            foreclosure_row['status_timestamp '] = datetime.now()
             foreclosure_row.update()

@@ -24,17 +24,23 @@ class extension_details(extension_detailsTemplate):
         self.new_emi.text = f"{selected_row['new_emi']}"
 
         if self.selected_row['status'] not in ('approved', 'rejected'):
-            # Calculate the time difference between now and the request date
-            print("Extension Request Date:", self.selected_row['extension_request_date'])
-            time_difference = datetime.now() - datetime.combine(self.selected_row['extension_request_date'], datetime.min.time())
-            print("Time Difference (seconds):", time_difference.total_seconds())
-
-            # Check if the time difference is more than 48 hours (2 days)
-            if time_difference.total_seconds() > (48 * 3600):
-                self.selected_row['status'] = 'approved'
-                self.selected_row.update()
-                Notification("Borrower request has been automatically approved.").show()
-                open_form("lendor.dashboard.view_loan_extension_requests")
+          approval_days_row = app_tables.fin_approval_days.get(loans='Extension')
+        
+          if approval_days_row:
+              approval_days = approval_days_row['days_for_approval']
+              
+              # Calculate the time difference between now and the request date
+              print("Extension Request Date:", self.selected_row['extension_request_date'])
+              time_difference = datetime.now() - datetime.combine(self.selected_row['extension_request_date'], datetime.min.time())
+              print("Time Difference (seconds):", time_difference.total_seconds())
+  
+              # Check if the time difference is more than the approval days
+              if time_difference.total_seconds() > (approval_days * 86400):  # 86400 seconds in a day
+                  # self.selected_row['status'] = 'approved'
+                  # self.selected_row.update()
+                  self.update_extension_status('approved')
+                  Notification("Borrower request has been automatically approved.").show()
+                  open_form("lendor.dashboard.view_loan_extension_requests")
 
 
     def approve_click(self, **event_args):
@@ -67,6 +73,7 @@ class extension_details(extension_detailsTemplate):
         self.selected_row['status'] = 'rejected'
         self.selected_row['status_timestamp '] = datetime.now()
         self.selected_row.update()
+        self.update_extension_status('rejected')
         Notification("Borrower will get notified").show()
         
         open_form("lendor.dashboard.view_loan_extension_requests")
@@ -76,8 +83,11 @@ class extension_details(extension_detailsTemplate):
         foreclosure_row = app_tables.fin_extends_loan.get(loan_id=self.selected_row['loan_id'])
         if foreclosure_row is not None:
             foreclosure_row['status'] = new_status
+            foreclosure_row['status_timestamp '] = datetime.now()
             foreclosure_row.update()
-
+            self.approve.visible = False
+            self.decline.visible = False
+          
     def button_1_click(self, **event_args):
         """This method is called when the button is clicked"""
         open_form('lendor.dashboard.view_loan_extension_requests')
