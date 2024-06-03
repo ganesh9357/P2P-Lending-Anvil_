@@ -88,6 +88,22 @@ components:
         underline: false, icon: ''}
       type: Label
       layout_properties: {grid_position: 'NSFBBW,IKTOGX PUKXRL,ATGQCU'}
+    - name: label_11
+      properties: {text: 'Foreclose Amount :', bold: true, visible: false}
+      type: Label
+      layout_properties: {grid_position: 'NSFBBW,IKTOGX ICOFYY,JGZITO'}
+    - name: label_14
+      properties: {text: 'Due amount :', bold: true, visible: false}
+      type: Label
+      layout_properties: {grid_position: 'NSFBBW,IKTOGX WWABIV,CTGNSA'}
+    - name: label_17
+      properties: {text: 'Total Amount :', bold: true, visible: false}
+      type: Label
+      layout_properties: {grid_position: 'NSFBBW,IKTOGX LHCBUD,PXDXQM'}
+    - name: label_13
+      properties: {text: 'Extra Fee :', bold: true, visible: false}
+      type: Label
+      layout_properties: {grid_position: 'NSFBBW,IKTOGX MWTJLK,GXOBYA'}
     - name: label_name
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
         visible: true, text: '', font_size: null, font: '', spacing_above: small,
@@ -137,6 +153,22 @@ components:
         underline: false, icon: ''}
       type: Label
       layout_properties: {grid_position: 'NSFBBW,FBKSUO ZQBYVQ,WXQEYL'}
+    - name: foreclose_amount
+      properties: {visible: false}
+      type: Label
+      layout_properties: {grid_position: 'NSFBBW,FBKSUO SXXZDM,AHEIZE'}
+    - name: due_amount
+      properties: {visible: false}
+      type: Label
+      layout_properties: {grid_position: 'NSFBBW,FBKSUO CXUZIS,ZOFSYP'}
+    - name: total_amount
+      properties: {visible: false}
+      type: Label
+      layout_properties: {grid_position: 'NSFBBW,FBKSUO UEYQOI,GLBIPZ'}
+    - name: extra_fee
+      properties: {visible: false}
+      type: Label
+      layout_properties: {grid_position: 'NSFBBW,FBKSUO TTYLAI,OCWFMH'}
     - name: spacer_2
       properties: {height: 154.9285888671875}
       type: Spacer
