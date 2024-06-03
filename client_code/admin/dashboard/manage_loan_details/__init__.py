@@ -35,3 +35,8 @@ class manage_loan_details(manage_loan_detailsTemplate):
   def image_1_mouse_up(self, x, y, button, **event_args):
     """This method is called when a mouse button is released on this component"""
     open_form('admin.dashboard.manage_loan_details.loan_settings')
+
+  def day_approval(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard.manage_loan_details.approval_days')
+

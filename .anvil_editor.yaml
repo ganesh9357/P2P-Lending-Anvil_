@@ -60,6 +60,7 @@ unique_ids:
     admin.dashboard.manage_ascend.view_ascend_subcategory.RowTemplate19: '1709635189882215361568053.49905'
     lendor.dashboard.view_loan_extension_requests.extension_details_approved_or_rejected: '1706449063565318739229397.3752'
     borrower.dashboard: '171654657221485665663770.40962'
+    admin.dashboard.manage_loan_details.approval_days: '171738656206145864182938.08747'
     admin.dashboard.borrowers.ItemTemplate96: '1712062136716241415691586.34946'
     bank_users.main_form.investNow_applyForLoan: '1714366810236923651939721.386'
     lendor.dashboard.view_loan_foreclosure_Requests.ItemTemplate59: '1709797526719604321418306.3726'

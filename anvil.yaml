@@ -1477,6 +1477,17 @@ db_schema:
       admin_ui: {width: 200, order: 8.875}
       type: number
     title: fin_loan_details
+  fin_approval_days:
+    client: full
+    server: full
+    columns:
+    - name: days_for_approval
+      admin_ui: {width: 200, order: 0}
+      type: number
+    - name: loans
+      admin_ui: {width: 200, order: 1}
+      type: string
+    title: fin_approval_days
   fin_user_issues_bugreports:
     title: fin_user_issues_bugreports
     client: full
