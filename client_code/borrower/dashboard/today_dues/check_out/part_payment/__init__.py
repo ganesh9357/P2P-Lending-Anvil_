@@ -218,6 +218,7 @@ class part_payment(part_paymentTemplate):
                           if loan_row['lender_returns'] is None:
                             loan_row['lender_returns'] = 0
                           loan_row['lender_returns'] += float(self.loan_details['i_r']) /2
+
                           
                           loan_row.update()
   
@@ -258,7 +259,8 @@ class part_payment(part_paymentTemplate):
                               # Default to monthly calculation
                               next_scheduled_payment = prev_scheduled_payment + timedelta(days=30)
                               next_next_payment = prev_next_payment + timedelta(days=30)
-  
+
+                          lender_returns_in_emi_table = float(self.loan_details['i_r']) /2
                           # Add a new row to fin_emi_table
                           new_emi_row = app_tables.fin_emi_table.add_row(
                               loan_id=loan_id,
@@ -279,6 +281,7 @@ class part_payment(part_paymentTemplate):
                               part_payment_done= 1,
                               total_amount_pay= float(self.loan_details['total_emi_amount']),
                               remaining_tenure=remaining_tenure,
+                              part_lender_returns=lender_returns_in_emi_table,
                             
                               
                               

@@ -1114,6 +1114,12 @@ db_schema:
     - name: remaining_tenure
       admin_ui: {width: 200, order: 6.125}
       type: number
+    - name: part_lender_returns
+      admin_ui: {width: 200, order: 17}
+      type: number
+    - name: part_remaining_amount
+      admin_ui: {width: 200, order: 18}
+      type: number
   fin_borrower_business_type:
     client: full
     server: full
