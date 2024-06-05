@@ -461,6 +461,8 @@ class check_out(check_outTemplate):
         )
         if adding_remaining_part_payment:
           part_pay = adding_remaining_part_payment['payment_type']
+          lender_return = adding_remaining_part_payment['part_lender_returns']
+          remaining_amount_pay_to_lender = adding_remaining_part_payment['part_remaining_amount']
           if part_pay == 'part payment':
             remaining_part_payment = adding_remaining_part_payment['part_payment_amount']
             # total_due_amount += remaining_part_payment
@@ -469,6 +471,8 @@ class check_out(check_outTemplate):
             self.label_14.text = additional_fees + remaining_part_payment
             # total_due_amount +=additional_fees
 
+            # self.i_r.text = float(self.i_r.text) + lender_return
+            # self.i_r.text = float(self.i_r.text) + lender_return
             total_emi += remaining_part_payment
             total_emi +=additional_fees
             self.part_payment.enabled = False
