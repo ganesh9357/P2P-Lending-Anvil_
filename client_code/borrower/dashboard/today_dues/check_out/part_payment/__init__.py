@@ -131,6 +131,9 @@ class part_payment(part_paymentTemplate):
                         loan_row['loan_updated_status'] = 'close'
                       loan_row.update()
 
+                  part_lender_returns = float(self.loan_details['i_r']) /2
+                  part_remaining_amount = float(self.loan_details['for_remaining_amount_calculation']) /2
+
                   additional_fees = self.calculate_additional_fees(emi_row)
                     
                   # schedule_payment  = emi_row['scheduled_payment']
@@ -164,6 +167,8 @@ class part_payment(part_paymentTemplate):
                       # emi_row['next_payment'] = next_next_payment
                       emi_row['extra_fee'] += additional_fees
                       emi_row['part_payment_done'] = 2
+                      emi_row['part_lender_returns'] += part_lender_returns
+                      emi_row['part_remaining_amount'] += part_remaining_amount
                       emi_row.update()
   
                   alert("Payment successful!")
@@ -261,6 +266,7 @@ class part_payment(part_paymentTemplate):
                               next_next_payment = prev_next_payment + timedelta(days=30)
 
                           lender_returns_in_emi_table = float(self.loan_details['i_r']) /2
+                          remaining_amount_in_emi_table = float(self.loan_details['for_remaining_amount_calculation']) /2
                           # Add a new row to fin_emi_table
                           new_emi_row = app_tables.fin_emi_table.add_row(
                               loan_id=loan_id,
@@ -282,6 +288,7 @@ class part_payment(part_paymentTemplate):
                               total_amount_pay= float(self.loan_details['total_emi_amount']),
                               remaining_tenure=remaining_tenure,
                               part_lender_returns=lender_returns_in_emi_table,
+                              part_remaining_amount=remaining_amount_in_emi_table,
                             
                               
                               
