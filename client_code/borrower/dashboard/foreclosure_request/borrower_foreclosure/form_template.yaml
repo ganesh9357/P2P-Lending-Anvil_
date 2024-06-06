@@ -35,7 +35,7 @@ components:
     layout_properties: {grid_position: 'TNAJOY,YOWCEE'}
     name: column_panel_1
     components:
-    - properties: {height: 350.50001525878906}
+    - properties: {height: 288.6428527832031}
       type: Spacer
       layout_properties: {grid_position: 'NSFBBW,MUKVFA'}
       name: spacer_1

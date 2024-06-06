@@ -199,6 +199,7 @@ class borrower_foreclosure(borrower_foreclosureTemplate):
                         open_form('borrower.dashboard.foreclosure_request')
                 else:
                     total_payments_made = 0
+                    self.label_tpm.text = 0
                     self.button_2.visible = False
                     self.button_foreclose.visible = False
                     self.button_5.visible = True
@@ -206,11 +207,13 @@ class borrower_foreclosure(borrower_foreclosureTemplate):
                     open_form('borrower.dashboard')
             else:
                 total_payments_made = 0
+                # self.label_tpm.text = 0
                 alert("No EMIs found for this loan.")   
-                open_form('borrower.dashboard')
+                # open_form('borrower.dashboard')
         except ValueError as e:
             alert(str(e))
-
+            
+            
         foreclosure_row = app_tables.fin_foreclosure.get(loan_id=loan_id)
         if foreclosure_row:
                                 foreclosure_amount = foreclosure_row['foreclose_amount']
