@@ -209,6 +209,7 @@ class check(checkTemplate):
             loan_amount_ending_balance = loan_amount_beginning_balance - principal_amount
     
             total_processing_fee += processing_fee_per_month
+            print(total_processing_fee)
     
             if month % 3 == 0 or month == self.tenure_months:
                 remaining_months = self.tenure_months - month + 1
@@ -229,11 +230,12 @@ class check(checkTemplate):
                 else:
                   total_interest = self.calculate_interest_for_months(
                       emi, loan_amount_beginning_balance, monthly_interest_rate, month - remaining_months, month)
+                print(f"Row {len(payment_schedule) + 1} - Scheduled Payment: {scheduled_payment}, Total Interest: {total_interest}")
 
                 # Calculate principal for this row
                 principal = scheduled_payment - total_interest
                 # Calculate total payment for this row
-                total_payment = scheduled_payment + total_processing_fee + total_interest
+                total_payment = scheduled_payment + total_processing_fee #+ total_interest
     
                 # Calculate ending balance and loan amount ending balance
                 ending_balance = beginning_balance - total_payment
