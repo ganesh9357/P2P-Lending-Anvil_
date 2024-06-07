@@ -99,6 +99,7 @@ class lender_view_profile(lender_view_profileTemplate):
       self.bank_id_tx.text = user_profile["bank_id"]
       self.bank_name_tx.text = user_profile["bank_name"]
       self.acccount_type_dropdown.selected_value = user_profile["account_type"]
+      self.alternate_email.text = user_profile['another_email']
 
       if lender_details['lending_type'] == 'Individual' :
         self.institutional_button.visible = False
@@ -194,6 +195,7 @@ class lender_view_profile(lender_view_profileTemplate):
     self.address_2_tx.enabled = False
     self.how_long_dropdown.enabled = False
     self.pincode_tx.enabled = False
+    self.alternate_email.enabled = False
     # self.age_tx.enabled = False
     # self.vehicle_loan_tx.enabled = False
     # self.credit_tx.enabled = False
@@ -222,6 +224,7 @@ class lender_view_profile(lender_view_profileTemplate):
     # self.credit_tx.enabled = True
     self.qualification_dropdown.enabled = True
     # self.profession_dropdown.enabled = True
+    self.alternate_email.enabled = True
 
   def edit_personal_details_click(self, **event_args):
     self.enable_personal_fields()
@@ -271,6 +274,7 @@ class lender_view_profile(lender_view_profileTemplate):
         # "Vehicle Loan": self.vehicle_loan_tx.text,
         # "Credit Card Loans": self.credit_tx.text,
         "Qualification": self.qualification_dropdown.selected_value,
+        "Alternate email": self.alternate_email.text,
         # "Profession": self.profession_dropdown.selected_value,
         # "Other Loan": self.Language_tx.text,
     }
@@ -286,6 +290,8 @@ class lender_view_profile(lender_view_profileTemplate):
 
     }
     if not is_valid_email(self.email_tx.text):
+        error_messages.append('Enter a valid email address.')
+    if not is_valid_email(self.alternate_email.text):
         error_messages.append('Enter a valid email address.')
       
     if not is_alpha(self.city_tx.text) :
@@ -412,6 +418,7 @@ class lender_view_profile(lender_view_profileTemplate):
         self.govt_1_file_loader_1.visible = False
         self.govt_2_file_loader_2.visible = False
         self.name_label.text = self.name_text_box.text
+        self.email_id_label.text =self.email_tx.text
 
         photo = self.govt_1_file_loader_1.file
         if photo:

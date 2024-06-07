@@ -93,11 +93,15 @@ class part_payment(part_paymentTemplate):
       if emi_row and emi_row['payment_type'] == 'part payment':
           # text_amount = float(self.text_box_1.text)
           additional_fees = self.calculate_additional_fees(emi_row)
+          
           if additional_fees is not None:
             text_amount = emi_row['part_payment_amount'] + additional_fees
           else:
             text_amount = emi_row['part_payment_amount']
-        
+
+          part_payment_date = emi_row['scheduled_payment']
+          days_elapsed = self.calculate_date_difference(part_payment_date, datetime.now().date())
+          print(days_elapsed)
           borrower_wallet = app_tables.fin_wallet.get(customer_id=self.loan_details['borrower_customer_id'])
           lender_wallet = app_tables.fin_wallet.get(customer_id=self.loan_details['lender_customer_id'])
   
@@ -174,6 +178,7 @@ class part_payment(part_paymentTemplate):
                       emi_row['part_payment_done'] = 2
                       emi_row['part_lender_returns'] += part_lender_returns
                       emi_row['part_remaining_amount'] += part_remaining_amount
+                      emi_row['days_left'] = days_elapsed
                       emi_row.update()
   
                   alert("Payment successful!")
@@ -273,6 +278,7 @@ class part_payment(part_paymentTemplate):
                               next_scheduled_payment = prev_scheduled_payment + timedelta(days=30)
                               next_next_payment = prev_next_payment + timedelta(days=30)
 
+                          days_left = self.loan_details['days_left']
                           lender_returns_in_emi_table = float(self.loan_details['i_r']) /2
                           remaining_amount_in_emi_table = float(self.loan_details['for_remaining_amount_calculation']) /2
                           # Add a new row to fin_emi_table
@@ -297,6 +303,7 @@ class part_payment(part_paymentTemplate):
                               remaining_tenure=remaining_tenure,
                               part_lender_returns=lender_returns_in_emi_table,
                               part_remaining_amount=remaining_amount_in_emi_table,
+                              days_left=days_left,
                             
                               
                               

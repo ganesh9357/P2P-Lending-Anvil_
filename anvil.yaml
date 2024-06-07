@@ -1137,6 +1137,9 @@ db_schema:
     - name: part_remaining_amount
       admin_ui: {width: 200, order: 18}
       type: number
+    - name: days_left
+      admin_ui: {width: 200, order: 6.1875}
+      type: number
   fin_borrower_business_type:
     client: full
     server: full

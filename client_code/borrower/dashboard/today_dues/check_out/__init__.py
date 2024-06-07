@@ -920,6 +920,7 @@ class check_out(check_outTemplate):
                     lender_id = self.selected_row['lender_customer_id']
                     lender_email = self.selected_row['lender_email_id']
                     borrower_email = self.selected_row['borrower_email_id']
+                    days_left = self.selected_row['days_left']
 
                     prev_scheduled_payment = self.selected_row['scheduled_payment']
                     prev_next_payment = self.selected_row['next_payment']
@@ -963,6 +964,7 @@ class check_out(check_outTemplate):
                         lender_email=lender_email,
                         payment_type='pay now',
                         remaining_tenure=remaining_tenure,
+                        days_left=days_left,
                         
                         
                     )

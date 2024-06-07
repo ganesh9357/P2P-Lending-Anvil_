@@ -92,7 +92,7 @@ components:
     layout_properties: {grid_position: 'DXTZII,WCIGSN'}
     components:
     - name: personal_information_panel
-      properties: {col_widths: '{"JMWRZL":25,"JNUESH":35,"XQSWFO":25,"QJAPZN":25,"IXDCZJ":25,"TLNBEN":25,"EGSFLR":25,"KGQXHY":5,"KLESAL":55,"ZCPZRF":35,"DATHWX":35,"LVJSXW":25,"HYVXAC":35,"NFSLAK":25,"JFBSNP":35,"PJCMGZ":35,"DUACGL":25,"ZFULZJ":35,"VAVODZ":25,"NCNLMF":25,"BEMUDH":35,"SPMTQD":25,"YYVQHV":35,"LPGPDR":25,"JRYIFF":25,"FFEKIU":35,"KHSZQT":25,"USYQIB":25,"RUGPEC":35,"SSGVTB":35,"IMHPVD":35,"ORARGK":35,"LBAQLI":20,"GJDUAS":35,"HFIOKG":20,"FBVMCM":35,"VGTTOU":35,"VSZMEF":35,"DEKDAY":25,"MRDKCO":25,"REJHYT":35}',
+      properties: {col_widths: '{"JMWRZL":25,"JNUESH":35,"XQSWFO":25,"QJAPZN":25,"IXDCZJ":25,"TLNBEN":25,"EGSFLR":25,"KGQXHY":5,"KLESAL":55,"ZCPZRF":35,"DATHWX":35,"LVJSXW":25,"HYVXAC":35,"NFSLAK":25,"JFBSNP":35,"DUACGL":25,"ZFULZJ":35,"VAVODZ":25,"NCNLMF":25,"BEMUDH":35,"SPMTQD":25,"YYVQHV":35,"LPGPDR":25,"JRYIFF":25,"FFEKIU":35,"KHSZQT":25,"USYQIB":25,"RUGPEC":35,"SSGVTB":35,"IMHPVD":35,"ORARGK":35,"LBAQLI":20,"GJDUAS":35,"HFIOKG":20,"FBVMCM":35,"VGTTOU":35,"VSZMEF":35,"DEKDAY":25,"MRDKCO":25,"REJHYT":35,"DGJPCO":25,"BFGLEI":35}',
         role: elevated-card, visible: true}
       type: ColumnPanel
       layout_properties: {grid_position: 'VNYQWZ,XCYJCJ', full_width_row: true}
@@ -136,11 +136,11 @@ components:
         layout_properties: {grid_position: 'NQDUFW,KLESAL SQBAVF,ZCPZRF'}
         event_bindings: {pressed_enter: text_box_1_copy_2_pressed_enter}
       - name: label_19
-        properties: {}
+        properties: {text: 'Alternate Email :', bold: true}
         type: Label
         layout_properties: {grid_position: 'NQDUFW,KLESAL DDJREQ,DGJPCO'}
-      - name: text_box_1
-        properties: {}
+      - name: alternate_email
+        properties: {role: outlined}
         type: TextBox
         layout_properties: {grid_position: 'NQDUFW,KLESAL DDJREQ,BFGLEI'}
       - name: label_4_copy
