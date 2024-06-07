@@ -194,7 +194,8 @@ def add_loan_details(loan_amount, tenure,user_id,interest_rate, total_repayment_
           total_processing_fee_amount = processing_fee_amount,
           total_interest_amount = total_interest,
           product_description = product_description,
-          monthly_emi = emi
+          monthly_emi = emi,
+          remaining_amount=total_repayment_amount,
          )
 
         # Return the generated loan ID to the client
