@@ -19,3 +19,7 @@ class loan_servicing(loan_servicingTemplate):
   def button_1_copy_3_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('admin.dashboard')
+
+  def button_14_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard.loan_servicing.out_standing_amount')

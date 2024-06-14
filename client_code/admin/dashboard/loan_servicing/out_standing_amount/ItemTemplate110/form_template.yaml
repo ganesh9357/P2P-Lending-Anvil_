@@ -2,6 +2,31 @@ is_package: true
 container: {type: ColumnPanel}
 components:
 - name: label_1
-  properties: {}
+  properties: {align: center}
   type: Label
   layout_properties: {grid_position: 'NFAYYB,YARNOV'}
+  data_bindings:
+  - {property: text, code: 'self.item[''product_name'']', writeback: false}
+- name: label_2
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'NFAYYB,CVNWIT'}
+  data_bindings:
+  - {property: text, code: 'self.item[''borrower_full_name'']', writeback: false}
+- name: label_3
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'NFAYYB,MXCKWW'}
+  data_bindings:
+  - {property: text, code: 'self.item[''borrower_customer_id'']', writeback: false}
+- name: label_4
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'NFAYYB,LNZLIH'}
+  data_bindings:
+  - {property: text, code: 'self.item[''total_repayment_amount'']', writeback: false}
+- name: link_1
+  properties: {align: center, text: View Tracking Amount}
+  type: Link
+  layout_properties: {grid_position: 'NFAYYB,VOVPJH'}
+  event_bindings: {click: link_1_click}

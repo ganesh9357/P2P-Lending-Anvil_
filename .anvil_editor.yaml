@@ -109,6 +109,7 @@ unique_ids:
     lendor.dashboard.RowTemplate13: '1715227710043217201182815.06174'
     borrower.dashboard.view_loans.RowTemplate15: 2HZLIPF4L4CRJLKCYZEVH2IQUPPWUUVF
     wallet.wallet.all_transaction.ItemTemplate99: '1712210109572218685580049.6752'
+    admin.dashboard.loan_servicing.out_standing_amount.chart_tracking: '1718370820066793899175085.8384'
     bank_users.main_form.contact_main_form: '1700563592845388062481880.76544'
     lendor.lendor_registration_forms.dasboard_contact_lendor_registration_form: '1710749042563704662250748.9884'
     admin.dashboard.manage_cms.add_lender_dropdown_details.ItemTemplate20: '1706531170115555265592720.5698'
