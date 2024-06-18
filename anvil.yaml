@@ -16,7 +16,7 @@ services:
 - source: /runtime/services/anvil/secrets.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: admin.dashboard.loan_servicing}
+startup: {type: form, module: bank_users.main_form}
 package_name: pip_install_reportlab
 allow_embedding: false
 name: P2P Lending App 1
@@ -379,6 +379,9 @@ db_schema:
       admin_ui: {width: 200}
       type: number
     - name: npa_fee
+      admin_ui: {width: 200}
+      type: number
+    - name: total_remaining_amount
       admin_ui: {width: 200}
       type: number
   fin_guarantor_details:

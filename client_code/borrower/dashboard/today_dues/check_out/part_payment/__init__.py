@@ -189,6 +189,7 @@ class part_payment(part_paymentTemplate):
                       emi_row['lapsed_fee'] += lapsed_fee_amount
                       emi_row['default_fee'] += default_fee_amount
                       emi_row['lapsed_fee'] += npa_fee_amount
+                      emi_row['total_remaining_amount'] = round(remaining_amount ,2)
                       emi_row.update()
   
                   alert("Payment successful!")
@@ -328,6 +329,7 @@ class part_payment(part_paymentTemplate):
                               npa_fee=npa,
                               default_fee=default,
                               lapsed_fee=lapsed,
+                              total_remaining_amount=round(remaining_amount , 2),
                             
                               
                               
