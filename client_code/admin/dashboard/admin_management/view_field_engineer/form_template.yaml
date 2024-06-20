@@ -1,11 +1,13 @@
-container: {type: ColumnPanel}
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"NOPEAX":55,"FTYLGZ":5}'}
 components:
 - name: home_button_admin_1
   properties: {}
   type: form:admin.dashboard.home_button_admin
   layout_properties: {grid_position: 'FDGVTU,LWSFKE', full_width_row: true}
 - name: label_1
-  properties: {align: center, text: View Field Engineers, bold: true, role: null, font_size: 18}
+  properties: {align: center, text: '                       View Field Engineers', bold: true, role: null, font_size: 18}
   type: Label
   layout_properties: {grid_position: 'NOVMKF,NOPEAX', full_width_row: true}
 - name: button_1
@@ -13,6 +15,10 @@ components:
   type: Button
   layout_properties: {grid_position: 'NOVMKF,FTYLGZ'}
   event_bindings: {click: button_1_click}
+- name: spacer_1
+  properties: {height: 18.857086181640625}
+  type: Spacer
+  layout_properties: {grid_position: 'BAGGIC,NKGBRG'}
 - name: data_grid_1
   properties:
     columns:
