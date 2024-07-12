@@ -49,16 +49,16 @@ class star_1_borrower_registration_form_5_bank_1(star_1_borrower_registration_fo
   def validate_account_name(self, **event_args):
     account_name = self.text_box_1.text
     if not account_name or not re.match(r'^[A-Za-z\s]+$', account_name):
-      self.text_box_1.background = 'outlined-error'
+      self.text_box_1.role = 'outlined-error'
     else:
-      self.text_box_1.background = 'outlined'
+      self.text_box_1.role = 'outlined'
 
   def validate_account_number(self, **event_args):
     account_number = self.text_box_3.text
     if ' ' in account_number or not account_number.isdigit():
-      self.text_box_3.background = 'outlined-error'
+      self.text_box_3.role = 'outlined-error'
     else:
-      self.text_box_3.background = 'outlined'
+      self.text_box_3.role = 'outlined'
 
   def validate_bank_name(self, **event_args):
     bank_name = self.text_box_4.text
